@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="apex-analytics" />
+    <profile name="sbt 1" modules="apex-analytics">
+      <parameters>
+        <parameter value="-Ykind-projector:underscores" />
+      </parameters>
+    </profile>
+    <profile name="sbt 2" modules="application,common,domain">
+      <option name="implicitConversions" value="true" />
+      <option name="higherKinds" value="true" />
+      <option name="existentials" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-Ykind-projector:underscores" />
+        <parameter value="-Ypartial-unification" />
+      </parameters>
+    </profile>
   </component>
 </project>

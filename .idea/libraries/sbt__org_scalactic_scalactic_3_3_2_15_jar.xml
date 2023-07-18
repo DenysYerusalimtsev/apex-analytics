@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.scalactic:scalactic_3:3.2.15:jar" external-system-id="SBT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.scalactic/scalactic_3/bundles/scalactic_3-3.2.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.scalactic/scalactic_3/srcs/scalactic_3-3.2.15-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,3 +1,1239 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/D:/Projects/apex-analytics/"), "root")...
-[debug] Done updating ProjectRef(uri("file:/D:/Projects/apex-analytics/"), "root")
+[debug] :: resolving dependencies :: apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT
+[debug] 	confs: [compile, runtime, test, provided, optional, protobuf, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, scala-doc-tool, scoveragePlugin, protobuf-src]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'compile'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala3-library_3;3.2.2 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala3-library_3;3.2.2
+[debug] 	found org.scala-lang#scala3-library_3;3.2.2 in sbt-chain
+[debug] 	[3.2.2] org.scala-lang#scala3-library_3;3.2.2
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.13.10 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.13.10
+[debug] 	found org.scala-lang#scala-library;2.13.10 in sbt-chain
+[debug] 	[2.13.10] org.scala-lang#scala-library;2.13.10
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master]
+[debug] resolving dependencies for configuration 'runtime'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [runtime]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->master]
+[debug] resolving dependencies for configuration 'test'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [test]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [runtime]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->master]
+[debug] resolving dependencies for configuration 'provided'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [provided]
+[debug] resolving dependencies for configuration 'optional'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [optional]
+[debug] resolving dependencies for configuration 'protobuf'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [protobuf]
+[debug] resolving dependencies for configuration 'compile-internal'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [optional]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [provided]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile-internal->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile-internal->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile-internal->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile-internal->master]
+[debug] resolving dependencies for configuration 'runtime-internal'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [runtime]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->master]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [optional]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime-internal->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime-internal->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime-internal->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime-internal->master]
+[debug] resolving dependencies for configuration 'test-internal'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [test]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [runtime]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [compile->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [runtime->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test->master]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [optional]
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [provided]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->default]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [test-internal->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test-internal->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test-internal->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test-internal->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test-internal->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test-internal->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [test-internal->master]
+[debug] resolving dependencies for configuration 'plugin'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [plugin]
+[debug] resolving dependencies for configuration 'pom'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [pom]
+[debug] resolving dependencies for configuration 'scala-tool'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.jline#jline-terminal-jna;3.19.0 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.jline#jline-terminal-jna;3.19.0
+[debug] 	found org.jline#jline-terminal-jna;3.19.0 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->default]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala3-compiler_3;3.2.2 {scala-tool=[default, compile, runtime, default(compile), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala3-compiler_3;3.2.2
+[debug] 	found org.scala-lang#scala3-compiler_3;3.2.2 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#tasty-core_3;3.2.2 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#tasty-core_3;3.2.2
+[debug] 	found org.scala-lang#tasty-core_3;3.2.2 in sbt-chain
+[debug] 	[3.2.2] org.scala-lang#tasty-core_3;3.2.2
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.jline#jline-reader;3.19.0 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.jline#jline-reader;3.19.0
+[debug] 	found org.jline#jline-reader;3.19.0 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-asm;9.3.0-scala-1 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-asm;9.3.0-scala-1
+[debug] 	found org.scala-lang.modules#scala-asm;9.3.0-scala-1 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: net.java.dev.jna#jna;5.3.1 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: net.java.dev.jna#jna;5.3.1
+[debug] 	found net.java.dev.jna#jna;5.3.1 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#compiler-interface;1.3.5 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#compiler-interface;1.3.5
+[debug] 	found org.scala-sbt#compiler-interface;1.3.5 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala3-interfaces;3.2.2 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala3-interfaces;3.2.2
+[debug] 	found org.scala-lang#scala3-interfaces;3.2.2 in sbt-chain
+[debug] 	[3.2.2] org.scala-lang#scala3-interfaces;3.2.2
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#util-interface;1.3.0 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-sbt#util-interface;1.3.0
+[debug] 	found org.scala-sbt#util-interface;1.3.0 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.jline#jline-terminal;3.19.0 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.jline#jline-terminal;3.19.0
+[debug] 	found org.jline#jline-terminal;3.19.0 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.google.protobuf#protobuf-java;3.7.0 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;3.7.0
+[debug] 	found com.google.protobuf#protobuf-java;3.7.0 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-tool->master]
+[debug] resolving dependencies for configuration 'scala-doc-tool'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [scala-doc-tool]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal-jna;3.19.0 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1
+[debug] 	found com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->default]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scaladoc_3;3.2.2 {scala-doc-tool=[default, compile, runtime, default(compile), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scaladoc_3;3.2.2
+[debug] 	found org.scala-lang#scaladoc_3;3.2.2 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->default(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scaladoc_3;3.2.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-compiler_3;3.2.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#tasty-core_3;3.2.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.yaml#snakeyaml;1.30 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.yaml#snakeyaml;1.30 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.yaml#snakeyaml;1.30
+[debug] 	found org.yaml#snakeyaml;1.30 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.yaml#snakeyaml;1.30 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.yaml#snakeyaml;1.30 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.yaml#snakeyaml;1.30 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.yaml#snakeyaml;1.30 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.yaml#snakeyaml;1.30 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.yaml#snakeyaml;1.30 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.yaml#snakeyaml;1.30 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-reader;3.19.0 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-autolink;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-autolink;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-superscript;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-superscript;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang.modules#scala-asm;9.3.0-scala-1 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-util;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-util;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-util;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-util;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-util;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-util;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-util;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-util;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-util;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-util;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-util;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.13.3 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-annotations;2.13.3 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.13.3
+[debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.13.3 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.13.3 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.13.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.13.3 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.13.3 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.13.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.13.3 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-annotations;2.13.3 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->net.java.dev.jna#jna;5.3.1 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-tasty-inspector_3;3.2.2 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala3-tasty-inspector_3;3.2.2 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala3-tasty-inspector_3;3.2.2
+[debug] 	found org.scala-lang#scala3-tasty-inspector_3;3.2.2 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-tasty-inspector_3;3.2.2 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-tasty-inspector_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-tasty-inspector_3;3.2.2 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-tasty-inspector_3;3.2.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-tasty-inspector_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-tasty-inspector_3;3.2.2 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-tasty-inspector_3;3.2.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#compiler-interface;1.3.5 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.13.3 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-core;2.13.3 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.13.3
+[debug] 	found com.fasterxml.jackson.core#jackson-core;2.13.3 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.13.3 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.13.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.13.3 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.13.3 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.13.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.13.3 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-core;2.13.3 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-library_3;3.2.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala3-interfaces;3.2.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.antlr#antlr4-runtime;4.7.2 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.antlr#antlr4-runtime;4.7.2 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.antlr#antlr4-runtime;4.7.2
+[debug] 	found org.antlr#antlr4-runtime;4.7.2 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.antlr#antlr4-runtime;4.7.2 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.antlr#antlr4-runtime;4.7.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.antlr#antlr4-runtime;4.7.2 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.antlr#antlr4-runtime;4.7.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.antlr#antlr4-runtime;4.7.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.antlr#antlr4-runtime;4.7.2 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.antlr#antlr4-runtime;4.7.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.13.3 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-databind;2.13.3 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.13.3
+[debug] 	found com.fasterxml.jackson.core#jackson-databind;2.13.3 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.13.3 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.13.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.13.3 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.13.3 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.13.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.13.3 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.13.3 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jsoup#jsoup;1.14.3 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.jsoup#jsoup;1.14.3 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.jsoup#jsoup;1.14.3
+[debug] 	found org.jsoup#jsoup;1.14.3 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jsoup#jsoup;1.14.3 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jsoup#jsoup;1.14.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jsoup#jsoup;1.14.3 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jsoup#jsoup;1.14.3 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jsoup#jsoup;1.14.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jsoup#jsoup;1.14.3 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jsoup#jsoup;1.14.3 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-jira-converter;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-jira-converter;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-jira-converter;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-jira-converter;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-jira-converter;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-jira-converter;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-jira-converter;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-jira-converter;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-jira-converter;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-jira-converter;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-jira-converter;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-emoji;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-emoji;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-formatter;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-formatter;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-formatter;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-formatter;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-formatter;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-formatter;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-formatter;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-formatter;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-formatter;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-formatter;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-formatter;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-sbt#util-interface;1.3.0 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.jline#jline-terminal;3.19.0 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-html-parser;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-html-parser;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-html-parser;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-html-parser;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-html-parser;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-html-parser;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-html-parser;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-html-parser;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-html-parser;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-html-parser;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-html-parser;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->ua.co.k#strftime4j;1.0.5 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: ua.co.k#strftime4j;1.0.5 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: ua.co.k#strftime4j;1.0.5
+[debug] 	found ua.co.k#strftime4j;1.0.5 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->ua.co.k#strftime4j;1.0.5 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->ua.co.k#strftime4j;1.0.5 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->ua.co.k#strftime4j;1.0.5 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->ua.co.k#strftime4j;1.0.5 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->ua.co.k#strftime4j;1.0.5 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->ua.co.k#strftime4j;1.0.5 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->ua.co.k#strftime4j;1.0.5 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-tables;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-tables;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-tables;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-tables;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-tables;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-tables;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-tables;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-tables;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-tables;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-tables;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-tables;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.nibor.autolink#autolink;0.6.0 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.nibor.autolink#autolink;0.6.0 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.nibor.autolink#autolink;0.6.0
+[debug] 	found org.nibor.autolink#autolink;0.6.0 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.nibor.autolink#autolink;0.6.0 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.nibor.autolink#autolink;0.6.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.nibor.autolink#autolink;0.6.0 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.nibor.autolink#autolink;0.6.0 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.nibor.autolink#autolink;0.6.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.nibor.autolink#autolink;0.6.0 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.nibor.autolink#autolink;0.6.0 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.google.protobuf#protobuf-java;3.7.0 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.13.10 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->nl.big-o#liqp;0.8.2 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: nl.big-o#liqp;0.8.2 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: nl.big-o#liqp;0.8.2
+[debug] 	found nl.big-o#liqp;0.8.2 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->nl.big-o#liqp;0.8.2 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->nl.big-o#liqp;0.8.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->nl.big-o#liqp;0.8.2 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->nl.big-o#liqp;0.8.2 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->nl.big-o#liqp;0.8.2 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->nl.big-o#liqp;0.8.2 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->nl.big-o#liqp;0.8.2 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-ins;0.42.12 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.vladsch.flexmark#flexmark-ext-ins;0.42.12 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.vladsch.flexmark#flexmark-ext-ins;0.42.12
+[debug] 	found com.vladsch.flexmark#flexmark-ext-ins;0.42.12 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-ins;0.42.12 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-ins;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-ins;0.42.12 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-ins;0.42.12 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-ins;0.42.12 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-ins;0.42.12 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.vladsch.flexmark#flexmark-ext-ins;0.42.12 [scala-doc-tool->master]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 [scala-doc-tool->compile]
+[debug] sbt-chain: Checking cache for: dependency: com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 {scala-doc-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3
+[debug] 	found com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 in sbt-chain
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 [scala-doc-tool->runtime(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 [scala-doc-tool->master(compile)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 [scala-doc-tool->runtime]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 [scala-doc-tool->compile]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 [scala-doc-tool->compile(*)]
+[debug] == resolving dependencies apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT->com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3 [scala-doc-tool->master]
+[debug] resolving dependencies for configuration 'scoveragePlugin'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [scoveragePlugin]
+[debug] resolving dependencies for configuration 'protobuf-src'
+[debug] == resolving dependencies for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT [protobuf-src]
+[debug] 	resolved ivy file produced in cache
+[debug] :: downloading artifacts ::
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-lang\scala-library\2.13.10\srcs\scala-library-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.jline\jline-terminal-jna\3.19.0\srcs\jline-terminal-jna-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-lang\scala3-library_3\3.2.2\srcs\scala3-library_3-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-lang\scala3-compiler_3\3.2.2\srcs\scala3-compiler_3-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-lang\tasty-core_3\3.2.2\srcs\tasty-core_3-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.jline\jline-reader\3.19.0\srcs\jline-reader-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.2.2/scala3-compiler_3-3.2.2-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.2.2/tasty-core_3-3.2.2-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0-sources.jar ...
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2-sources.jar ...
+[info] downloading https://repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0-sources.jar ...
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar ...
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.2.2/tasty-core_3-3.2.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.2.2/tasty-core_3-3.2.2-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.2.2/tasty-core_3-3.2.2-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.2.2/scala3-compiler_3-3.2.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.2.2/scala3-compiler_3-3.2.2-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.2.2/tasty-core_3-3.2.2-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2-sources.jar.sha1
+[info] 	[SUCCESSFUL ] org.scala-lang#tasty-core_3;3.2.2!tasty-core_3.jar(src) (694ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-lang.modules\scala-asm\9.3.0-scala-1\srcs\scala-asm-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.3.0-scala-1/scala-asm-9.3.0-scala-1-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.13.10!scala-library.jar(src) (720ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\net.java.dev.jna\jna\5.3.1\srcs\jna-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1-sources.jar
+[info] 	[SUCCESSFUL ] org.jline#jline-reader;3.19.0!jline-reader.jar(src) (722ms)
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.3.0-scala-1/scala-asm-9.3.0-scala-1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.3.0-scala-1/scala-asm-9.3.0-scala-1-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-sbt\compiler-interface\1.3.5\srcs\compiler-interface-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala3-library_3;3.2.2!scala3-library_3.jar(src) (743ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-lang\scala3-interfaces\3.2.2\srcs\scala3-interfaces-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.2.2/scala3-interfaces-3.2.2-sources.jar
+[info] downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.2.2/scala3-interfaces-3.2.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.2.2/scala3-interfaces-3.2.2-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0-sources.jar
+[info] 	[SUCCESSFUL ] org.jline#jline-terminal-jna;3.19.0!jline-terminal-jna.jar(src) (815ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-sbt\util-interface\1.3.0\srcs\util-interface-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.2.2/scala3-interfaces-3.2.2-sources.jar.sha1
+[info] 	[SUCCESSFUL ] net.java.dev.jna#jna;5.3.1!jna.jar(src) (227ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.jline\jline-terminal\3.19.0\srcs\jline-terminal-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.3.0-scala-1/scala-asm-9.3.0-scala-1-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-sbt#compiler-interface;1.3.5!compiler-interface.jar(src) (257ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.google.protobuf\protobuf-java\3.7.0\srcs\protobuf-java-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.2.2/scala3-interfaces-3.2.2-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala3-interfaces;3.2.2!scala3-interfaces.jar(src) (252ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.12.1\srcs\jackson-datatype-jsr310-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.3.0-scala-1/scala-asm-9.3.0-scala-1-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-asm;9.3.0-scala-1!scala-asm.jar(src) (313ms)
+[info] downloading https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-lang\scaladoc_3\3.2.2\srcs\scaladoc_3-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.2.2/scaladoc_3-3.2.2-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.2.2/scaladoc_3-3.2.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.2.2/scaladoc_3-3.2.2-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-sbt#util-interface;1.3.0!util-interface.jar(src) (239ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-gfm-strikethrough\0.42.12\srcs\flexmark-ext-gfm-strikethrough-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.42.12/flexmark-ext-gfm-strikethrough-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.42.12/flexmark-ext-gfm-strikethrough-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.42.12/flexmark-ext-gfm-strikethrough-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.2.2/scala3-compiler_3-3.2.2-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1-sources.jar
+[info] 	[SUCCESSFUL ] com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.12.1!jackson-datatype-jsr310.jar(src) (233ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.yaml\snakeyaml\1.30\srcs\snakeyaml-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.30/snakeyaml-1.30-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.2.2/scala3-compiler_3-3.2.2-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala3-compiler_3;3.2.2!scala3-compiler_3.jar(src) (1252ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-autolink\0.42.12\srcs\flexmark-ext-autolink-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.42.12/flexmark-ext-autolink-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.30/snakeyaml-1.30-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.30/snakeyaml-1.30-sources.jar
+[info] 	[SUCCESSFUL ] org.jline#jline-terminal;3.19.0!jline-terminal.jar(src) (327ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-superscript\0.42.12\srcs\flexmark-ext-superscript-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.42.12/flexmark-ext-superscript-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.42.12/flexmark-ext-autolink-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.42.12/flexmark-ext-autolink-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.42.12/flexmark-ext-superscript-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.42.12/flexmark-ext-superscript-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.42.12/flexmark-ext-gfm-strikethrough-0.42.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.30/snakeyaml-1.30-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.42.12/flexmark-ext-gfm-strikethrough-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-gfm-strikethrough;0.42.12!flexmark-ext-gfm-strikethrough.jar(src) (321ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-util\0.42.12\srcs\flexmark-util-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.42.12/flexmark-util-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.42.12/flexmark-util-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.42.12/flexmark-util-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.30/snakeyaml-1.30-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0-sources.jar.sha1
+[info] 	[SUCCESSFUL ] org.yaml#snakeyaml;1.30!snakeyaml.jar(src) (188ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.fasterxml.jackson.core\jackson-annotations\2.13.3\srcs\jackson-annotations-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.2.2/scaladoc_3-3.2.2-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.42.12/flexmark-ext-autolink-0.42.12-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0-sources.jar
+[info] 	[SUCCESSFUL ] com.google.protobuf#protobuf-java;3.7.0!protobuf-java.jar(src) (490ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.scala-lang\scala3-tasty-inspector_3\3.2.2\srcs\scala3-tasty-inspector_3-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.2.2/scala3-tasty-inspector_3-3.2.2-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.42.12/flexmark-ext-autolink-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-autolink;0.42.12!flexmark-ext-autolink.jar(src) (264ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.fasterxml.jackson.core\jackson-core\2.13.3\srcs\jackson-core-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.2.2/scaladoc_3-3.2.2-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scaladoc_3;3.2.2!scaladoc_3.jar(src) (521ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.antlr\antlr4-runtime\4.7.2\srcs\antlr4-runtime-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.2.2/scala3-tasty-inspector_3-3.2.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.2.2/scala3-tasty-inspector_3-3.2.2-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.42.12/flexmark-ext-superscript-0.42.12-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.42.12/flexmark-util-0.42.12-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-sources.jar
+[info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.13.3!jackson-annotations.jar(src) (165ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-yaml-front-matter\0.42.12\srcs\flexmark-ext-yaml-front-matter-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.42.12/flexmark-ext-yaml-front-matter-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.42.12/flexmark-ext-superscript-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-superscript;0.42.12!flexmark-ext-superscript.jar(src) (318ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-gfm-tasklist\0.42.12\srcs\flexmark-ext-gfm-tasklist-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.42.12/flexmark-ext-gfm-tasklist-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.42.12/flexmark-ext-yaml-front-matter-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.42.12/flexmark-ext-yaml-front-matter-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.42.12/flexmark-ext-gfm-tasklist-0.42.12-sources.jar ...
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.42.12/flexmark-util-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.42.12/flexmark-ext-gfm-tasklist-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-util;0.42.12!flexmark-util.jar(src) (245ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.fasterxml.jackson.core\jackson-databind\2.13.3\srcs\jackson-databind-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.2.2/scala3-tasty-inspector_3-3.2.2-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2-sources.jar
+[info] 	[SUCCESSFUL ] org.antlr#antlr4-runtime;4.7.2!antlr4-runtime.jar(src) (158ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.jsoup\jsoup\1.14.3\srcs\jsoup-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.2.2/scala3-tasty-inspector_3-3.2.2-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala3-tasty-inspector_3;3.2.2!scala3-tasty-inspector_3.jar(src) (248ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-jira-converter\0.42.12\srcs\flexmark-jira-converter-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.42.12/flexmark-jira-converter-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-sources.jar
+[info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.13.3!jackson-core.jar(src) (212ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-emoji\0.42.12\srcs\flexmark-ext-emoji-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.42.12/flexmark-ext-emoji-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.42.12/flexmark-jira-converter-0.42.12-sources.jar ...
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.42.12/flexmark-ext-emoji-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.42.12/flexmark-jira-converter-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.42.12/flexmark-ext-emoji-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.42.12/flexmark-ext-gfm-tasklist-0.42.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.42.12/flexmark-ext-gfm-tasklist-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-gfm-tasklist;0.42.12!flexmark-ext-gfm-tasklist.jar(src) (235ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-formatter\0.42.12\srcs\flexmark-formatter-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-formatter/0.42.12/flexmark-formatter-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/jsoup/jsoup/1.14.3/jsoup-1.14.3-sources.jar
+[info] 	[SUCCESSFUL ] org.jsoup#jsoup;1.14.3!jsoup.jar(src) (148ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-gfm-tables\0.42.12\srcs\flexmark-ext-gfm-tables-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.42.12/flexmark-ext-gfm-tables-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.42.12/flexmark-ext-yaml-front-matter-0.42.12-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.42.12/flexmark-ext-gfm-tables-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.42.12/flexmark-ext-gfm-tables-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.42.12/flexmark-ext-yaml-front-matter-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-yaml-front-matter;0.42.12!flexmark-ext-yaml-front-matter.jar(src) (307ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-html-parser\0.42.12\srcs\flexmark-html-parser-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-html-parser/0.42.12/flexmark-html-parser-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.42.12/flexmark-jira-converter-0.42.12-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-html-parser/0.42.12/flexmark-html-parser-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-html-parser/0.42.12/flexmark-html-parser-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-sources.jar
+[info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.13.3!jackson-databind.jar(src) (296ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark\0.42.12\srcs\flexmark-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.42.12/flexmark-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.42.12/flexmark-ext-emoji-0.42.12-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.42.12/flexmark-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.42.12/flexmark-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.42.12/flexmark-jira-converter-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-jira-converter;0.42.12!flexmark-jira-converter.jar(src) (239ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\ua.co.k\strftime4j\1.0.5\srcs\strftime4j-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-formatter/0.42.12/flexmark-formatter-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-formatter/0.42.12/flexmark-formatter-0.42.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.42.12/flexmark-ext-emoji-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-emoji;0.42.12!flexmark-ext-emoji.jar(src) (244ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-tables\0.42.12\srcs\flexmark-ext-tables-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.42.12/flexmark-ext-tables-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.42.12/flexmark-ext-gfm-tables-0.42.12-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.42.12/flexmark-ext-gfm-tables-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-gfm-tables;0.42.12!flexmark-ext-gfm-tables.jar(src) (226ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\org.nibor.autolink\autolink\0.6.0\srcs\autolink-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-html-parser/0.42.12/flexmark-html-parser-0.42.12-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.42.12/flexmark-ext-tables-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.42.12/flexmark-ext-tables-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.42.12/flexmark-0.42.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-formatter/0.42.12/flexmark-formatter-0.42.12-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-html-parser/0.42.12/flexmark-html-parser-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-html-parser;0.42.12!flexmark-html-parser.jar(src) (227ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-wikilink\0.42.12\srcs\flexmark-ext-wikilink-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.42.12/flexmark-ext-wikilink-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5-sources.jar.sha1
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.42.12/flexmark-ext-wikilink-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.42.12/flexmark-ext-wikilink-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-formatter/0.42.12/flexmark-formatter-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-formatter;0.42.12!flexmark-formatter.jar(src) (330ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\nl.big-o\liqp\0.8.2\srcs\liqp-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.42.12/flexmark-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark;0.42.12!flexmark.jar(src) (247ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-anchorlink\0.42.12\srcs\flexmark-ext-anchorlink-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.42.12/flexmark-ext-anchorlink-0.42.12-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0-sources.jar
+[debug] sha1 OK for https://repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5-sources.jar
+[info] 	[SUCCESSFUL ] ua.co.k#strftime4j;1.0.5!strftime4j.jar(src) (218ms)
+[info] 	[SUCCESSFUL ] org.nibor.autolink#autolink;0.6.0!autolink.jar(src) (116ms)
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.vladsch.flexmark\flexmark-ext-ins\0.42.12\srcs\flexmark-ext-ins-sources.jar
+[debug] 		tried C:\Users\Denis.Yerusalimtsev\.ivy2\local\com.fasterxml.jackson.dataformat\jackson-dataformat-yaml\2.13.3\srcs\jackson-dataformat-yaml-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.42.12/flexmark-ext-ins-0.42.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.3/jackson-dataformat-yaml-2.13.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.42.12/flexmark-ext-anchorlink-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.42.12/flexmark-ext-anchorlink-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.42.12/flexmark-ext-ins-0.42.12-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.42.12/flexmark-ext-ins-0.42.12-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.3/jackson-dataformat-yaml-2.13.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.3/jackson-dataformat-yaml-2.13.3-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.42.12/flexmark-ext-tables-0.42.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.3/jackson-dataformat-yaml-2.13.3-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.42.12/flexmark-ext-tables-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-tables;0.42.12!flexmark-ext-tables.jar(src) (325ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.3/jackson-dataformat-yaml-2.13.3-sources.jar
+[info] 	[SUCCESSFUL ] com.fasterxml.jackson.dataformat#jackson-dataformat-yaml;2.13.3!jackson-dataformat-yaml.jar(src) (122ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.42.12/flexmark-ext-anchorlink-0.42.12-sources.jar.sha1
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.42.12/flexmark-ext-ins-0.42.12-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2-sources.jar
+[info] 	[SUCCESSFUL ] nl.big-o#liqp;0.8.2!liqp.jar(src) (227ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.42.12/flexmark-ext-anchorlink-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-anchorlink;0.42.12!flexmark-ext-anchorlink.jar(src) (226ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.42.12/flexmark-ext-ins-0.42.12-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.42.12/flexmark-ext-wikilink-0.42.12-sources.jar.sha1
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-ins;0.42.12!flexmark-ext-ins.jar(src) (219ms)
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.42.12/flexmark-ext-wikilink-0.42.12-sources.jar
+[info] 	[SUCCESSFUL ] com.vladsch.flexmark#flexmark-ext-wikilink;0.42.12!flexmark-ext-wikilink.jar(src) (325ms)
+[debug] :: resolution report :: resolve 340ms :: artifacts dl 2455ms
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT compile produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-compile.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT runtime produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-runtime.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT test produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-test.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT provided produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-provided.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT optional produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-optional.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT protobuf produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-protobuf.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT compile-internal produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-compile-internal.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT runtime-internal produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-runtime-internal.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT test-internal produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-test-internal.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT plugin produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-plugin.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT pom produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-pom.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT scala-tool produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-scala-tool.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT scala-doc-tool produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-scala-doc-tool.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT scoveragePlugin produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-scoveragePlugin.xml
+[debug] 	report for apex-analytics#apex-analytics$sources;0.1.0-SNAPSHOT protobuf-src produced in D:\Projects\apex-analytics\target\scala-3.2.2\resolution-cache\reports\apex-analytics-apex-analytics$sources-protobuf-src.xml
+[debug] 	resolve done (340ms resolve - 2455ms download)

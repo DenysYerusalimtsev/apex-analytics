@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/apex-analytics.iml" filepath="$PROJECT_DIR$/.idea/modules/apex-analytics.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/apex-analytics-build.iml" filepath="$PROJECT_DIR$/.idea/modules/apex-analytics-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/application.iml" filepath="$PROJECT_DIR$/.idea/modules/application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain.iml" />
     </modules>
   </component>
 </project>
