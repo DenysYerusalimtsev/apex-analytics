@@ -34,7 +34,6 @@ lazy val commonSettings = Seq(
   // we need to remove Maven Central cause that is proxied by Azure Artifactory already
   externalResolvers -= Resolver.mavenCentral,
   externalResolvers ++= Seq(
-    // since Azure Artifactory can proxy only Maven Central we still need to explicitly set the rest
     "confluent" at "https://packages.confluent.io/maven",
     "apache" at "https://repo.maven.apache.org/maven2"),
   //  credentials += Credentials(Path.userHome / ".sbt" / ".credentials"),
@@ -108,5 +107,5 @@ lazy val `common` = (project in file("common"))
     name := "common",
     commonSettings,
     libraryDependencies ++= commonDependencies ++ Seq(
-      //      "org.scodec" % "scodec-core" % "2.2.1"
+      "org.scodec" % "scodec-core_3" % "2.2.2"
     ))
