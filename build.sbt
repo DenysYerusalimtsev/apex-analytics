@@ -96,9 +96,9 @@ lazy val `application` = (project in file("application"))
     libraryDependencies ++= commonDependencies ++ Seq())
   .dependsOn(`common`)
 
-lazy val `domain` = (project in file("domain"))
+lazy val `core` = (project in file("core"))
   .settings(
-    name := "domain",
+    name := "core",
     commonSettings,
     libraryDependencies ++= commonDependencies ++ Seq())
 
