@@ -1,14 +1,11 @@
 package io.apex.f1.packets
 
-
-/**
- * Base class for all packets
- */
 trait Packet {
+  @inline def size: Int
+}
 
 //  var header: PacketHeader = new PacketHeader()
 //
-//  def size: Int
 //
 //  def fill(buffer: ByteBuf): Packet = {
 //    this.header.fill(buffer)
@@ -18,5 +15,5 @@ trait Packet {
 //  def fillBuffer(buffer: ByteBuf): ByteBuf = this.header.fillBuffer(buffer)
 //
 //  override def toString: String = this.header.toString
-}
+
 

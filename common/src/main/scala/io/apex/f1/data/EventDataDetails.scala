@@ -1,5 +1,7 @@
 package io.apex.f1.data
 
+import io.apex.f1.packets.Packet
+
 case class EventDataDetails(
                              fastestLap: FastestLap,
                              retirement: Retirement,
@@ -16,4 +18,8 @@ case class EventDataDetails(
       s"penalty=$penalty, " +
       s"speedTrap=$speedTrap]"
   }
+}
+
+object EventDataDetails extends Packet {
+  override def size: Int = 7
 }

@@ -1,5 +1,8 @@
 package io.apex.f1.packets
 
+import io.apex.f1.PacketConstants
+import io.apex.f1.data.FinalClassificationData
+
 
 /**
  * Final Classification Packet
@@ -14,23 +17,26 @@ case class PacketFinalClassificationData(
                                           header: PacketHeader,
                                           numCars: Short,
                                           finalClassificationData: List[FinalClassificationData]
-                                        ) extends Packet {
+                                        ) {
 
-  override def size: Int = PacketHeader.SIZE + 1 + FinalClassificationData.SIZE * PacketConstants.CARS
   override def toString: String = {
     s"FinalClassification[$header,numCars=$numCars,finalClassificationData=${finalClassificationData.mkString(",")}]"
   }
-  def fill(buffer: ByteBuf): PacketFinalClassificationData = {
-    val filledHeader = PacketHeader().fill(buffer)
-    val filledNumCars = buffer.readUnsignedByte()
-    val filledFinalClassificationData = List.fill(filledNumCars)(FinalClassificationData().fill(buffer))
-    PacketFinalClassificationData(filledHeader, filledNumCars, filledFinalClassificationData)
-  }
+  //  def fill(buffer: ByteBuf): PacketFinalClassificationData = {
+  //    val filledHeader = PacketHeader().fill(buffer)
+  //    val filledNumCars = buffer.readUnsignedByte()
+  //    val filledFinalClassificationData = List.fill(filledNumCars)(FinalClassificationData().fill(buffer))
+  //    PacketFinalClassificationData(filledHeader, filledNumCars, filledFinalClassificationData)
+  //  }
+  //
+  //  def fillBuffer(packet: PacketFinalClassificationData, buffer: ByteBuf): ByteBuf = {
+  //    packet.header.fillBuffer(buffer)
+  //    buffer.writeByte(packet.numCars)
+  //    packet.finalClassificationData.foreach(_.fillBuffer(buffer))
+  //    buffer
+  //  }
+}
 
-  def fillBuffer(packet: PacketFinalClassificationData, buffer: ByteBuf): ByteBuf = {
-    packet.header.fillBuffer(buffer)
-    buffer.writeByte(packet.numCars)
-    packet.finalClassificationData.foreach(_.fillBuffer(buffer))
-    buffer
-  }
+object PacketFinalClassificationData extends Packet {
+  override def size: Int = PacketHeader.size + 1 + FinalClassificationData.size * PacketConstants.CARS
 }

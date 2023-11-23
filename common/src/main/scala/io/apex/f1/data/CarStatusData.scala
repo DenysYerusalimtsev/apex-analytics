@@ -1,6 +1,8 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums._
+import io.apex.f1.packets.Packet
+
 import java.util.Arrays
 
 case class CarStatusData(
@@ -163,4 +165,8 @@ case class CarStatusData(
       s"ersHarvestedThisLapMGUH=$ersHarvestedThisLapMGUH," +
       s"ersDeployedThisLap=$ersDeployedThisLap" +
       "]"
+}
+
+object CarStatusData extends Packet {
+  override def size: Int = 60
 }

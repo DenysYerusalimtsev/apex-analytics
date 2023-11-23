@@ -1,5 +1,8 @@
 package io.apex.f1.packets
 
+import io.apex.f1.PacketConstants
+import io.apex.f1.data.*
+
 
 /**
  * Car Status Packet
@@ -11,28 +14,32 @@ package io.apex.f1.packets
 case class PacketCarStatusData(
                                 header: PacketHeader,
                                 carStatusData: List[CarStatusData]
-                              ) extends Packet {
+                              ) {
 
   // 1344
-  override def size: Int = PacketHeader.SIZE + CarSetupData.SIZE * PacketConstants.CARS;
 
   override def toString: String = {
     val carStatusDataString = carStatusData.map(_.toString).mkString(",")
     s"CarStatus[$header, carStatusData=[$carStatusDataString]]"
   }
 
-//  def fill(buffer: ByteBuf): PacketCarStatusData = {
-//    val filledHeader = header.fill(buffer)
-//    val filledCarStatusData = ListBuffer[CarStatusData]()
-//    for (_ <- 0 until PacketConstants.CARS) {
-//      filledCarStatusData += CarStatusData().fill(buffer)
-//    }
-//    PacketCarStatusData(filledHeader, filledCarStatusData.toList)
-//  }
-//
-//  def fillBuffer(buffer: ByteBuf): ByteBuf = {
-//    header.fillBuffer(buffer)
-//    carStatusData.foreach(_.fillBuffer(buffer))
-//    buffer
-//  }
+  //  def fill(buffer: ByteBuf): PacketCarStatusData = {
+  //    val filledHeader = header.fill(buffer)
+  //    val filledCarStatusData = ListBuffer[CarStatusData]()
+  //    for (_ <- 0 until PacketConstants.CARS) {
+  //      filledCarStatusData += CarStatusData().fill(buffer)
+  //    }
+  //    PacketCarStatusData(filledHeader, filledCarStatusData.toList)
+  //  }
+  //
+  //  def fillBuffer(buffer: ByteBuf): ByteBuf = {
+  //    header.fillBuffer(buffer)
+  //    carStatusData.foreach(_.fillBuffer(buffer))
+  //    buffer
+  //  }
+}
+
+object PacketCarStatusData extends Packet {
+  override def size: Int = PacketHeader.size + CarSetupData.size * PacketConstants.CARS;
+
 }

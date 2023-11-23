@@ -1,11 +1,6 @@
 package io.apex.f1.packets
 
-import io.netty.buffer.ByteBuf
-import io.ppatierno.formula1.PacketConstants
-import io.ppatierno.formula1.data.ParticipantData
-import io.ppatierno.formula1.packets.PacketHeader
-
-import scala.collection.mutable.ListBuffer
+import io.apex.f1.data.*
 
 /**
  * Participants Packet
@@ -19,25 +14,28 @@ case class PacketParticipantsData(
                                    header: PacketHeader,
                                    numActiveCars: Short,
                                    participants: List[ParticipantData]
-                                 ) extends Packet {
+                                 ) {
 
-  override def size: Int = PacketHeader.SIZE + 4 + EventDataDetails.SIZE
 
   override def toString: String = {
     s"Participants[$header,numActiveCars=$numActiveCars,participants=${participants.mkString(",")}]"
   }
 
-  def fill(buffer: ByteBuf): PacketParticipantsData = {
-    val filledHeader = PacketHeader().fill(buffer)
-    val filledNumActiveCars = buffer.readUnsignedByte()
-    val filledParticipants = ListBuffer.fill(filledNumActiveCars)(ParticipantData().fill(buffer)).toList
-    PacketParticipantsData(filledHeader, filledNumActiveCars, filledParticipants)
-  }
+  //  def fill(buffer: ByteBuf): PacketParticipantsData = {
+  //    val filledHeader = PacketHeader().fill(buffer)
+  //    val filledNumActiveCars = buffer.readUnsignedByte()
+  //    val filledParticipants = ListBuffer.fill(filledNumActiveCars)(ParticipantData().fill(buffer)).toList
+  //    PacketParticipantsData(filledHeader, filledNumActiveCars, filledParticipants)
+  //  }
+  //
+  //  def fillBuffer(packet: PacketParticipantsData, buffer: ByteBuf): ByteBuf = {
+  //    packet.header.fillBuffer(buffer)
+  //    buffer.writeByte(packet.numActiveCars)
+  //    packet.participants.foreach(_.fillBuffer(buffer))
+  //    buffer
+  //  }
+}
 
-  def fillBuffer(packet: PacketParticipantsData, buffer: ByteBuf): ByteBuf = {
-    packet.header.fillBuffer(buffer)
-    buffer.writeByte(packet.numActiveCars)
-    packet.participants.foreach(_.fillBuffer(buffer))
-    buffer
-  }
+object PacketParticipantsData extends Packet {
+  override def size: Int = PacketHeader.size + 4 + EventDataDetails.size
 }

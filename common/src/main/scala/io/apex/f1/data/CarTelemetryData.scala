@@ -2,6 +2,8 @@ package io.apex.f1.data
 
 
 import io.apex.f1.enums._
+import io.apex.f1.packets.Packet
+
 import java.util.Arrays
 
 case class CarTelemetryData(
@@ -68,4 +70,8 @@ case class CarTelemetryData(
       ",surfaceType=" + surfaceType.mkString(",") +
       "]"
   }
+}
+
+object CarTelemetryData extends Packet {
+  override def size: Int = 58
 }

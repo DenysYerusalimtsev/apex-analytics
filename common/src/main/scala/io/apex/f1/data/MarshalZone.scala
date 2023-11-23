@@ -1,9 +1,9 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums.ZoneFlag
+import io.apex.f1.packets.Packet
 
 case class MarshalZone(zoneStart: Float, zoneFlag: ZoneFlag) {
-  val SIZE: Int = 5
 
   //  def fill(buffer: ByteBuf): MarshalZone = {
   //    val zoneStart = buffer.readFloatLE()
@@ -21,4 +21,8 @@ case class MarshalZone(zoneStart: Float, zoneFlag: ZoneFlag) {
   override def toString: String = {
     s"MarshalZone[zoneStart=$zoneStart, zoneFlag=$zoneFlag]"
   }
+}
+
+object MarshalZone extends Packet {
+  override def size: Int = 5
 }

@@ -1,5 +1,7 @@
 package io.apex.f1.data
 
+import io.apex.f1.packets.Packet
+
 case class CarMotionData(
                           worldPositionX: Float,
                           worldPositionY: Float,
@@ -71,4 +73,8 @@ case class CarMotionData(
       s"gForceLateral=$gForceLateral,gForceLongitudinal=$gForceLongitudinal,gForceVertical=$gForceVertical," +
       s"yaw=$yaw,pitch=$pitch,roll=$roll]"
   }
+}
+
+object CarMotionData extends Packet {
+  override def size: Int = 60
 }

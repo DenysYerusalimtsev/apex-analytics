@@ -1,5 +1,9 @@
 package io.apex.f1.packets
 
+import io.apex.f1.PacketConstants
+import io.apex.f1.data.*
+import io.apex.f1.enums.*
+
 /**
  * Session Packet
  *
@@ -29,10 +33,7 @@ case class PacketSessionData(
                               networkGame: Short,
                               numWeatherForecastSamples: Short,
                               weatherForecastSamples: List[WeatherForecastSample]
-                            ) extends Packet {
-  override def size = PacketHeader.SIZE +
-    19 + MarshalZone.SIZE * PacketConstants.MARSHAL_ZONES + 3 +
-    WeatherForecastSample.SIZE * PacketConstants.WEATHER_FORECAST_SAMPLES
+                            ) {
 
   override def toString: String = {
     val marshalZonesString = marshalZones.mkString(",")
@@ -45,61 +46,67 @@ case class PacketSessionData(
       s"numWeatherForecastSamples=$numWeatherForecastSamples,weatherForecastSamples=$weatherForecastSamplesString]"
   }
 
-  def fill(buffer: ByteBuf): PacketSessionData = {
-    val filledHeader = PacketHeader().fill(buffer)
-    val filledWeather = Weather.valueOf(buffer.readUnsignedByte())
-    val filledTrackTemperature = buffer.readByte()
-    val filledAirTemperature = buffer.readByte()
-    val filledTotalLaps = buffer.readUnsignedByte()
-    val filledTrackLength = buffer.readUnsignedShortLE()
-    val filledSessionType = SessionType.valueOf(buffer.readUnsignedByte())
-    val filledTrackId = Track.valueOf(PacketConfig.getSeason(), buffer.readByte())
-    val filledFormula = Formula.valueOf(buffer.readUnsignedByte())
-    val filledSessionTimeLeft = buffer.readUnsignedShortLE()
-    val filledSessionDuration = buffer.readUnsignedShortLE()
-    val filledPitSpeedLimit = buffer.readUnsignedByte()
-    val filledGamePaused = buffer.readUnsignedByte()
-    val filledIsSpectating = buffer.readUnsignedByte()
-    val filledSpectatorCarIndex = buffer.readUnsignedByte()
-    val filledSliProNativeSupport = buffer.readUnsignedByte()
-    val filledNumMarshalZones = buffer.readUnsignedByte()
-    val filledMarshalZones = ListBuffer.fill(filledNumMarshalZones)(MarshalZone().fill(buffer)).toList
-    val filledSafetyCarStatus = SafetyCarStatus.valueOf(buffer.readUnsignedByte())
-    val filledNetworkGame = buffer.readUnsignedByte()
-    val filledNumWeatherForecastSamples = buffer.readUnsignedByte()
-    val filledWeatherForecastSamples = ListBuffer.fill(filledNumWeatherForecastSamples)(WeatherForecastSample().fill(buffer)).toList
+  //  def fill(buffer: ByteBuf): PacketSessionData = {
+  //    val filledHeader = PacketHeader().fill(buffer)
+  //    val filledWeather = Weather.valueOf(buffer.readUnsignedByte())
+  //    val filledTrackTemperature = buffer.readByte()
+  //    val filledAirTemperature = buffer.readByte()
+  //    val filledTotalLaps = buffer.readUnsignedByte()
+  //    val filledTrackLength = buffer.readUnsignedShortLE()
+  //    val filledSessionType = SessionType.valueOf(buffer.readUnsignedByte())
+  //    val filledTrackId = Track.valueOf(PacketConfig.getSeason(), buffer.readByte())
+  //    val filledFormula = Formula.valueOf(buffer.readUnsignedByte())
+  //    val filledSessionTimeLeft = buffer.readUnsignedShortLE()
+  //    val filledSessionDuration = buffer.readUnsignedShortLE()
+  //    val filledPitSpeedLimit = buffer.readUnsignedByte()
+  //    val filledGamePaused = buffer.readUnsignedByte()
+  //    val filledIsSpectating = buffer.readUnsignedByte()
+  //    val filledSpectatorCarIndex = buffer.readUnsignedByte()
+  //    val filledSliProNativeSupport = buffer.readUnsignedByte()
+  //    val filledNumMarshalZones = buffer.readUnsignedByte()
+  //    val filledMarshalZones = ListBuffer.fill(filledNumMarshalZones)(MarshalZone().fill(buffer)).toList
+  //    val filledSafetyCarStatus = SafetyCarStatus.valueOf(buffer.readUnsignedByte())
+  //    val filledNetworkGame = buffer.readUnsignedByte()
+  //    val filledNumWeatherForecastSamples = buffer.readUnsignedByte()
+  //    val filledWeatherForecastSamples = ListBuffer.fill(filledNumWeatherForecastSamples)(WeatherForecastSample().fill(buffer)).toList
+  //
+  //    PacketSessionData(
+  //      filledHeader, filledWeather, filledTrackTemperature, filledAirTemperature, filledTotalLaps, filledTrackLength,
+  //      filledSessionType, filledTrackId, filledFormula, filledSessionTimeLeft, filledSessionDuration, filledPitSpeedLimit,
+  //      filledGamePaused, filledIsSpectating, filledSpectatorCarIndex, filledSliProNativeSupport, filledNumMarshalZones,
+  //      filledMarshalZones, filledSafetyCarStatus, filledNetworkGame, filledNumWeatherForecastSamples, filledWeatherForecastSamples
+  //    )
+  //  }
+  //
+  //  def fillBuffer(packet: PacketSessionData, buffer: ByteBuf): ByteBuf = {
+  //    packet.header.fillBuffer(buffer)
+  //    buffer.writeByte(packet.weather.getValue())
+  //    buffer.writeByte(packet.trackTemperature)
+  //    buffer.writeByte(packet.airTemperature)
+  //    buffer.writeByte(packet.totalLaps)
+  //    buffer.writeShortLE(packet.trackLength)
+  //    buffer.writeByte(packet.sessionType.getValue())
+  //    buffer.writeByte(packet.trackId.getValue())
+  //    buffer.writeByte(packet.formula.getValue())
+  //    buffer.writeShortLE(packet.sessionTimeLeft)
+  //    buffer.writeShortLE(packet.sessionDuration)
+  //    buffer.writeByte(packet.pitSpeedLimit)
+  //    buffer.writeByte(packet.gamePaused)
+  //    buffer.writeByte(packet.isSpectating)
+  //    buffer.writeByte(packet.spectatorCarIndex)
+  //    buffer.writeByte(packet.sliProNativeSupport)
+  //    buffer.writeByte(packet.numMarshalZones)
+  //    packet.marshalZones.foreach(_.fillBuffer(buffer))
+  //    buffer.writeByte(packet.safetyCarStatus.getValue())
+  //    buffer.writeByte(packet.networkGame)
+  //    buffer.writeByte(packet.numWeatherForecastSamples)
+  //    packet.weatherForecastSamples.foreach(_.fillBuffer(buffer))
+  //    buffer
+  //  }
+}
 
-    PacketSessionData(
-      filledHeader, filledWeather, filledTrackTemperature, filledAirTemperature, filledTotalLaps, filledTrackLength,
-      filledSessionType, filledTrackId, filledFormula, filledSessionTimeLeft, filledSessionDuration, filledPitSpeedLimit,
-      filledGamePaused, filledIsSpectating, filledSpectatorCarIndex, filledSliProNativeSupport, filledNumMarshalZones,
-      filledMarshalZones, filledSafetyCarStatus, filledNetworkGame, filledNumWeatherForecastSamples, filledWeatherForecastSamples
-    )
-  }
-
-  def fillBuffer(packet: PacketSessionData, buffer: ByteBuf): ByteBuf = {
-    packet.header.fillBuffer(buffer)
-    buffer.writeByte(packet.weather.getValue())
-    buffer.writeByte(packet.trackTemperature)
-    buffer.writeByte(packet.airTemperature)
-    buffer.writeByte(packet.totalLaps)
-    buffer.writeShortLE(packet.trackLength)
-    buffer.writeByte(packet.sessionType.getValue())
-    buffer.writeByte(packet.trackId.getValue())
-    buffer.writeByte(packet.formula.getValue())
-    buffer.writeShortLE(packet.sessionTimeLeft)
-    buffer.writeShortLE(packet.sessionDuration)
-    buffer.writeByte(packet.pitSpeedLimit)
-    buffer.writeByte(packet.gamePaused)
-    buffer.writeByte(packet.isSpectating)
-    buffer.writeByte(packet.spectatorCarIndex)
-    buffer.writeByte(packet.sliProNativeSupport)
-    buffer.writeByte(packet.numMarshalZones)
-    packet.marshalZones.foreach(_.fillBuffer(buffer))
-    buffer.writeByte(packet.safetyCarStatus.getValue())
-    buffer.writeByte(packet.networkGame)
-    buffer.writeByte(packet.numWeatherForecastSamples)
-    packet.weatherForecastSamples.foreach(_.fillBuffer(buffer))
-    buffer
-  }
+object PacketSessionData extends Packet {
+  override def size: Int = PacketHeader.size +
+    19 + MarshalZone.size * PacketConstants.MARSHAL_ZONES + 3 +
+    WeatherForecastSample.size * PacketConstants.WEATHER_FORECAST_SAMPLES
 }

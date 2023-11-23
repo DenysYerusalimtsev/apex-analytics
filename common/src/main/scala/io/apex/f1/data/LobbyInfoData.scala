@@ -1,6 +1,7 @@
 package io.apex.f1.data
 
-import io.apex.f1.enums._
+import io.apex.f1.enums.*
+import io.apex.f1.packets.Packet
 
 case class LobbyInfoData(
                           aiControlled: Short,
@@ -9,10 +10,8 @@ case class LobbyInfoData(
                           name: String,
                           readyStatus: ReadyStatus
                         ) {
-  val SIZE: Int = 52
-  val NAME_LENGTH: Int = 48
 
-//  def fill(buffer: ByteBuf): LobbyInfoData = {
+  //  def fill(buffer: ByteBuf): LobbyInfoData = {
   //    val aiControlled = buffer.readUnsignedByte()
   //    val teamId = Team.valueOf(PacketConfig.getSeason, buffer.readUnsignedByte())
   //    val nationality = Nationality.valueOf(buffer.readUnsignedByte())
@@ -30,4 +29,10 @@ case class LobbyInfoData(
   //      .writeBytes(PacketUtils.writeString(lobbyInfoData.name, LobbyInfoData.NAME_LENGTH))
   //      .writeByte(lobbyInfoData.readyStatus.getValue)
   //  }
+}
+
+object LobbyInfoData extends Packet {
+  override def size: Int = 52
+
+  def nameLength: Int = 48
 }

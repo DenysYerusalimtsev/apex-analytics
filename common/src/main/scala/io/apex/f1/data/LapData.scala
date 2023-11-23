@@ -1,6 +1,7 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums._
+import io.apex.f1.packets.Packet
 
 case class LapData(
                     lastLapTime: Float,
@@ -31,7 +32,7 @@ case class LapData(
                     driverStatus: DriverStatus,
                     resultStatus: ResultStatus
                   ) {
-//  def fill(buffer: ByteBuf): LapData = {
+  //  def fill(buffer: ByteBuf): LapData = {
   //    LapData(
   //      buffer.readFloatLE(),
   //      buffer.readFloatLE(),
@@ -123,4 +124,8 @@ case class LapData(
       s"driverStatus=$driverStatus," +
       s"resultStatus=$resultStatus]"
   }
+}
+
+object LapData extends Packet {
+  override def size: Int = 53
 }

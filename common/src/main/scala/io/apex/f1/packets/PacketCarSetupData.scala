@@ -1,7 +1,8 @@
 package io.apex.f1.packets
 
 import io.apex.f1.PacketConstants
-import io.apex.f1.packets.{Packet, PacketHeader}
+import io.apex.f1.data.CarSetupData
+import io.apex.f1.packets._
 
 import scala.collection.mutable.ListBuffer
 
@@ -16,11 +17,8 @@ import scala.collection.mutable.ListBuffer
 case class PacketCarSetupData(
                                header: PacketHeader,
                                carSetupData: List[CarSetupData]
-                             ) extends Packet {
+                             ) {
 
-
-  // 1102
-  override def size: Int = PacketHeader.SIZE + CarSetupData.SIZE * PacketConstants.CARS
 
   override def toString: String = {
     val carSetupDataString = carSetupData.map(_.toString).mkString(",")
@@ -41,4 +39,9 @@ case class PacketCarSetupData(
 //    carSetupData.foreach(_.fillBuffer(buffer))
 //    buffer
 //  }
+}
+
+object PacketCarSetupData extends Packet {
+  // 1102
+  override def size: Int = PacketHeader.size + CarSetupData.size * PacketConstants.CARS
 }
