@@ -10,9 +10,9 @@ import io.apex.f1.data.LapData
  * The lap data packet gives details of all the cars in the session.
  * Frequency: Rate as specified in menus
  */
-case class PacketLapData(
-                          header: PacketHeader,
-                          lapData: List[LapData]
+case class F1PacketLapData$(
+                             header: F1PacketHeader$,
+                             lapData: List[LapData]
                         ) {
 
   override def toString: String = {
@@ -31,6 +31,6 @@ case class PacketLapData(
 //  }
 }
 
-object PacketLapData extends Packet {
-  override def size: Int = PacketHeader.size + LapData.size * PacketConstants.CARS
+object F1PacketLapData$ extends F1Packet {
+  override def size: Int = F1PacketHeader$.size + LapData.size * PacketConstants.CARS
 }

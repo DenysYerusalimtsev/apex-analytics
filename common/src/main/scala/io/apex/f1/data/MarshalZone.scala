@@ -1,7 +1,6 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums.ZoneFlag
-import io.apex.f1.packets.Packet
 
 case class MarshalZone(zoneStart: Float, zoneFlag: ZoneFlag) {
 
@@ -23,6 +22,6 @@ case class MarshalZone(zoneStart: Float, zoneFlag: ZoneFlag) {
   }
 }
 
-object MarshalZone extends Packet {
+object MarshalZone extends F1Data {
   override def size: Int = 5
 }

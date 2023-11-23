@@ -10,10 +10,10 @@ import io.apex.f1.data.*
  * There is additional data for the car being driven with the goal of being able to drive a motion platform setup.
  * Frequency: Rate as specified in menus
  */
-case class PacketMotionData(
-                             header: PacketHeader,
-                             carMotionData: List[CarMotionData],
-                             extraCarMotionData: ExtraCarMotionData
+case class F1PacketMotionData$(
+                                header: F1PacketHeader$,
+                                carMotionData: List[CarMotionData],
+                                extraCarMotionData: ExtraCarMotionData
                            ) {
 
   override def toString: String = {
@@ -35,6 +35,6 @@ case class PacketMotionData(
   //  }
 }
 
-object PacketMotionData extends Packet {
-  override def size: Int = PacketHeader.size + CarMotionData.size * PacketConstants.CARS + ExtraCarMotionData.size
+object F1PacketMotionData$ extends F1Packet {
+  override def size: Int = F1PacketHeader$.size + CarMotionData.size * PacketConstants.CARS + ExtraCarMotionData.size
 }

@@ -4,13 +4,13 @@ import io.apex.f1.PacketConstants
 import io.apex.f1.data.*
 import io.apex.f1.enums.*
 
-case class PacketCarTelemetryData(
-                                   header: PacketHeader,
-                                   carTelemetryData: List[CarTelemetryData],
-                                   buttonStatus: Long,
-                                   mfdPanelIndex: MfdPanel,
-                                   mfdPanelIndexSecondaryPlayer: MfdPanel,
-                                   suggestedGear: Short
+case class F1PacketCarTelemetryData$(
+                                      header: F1PacketHeader$,
+                                      carTelemetryData: List[CarTelemetryData],
+                                      buttonStatus: Long,
+                                      mfdPanelIndex: MfdPanel,
+                                      mfdPanelIndexSecondaryPlayer: MfdPanel,
+                                      suggestedGear: Short
                                  ) {
 
   override def toString: String = {
@@ -50,6 +50,6 @@ case class PacketCarTelemetryData(
   //  }
 }
 
-object PacketCarTelemetryData extends Packet {
-  override def size: Int = PacketHeader.size + CarTelemetryData.size * PacketConstants.CARS + 7
+object F1PacketCarTelemetryData$ extends F1Packet {
+  override def size: Int = F1PacketHeader$.size + CarTelemetryData.size * PacketConstants.CARS + 7
 }

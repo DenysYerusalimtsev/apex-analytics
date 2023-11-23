@@ -1,7 +1,6 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums._
-import io.apex.f1.packets.Packet
 
 
 case class ParticipantData(
@@ -44,7 +43,7 @@ case class ParticipantData(
   }
 }
 
-object ParticipantData extends Packet {
+object ParticipantData extends F1Data {
   override def size: Int = 54
 
   def nameLength: Int = 48

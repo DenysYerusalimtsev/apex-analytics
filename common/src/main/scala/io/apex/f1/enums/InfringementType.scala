@@ -1,6 +1,6 @@
 package io.apex.f1.enums
 
-enum InfringementType(val value: Int){
+enum InfringementType(val value: Int) {
   case BLOCKING_BY_SLOW_DRIVING extends InfringementType(0)
   case BLOCKING_BY_WRONG_WAY_DRIVING extends InfringementType(1)
   case REVERSING_OFF_THE_START_LINE extends InfringementType(2)
@@ -53,7 +53,7 @@ enum InfringementType(val value: Int){
   case RETRY_PENALTY extends InfringementType(49)
   case ILLEGAL_TIME_GAIN extends InfringementType(50)
   case MANDATORY_PITSTOP extends InfringementType(51)
-  }
+}
 
 object InfringementType {
   def valueOf(value: Int): Option[InfringementType] =

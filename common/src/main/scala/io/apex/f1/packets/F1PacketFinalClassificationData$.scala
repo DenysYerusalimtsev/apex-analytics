@@ -13,10 +13,10 @@ import io.apex.f1.data.FinalClassificationData
  * the final frame because of network delay.
  * Frequency: Once at the end of a race
  */
-case class PacketFinalClassificationData(
-                                          header: PacketHeader,
-                                          numCars: Short,
-                                          finalClassificationData: List[FinalClassificationData]
+case class F1PacketFinalClassificationData$(
+                                             header: F1PacketHeader$,
+                                             numCars: Short,
+                                             finalClassificationData: List[FinalClassificationData]
                                         ) {
 
   override def toString: String = {
@@ -37,6 +37,6 @@ case class PacketFinalClassificationData(
   //  }
 }
 
-object PacketFinalClassificationData extends Packet {
-  override def size: Int = PacketHeader.size + 1 + FinalClassificationData.size * PacketConstants.CARS
+object F1PacketFinalClassificationData$ extends F1Packet {
+  override def size: Int = F1PacketHeader$.size + 1 + FinalClassificationData.size * PacketConstants.CARS
 }

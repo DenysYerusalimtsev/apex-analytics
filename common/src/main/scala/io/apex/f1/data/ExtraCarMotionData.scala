@@ -1,7 +1,5 @@
 package io.apex.f1.data
 
-import io.apex.f1.packets.Packet
-
 case class ExtraCarMotionData(
                                suspensionPosition: Array[Float],
                                suspensionVelocity: Array[Float],
@@ -38,6 +36,6 @@ case class ExtraCarMotionData(
   }
 }
 
-object ExtraCarMotionData extends Packet {
+object ExtraCarMotionData extends F1Data {
   override def size: Int = 120
 }

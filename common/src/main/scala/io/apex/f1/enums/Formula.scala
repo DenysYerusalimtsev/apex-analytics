@@ -1,6 +1,6 @@
 package io.apex.f1.enums
 
-enum Formula(val value: Int){
+enum Formula(val value: Int) {
   case F1_MODERN extends Formula(0)
   case F1_CLASSIC extends Formula(1)
   case F2 extends Formula(2)

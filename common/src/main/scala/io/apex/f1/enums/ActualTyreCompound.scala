@@ -1,6 +1,6 @@
 package io.apex.f1.enums
 
-enum ActualTyreCompound(val value: Int):
+enum ActualTyreCompound(val value: Int) {
   case UNKNOWN extends ActualTyreCompound(0)
   case F1_C5 extends ActualTyreCompound(16)
   case F1_C4 extends ActualTyreCompound(17)
@@ -16,6 +16,7 @@ enum ActualTyreCompound(val value: Int):
   case F2_MEDIUM extends ActualTyreCompound(13)
   case F2_HARD extends ActualTyreCompound(14)
   case F2_WET extends ActualTyreCompound(15)
+}
 
 object ActualTyreCompound {
   def valueOf(value: Int): Option[ActualTyreCompound] =

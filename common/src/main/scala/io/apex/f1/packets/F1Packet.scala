@@ -1,6 +1,6 @@
 package io.apex.f1.packets
 
-trait Packet {
+trait F1Packet {
   @inline def size: Int
 }
 

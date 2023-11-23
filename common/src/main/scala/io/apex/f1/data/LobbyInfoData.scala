@@ -1,7 +1,6 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums.*
-import io.apex.f1.packets.Packet
 
 case class LobbyInfoData(
                           aiControlled: Short,
@@ -31,7 +30,7 @@ case class LobbyInfoData(
   //  }
 }
 
-object LobbyInfoData extends Packet {
+object LobbyInfoData extends F1Data {
   override def size: Int = 52
 
   def nameLength: Int = 48

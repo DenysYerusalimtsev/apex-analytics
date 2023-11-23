@@ -11,9 +11,9 @@ import io.apex.f1.data.*
  * values such as the damage readings on the car.
  * Frequency: Rate as specified in menus
  */
-case class PacketCarStatusData(
-                                header: PacketHeader,
-                                carStatusData: List[CarStatusData]
+case class F1PacketCarStatusData$(
+                                   header: F1PacketHeader$,
+                                   carStatusData: List[CarStatusData]
                               ) {
 
   // 1344
@@ -39,7 +39,7 @@ case class PacketCarStatusData(
   //  }
 }
 
-object PacketCarStatusData extends Packet {
-  override def size: Int = PacketHeader.size + CarSetupData.size * PacketConstants.CARS;
+object F1PacketCarStatusData$ extends F1Packet {
+  override def size: Int = F1PacketHeader$.size + CarSetupData.size * PacketConstants.CARS;
 
 }

@@ -1,7 +1,5 @@
 package io.apex.f1.data
 
-import io.apex.f1.packets.Packet
-
 case class CarMotionData(
                           worldPositionX: Float,
                           worldPositionY: Float,
@@ -75,6 +73,6 @@ case class CarMotionData(
   }
 }
 
-object CarMotionData extends Packet {
+object CarMotionData extends F1Data {
   override def size: Int = 60
 }

@@ -1,7 +1,6 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums.ResultStatus
-import io.apex.f1.packets.Packet
 
 import java.util.Arrays
 
@@ -69,6 +68,6 @@ case class FinalClassificationData(
       s"tyreStintsActual=${Arrays.toString(tyreStintsActual)},tyreStintsVisual=${Arrays.toString(tyreStintsVisual)}]"
 }
 
-object FinalClassificationData extends Packet {
+object FinalClassificationData extends F1Data {
   override def size: Int = 37
 }

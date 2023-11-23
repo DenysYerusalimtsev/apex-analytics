@@ -1,8 +1,5 @@
 package io.apex.f1.data
 
-import io.apex.f1.packets.Packet
-
-
 case class CarSetupData(
                          frontWing: Short,
                          rearWing: Short,
@@ -91,6 +88,6 @@ case class CarSetupData(
   }
 }
 
-object CarSetupData extends Packet {
+object CarSetupData extends F1Data {
   override def size: Int = 49
 }

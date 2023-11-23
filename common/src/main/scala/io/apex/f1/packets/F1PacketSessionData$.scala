@@ -10,29 +10,29 @@ import io.apex.f1.enums.*
  * The session packet includes details about the current session in progress.
  * Frequency: 2 per second
  */
-case class PacketSessionData(
-                              header: PacketHeader,
-                              weather: Weather,
-                              trackTemperature: Short,
-                              airTemperature: Short,
-                              totalLaps: Short,
-                              trackLength: Int,
-                              sessionType: SessionType,
-                              trackId: Track,
-                              formula: Formula,
-                              sessionTimeLeft: Int,
-                              sessionDuration: Int,
-                              pitSpeedLimit: Short,
-                              gamePaused: Short,
-                              isSpectating: Short,
-                              spectatorCarIndex: Short,
-                              sliProNativeSupport: Short,
-                              numMarshalZones: Short,
-                              marshalZones: List[MarshalZone],
-                              safetyCarStatus: SafetyCarStatus,
-                              networkGame: Short,
-                              numWeatherForecastSamples: Short,
-                              weatherForecastSamples: List[WeatherForecastSample]
+case class F1PacketSessionData$(
+                                 header: F1PacketHeader$,
+                                 weather: Weather,
+                                 trackTemperature: Short,
+                                 airTemperature: Short,
+                                 totalLaps: Short,
+                                 trackLength: Int,
+                                 sessionType: SessionType,
+                                 trackId: Track,
+                                 formula: Formula,
+                                 sessionTimeLeft: Int,
+                                 sessionDuration: Int,
+                                 pitSpeedLimit: Short,
+                                 gamePaused: Short,
+                                 isSpectating: Short,
+                                 spectatorCarIndex: Short,
+                                 sliProNativeSupport: Short,
+                                 numMarshalZones: Short,
+                                 marshalZones: List[MarshalZone],
+                                 safetyCarStatus: SafetyCarStatus,
+                                 networkGame: Short,
+                                 numWeatherForecastSamples: Short,
+                                 weatherForecastSamples: List[WeatherForecastSample]
                             ) {
 
   override def toString: String = {
@@ -105,8 +105,8 @@ case class PacketSessionData(
   //  }
 }
 
-object PacketSessionData extends Packet {
-  override def size: Int = PacketHeader.size +
+object F1PacketSessionData$ extends F1Packet {
+  override def size: Int = F1PacketHeader$.size +
     19 + MarshalZone.size * PacketConstants.MARSHAL_ZONES + 3 +
     WeatherForecastSample.size * PacketConstants.WEATHER_FORECAST_SAMPLES
 }

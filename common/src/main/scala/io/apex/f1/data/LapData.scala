@@ -1,7 +1,6 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums._
-import io.apex.f1.packets.Packet
 
 case class LapData(
                     lastLapTime: Float,
@@ -126,6 +125,6 @@ case class LapData(
   }
 }
 
-object LapData extends Packet {
+object LapData extends F1Data {
   override def size: Int = 53
 }

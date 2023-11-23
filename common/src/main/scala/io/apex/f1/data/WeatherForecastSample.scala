@@ -1,7 +1,6 @@
 package io.apex.f1.data
 
 import io.apex.f1.enums._
-import io.apex.f1.packets.Packet
 
 case class WeatherForecastSample(sessionType: SessionType,
                                  timeOffset: Short,
@@ -30,6 +29,6 @@ case class WeatherForecastSample(sessionType: SessionType,
   }
 }
 
-object WeatherForecastSample extends Packet {
+object WeatherForecastSample extends F1Data {
   override def size: Int = 5
 }
