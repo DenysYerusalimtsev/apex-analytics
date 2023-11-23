@@ -9,6 +9,11 @@ case class EventDataDetails(
                              speedTrap: SpeedTrap
                            ) {
   override def toString: String = {
-    s"EventDataDetails[fastestLap=$fastestLap, retirement=$retirement, teamMateInPits=$teamMateInPits, raceWinner=$raceWinner, penalty=$penalty, speedTrap=$speedTrap]"
+    s"EventDataDetails[fastestLap=$fastestLap, " +
+      s"retirement=$retirement, " +
+      s"teamMateInPits=$teamMateInPits, " +
+      s"raceWinner=$raceWinner, " +
+      s"penalty=$penalty, " +
+      s"speedTrap=$speedTrap]"
   }
 }

@@ -18,5 +18,3 @@ addSbtPlugin("pl.project13.scala" % "sbt-jmh" % "0.4.3")
 
 // scalaxb XML codegenerator
 addSbtPlugin("org.scalaxb" % "sbt-scalaxb" % "1.9.0")
-
-//addSbtPlugin("ch.epfl.lamp" % "sbt-dotty" % "0.5.5")

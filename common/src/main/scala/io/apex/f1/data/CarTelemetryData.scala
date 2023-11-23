@@ -1,8 +1,7 @@
 package io.apex.f1.data
 
-import io.apex.f1.PacketConstants
-import io.netty.buffer.ByteBuf
 
+import io.apex.f1.enums._
 import java.util.Arrays
 
 case class CarTelemetryData(
@@ -22,34 +21,34 @@ case class CarTelemetryData(
                              tyresPressure: Array[Float],
                              surfaceType: Array[SurfaceType]
                            ) {
-  def fillBuffer(buffer: ByteBuf): ByteBuf = {
-    buffer.writeShortLE(speed)
-    buffer.writeFloatLE(throttle)
-    buffer.writeFloatLE(steer)
-    buffer.writeFloatLE(brake)
-    buffer.writeByte(clutch)
-    buffer.writeByte(gear)
-    buffer.writeShortLE(engineRPM)
-    buffer.writeByte(drs)
-    buffer.writeByte(revLightsPercent)
-    for (j <- 0 until PacketConstants.TYRES) {
-      buffer.writeShortLE(brakesTemperature(j))
-    }
-    for (j <- 0 until PacketConstants.TYRES) {
-      buffer.writeByte(tyresSurfaceTemperature(j))
-    }
-    for (j <- 0 until PacketConstants.TYRES) {
-      buffer.writeByte(tyresInnerTemperature(j))
-    }
-    buffer.writeShortLE(engineTemperature)
-    for (j <- 0 until PacketConstants.TYRES) {
-      buffer.writeFloatLE(tyresPressure(j))
-    }
-    for (j <- 0 until PacketConstants.TYRES) {
-      buffer.writeByte(surfaceType(j).getValue)
-    }
-    buffer
-  }
+  //  def fillBuffer(buffer: ByteBuf): ByteBuf = {
+  //    buffer.writeShortLE(speed)
+  //    buffer.writeFloatLE(throttle)
+  //    buffer.writeFloatLE(steer)
+  //    buffer.writeFloatLE(brake)
+  //    buffer.writeByte(clutch)
+  //    buffer.writeByte(gear)
+  //    buffer.writeShortLE(engineRPM)
+  //    buffer.writeByte(drs)
+  //    buffer.writeByte(revLightsPercent)
+  //    for (j <- 0 until PacketConstants.TYRES) {
+  //      buffer.writeShortLE(brakesTemperature(j))
+  //    }
+  //    for (j <- 0 until PacketConstants.TYRES) {
+  //      buffer.writeByte(tyresSurfaceTemperature(j))
+  //    }
+  //    for (j <- 0 until PacketConstants.TYRES) {
+  //      buffer.writeByte(tyresInnerTemperature(j))
+  //    }
+  //    buffer.writeShortLE(engineTemperature)
+  //    for (j <- 0 until PacketConstants.TYRES) {
+  //      buffer.writeFloatLE(tyresPressure(j))
+  //    }
+  //    for (j <- 0 until PacketConstants.TYRES) {
+  //      buffer.writeByte(surfaceType(j).getValue)
+  //    }
+  //    buffer
+  //  }
 
   override def toString: String = {
     "CarTelemetryData[speed=" + speed +
@@ -66,7 +65,7 @@ case class CarTelemetryData(
       ",tyresInnerTemperature=" + Arrays.toString(tyresInnerTemperature) +
       ",engineTemperature=" + engineTemperature +
       ",tyresPressure=" + Arrays.toString(tyresPressure) +
-      ",surfaceType=" + Arrays.toString(surfaceType) +
+      ",surfaceType=" + surfaceType.mkString(",") +
       "]"
   }
 }

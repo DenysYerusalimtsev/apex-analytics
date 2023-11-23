@@ -1,8 +1,7 @@
-package io.ppatierno.formula1.packets
+package io.apex.f1.packets
 
 import io.apex.f1.PacketConstants
 import io.apex.f1.packets.{Packet, PacketHeader}
-import io.netty.buffer.ByteBuf
 
 import scala.collection.mutable.ListBuffer
 
@@ -28,18 +27,18 @@ case class PacketCarSetupData(
     s"CarSetup[$header, carSetupData=[$carSetupDataString]]"
   }
 
-  def fill(buffer: ByteBuf): PacketCarSetupData = {
-    val filledHeader = header.fill(buffer)
-    val filledCarSetupData = ListBuffer[CarSetupData]()
-    for (_ <- 0 until PacketConstants.CARS) {
-      filledCarSetupData += CarSetupData().fill(buffer)
-    }
-    PacketCarSetupData(filledHeader, filledCarSetupData.toList)
-  }
-
-  def fillBuffer(buffer: ByteBuf): ByteBuf = {
-    header.fillBuffer(buffer)
-    carSetupData.foreach(_.fillBuffer(buffer))
-    buffer
-  }
+//  def fill(buffer: ByteBuf): PacketCarSetupData = {
+//    val filledHeader = header.fill(buffer)
+//    val filledCarSetupData = ListBuffer[CarSetupData]()
+//    for (_ <- 0 until PacketConstants.CARS) {
+//      filledCarSetupData += CarSetupData().fill(buffer)
+//    }
+//    PacketCarSetupData(filledHeader, filledCarSetupData.toList)
+//  }
+//
+//  def fillBuffer(buffer: ByteBuf): ByteBuf = {
+//    header.fillBuffer(buffer)
+//    carSetupData.foreach(_.fillBuffer(buffer))
+//    buffer
+//  }
 }

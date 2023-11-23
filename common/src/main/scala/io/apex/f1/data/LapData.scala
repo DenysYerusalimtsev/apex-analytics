@@ -1,6 +1,6 @@
 package io.apex.f1.data
 
-import io.netty.buffer.ByteBuf
+import io.apex.f1.enums._
 
 case class LapData(
                     lastLapTime: Float,
@@ -31,68 +31,68 @@ case class LapData(
                     driverStatus: DriverStatus,
                     resultStatus: ResultStatus
                   ) {
-  def fill(buffer: ByteBuf): LapData = {
-    LapData(
-      buffer.readFloatLE(),
-      buffer.readFloatLE(),
-      buffer.readUnsignedShortLE(),
-      buffer.readUnsignedShortLE(),
-      buffer.readFloatLE(),
-      buffer.readUnsignedByte(),
-      buffer.readUnsignedShortLE(),
-      buffer.readUnsignedShortLE(),
-      buffer.readUnsignedShortLE(),
-      buffer.readUnsignedShortLE(),
-      buffer.readUnsignedByte(),
-      buffer.readUnsignedShortLE(),
-      buffer.readUnsignedByte(),
-      buffer.readUnsignedShortLE(),
-      buffer.readUnsignedByte(),
-      buffer.readFloatLE(),
-      buffer.readFloatLE(),
-      buffer.readFloatLE(),
-      buffer.readUnsignedByte(),
-      buffer.readUnsignedByte(),
-      PitStatus.valueOf(buffer.readUnsignedByte()),
-      Sector.valueOf(buffer.readUnsignedByte()),
-      buffer.readUnsignedByte(),
-      buffer.readUnsignedByte(),
-      buffer.readUnsignedByte(),
-      DriverStatus.valueOf(buffer.readUnsignedByte()),
-      ResultStatus.valueOf(buffer.readUnsignedByte())
-    )
-  }
-
-  def fillBuffer(lapData: LapData, buffer: ByteBuf): ByteBuf = {
-    buffer
-      .writeFloatLE(lapData.lastLapTime)
-      .writeFloatLE(lapData.currentLapTime)
-      .writeShortLE(lapData.sector1TimeInMS)
-      .writeShortLE(lapData.sector2TimeInMS)
-      .writeFloatLE(lapData.bestLapTime)
-      .writeByte(lapData.bestLapNum)
-      .writeShortLE(lapData.bestLapSector1TimeInMS)
-      .writeShortLE(lapData.bestLapSector2TimeInMS)
-      .writeShortLE(lapData.bestLapSector3TimeInMS)
-      .writeShortLE(lapData.bestOverallSector1TimeInMS)
-      .writeByte(lapData.bestOverallSector1LapNum)
-      .writeShortLE(lapData.bestOverallSector2TimeInMS)
-      .writeByte(lapData.bestOverallSector2LapNum)
-      .writeShortLE(lapData.bestOverallSector3TimeInMS)
-      .writeByte(lapData.bestOverallSector3LapNum)
-      .writeFloatLE(lapData.lapDistance)
-      .writeFloatLE(lapData.totalDistance)
-      .writeFloatLE(lapData.safetyCarDelta)
-      .writeByte(lapData.carPosition)
-      .writeByte(lapData.currentLapNum)
-      .writeByte(lapData.pitStatus.getValue)
-      .writeByte(lapData.sector.getValue)
-      .writeByte(lapData.currentLapInvalid)
-      .writeByte(lapData.penalties)
-      .writeByte(lapData.gridPosition)
-      .writeByte(lapData.driverStatus.getValue)
-      .writeByte(lapData.resultStatus.getValue)
-  }
+//  def fill(buffer: ByteBuf): LapData = {
+  //    LapData(
+  //      buffer.readFloatLE(),
+  //      buffer.readFloatLE(),
+  //      buffer.readUnsignedShortLE(),
+  //      buffer.readUnsignedShortLE(),
+  //      buffer.readFloatLE(),
+  //      buffer.readUnsignedByte(),
+  //      buffer.readUnsignedShortLE(),
+  //      buffer.readUnsignedShortLE(),
+  //      buffer.readUnsignedShortLE(),
+  //      buffer.readUnsignedShortLE(),
+  //      buffer.readUnsignedByte(),
+  //      buffer.readUnsignedShortLE(),
+  //      buffer.readUnsignedByte(),
+  //      buffer.readUnsignedShortLE(),
+  //      buffer.readUnsignedByte(),
+  //      buffer.readFloatLE(),
+  //      buffer.readFloatLE(),
+  //      buffer.readFloatLE(),
+  //      buffer.readUnsignedByte(),
+  //      buffer.readUnsignedByte(),
+  //      PitStatus.valueOf(buffer.readUnsignedByte()),
+  //      Sector.valueOf(buffer.readUnsignedByte()),
+  //      buffer.readUnsignedByte(),
+  //      buffer.readUnsignedByte(),
+  //      buffer.readUnsignedByte(),
+  //      DriverStatus.valueOf(buffer.readUnsignedByte()),
+  //      ResultStatus.valueOf(buffer.readUnsignedByte())
+  //    )
+  //  }
+  //
+  //  def fillBuffer(lapData: LapData, buffer: ByteBuf): ByteBuf = {
+  //    buffer
+  //      .writeFloatLE(lapData.lastLapTime)
+  //      .writeFloatLE(lapData.currentLapTime)
+  //      .writeShortLE(lapData.sector1TimeInMS)
+  //      .writeShortLE(lapData.sector2TimeInMS)
+  //      .writeFloatLE(lapData.bestLapTime)
+  //      .writeByte(lapData.bestLapNum)
+  //      .writeShortLE(lapData.bestLapSector1TimeInMS)
+  //      .writeShortLE(lapData.bestLapSector2TimeInMS)
+  //      .writeShortLE(lapData.bestLapSector3TimeInMS)
+  //      .writeShortLE(lapData.bestOverallSector1TimeInMS)
+  //      .writeByte(lapData.bestOverallSector1LapNum)
+  //      .writeShortLE(lapData.bestOverallSector2TimeInMS)
+  //      .writeByte(lapData.bestOverallSector2LapNum)
+  //      .writeShortLE(lapData.bestOverallSector3TimeInMS)
+  //      .writeByte(lapData.bestOverallSector3LapNum)
+  //      .writeFloatLE(lapData.lapDistance)
+  //      .writeFloatLE(lapData.totalDistance)
+  //      .writeFloatLE(lapData.safetyCarDelta)
+  //      .writeByte(lapData.carPosition)
+  //      .writeByte(lapData.currentLapNum)
+  //      .writeByte(lapData.pitStatus.getValue)
+  //      .writeByte(lapData.sector.getValue)
+  //      .writeByte(lapData.currentLapInvalid)
+  //      .writeByte(lapData.penalties)
+  //      .writeByte(lapData.gridPosition)
+  //      .writeByte(lapData.driverStatus.getValue)
+  //      .writeByte(lapData.resultStatus.getValue)
+  //  }
 
   override def toString: String = {
     s"LapData[lastLapTime=$lastLapTime," +

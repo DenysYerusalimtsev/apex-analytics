@@ -1,8 +1,5 @@
 package io.apex.f1.data
 
-import io.apex.f1.PacketUtils
-import io.netty.buffer.ByteBuf
-
 case class CarMotionData(
                           worldPositionX: Float,
                           worldPositionY: Float,
@@ -23,48 +20,48 @@ case class CarMotionData(
                           pitch: Float,
                           roll: Float
                         ) {
-//  def fill(buffer: ByteBuf): CarMotionData =
-//    CarMotionData(
-//      worldPositionX = buffer.readFloatLE(),
-//      worldPositionY = buffer.readFloatLE(),
-//      worldPositionZ = buffer.readFloatLE(),
-//      worldVelocityX = buffer.readFloatLE(),
-//      worldVelocityY = buffer.readFloatLE(),
-//      worldVelocityZ = buffer.readFloatLE(),
-//      worldForwardDirX = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
-//      worldForwardDirY = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
-//      worldForwardDirZ = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
-//      worldRightDirX = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
-//      worldRightDirY = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
-//      worldRightDirZ = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
-//      gForceLateral = buffer.readFloatLE(),
-//      gForceLongitudinal = buffer.readFloatLE(),
-//      gForceVertical = buffer.readFloatLE(),
-//      yaw = buffer.readFloatLE(),
-//      pitch = buffer.readFloatLE(),
-//      roll = buffer.readFloatLE())
+  //  def fill(buffer: ByteBuf): CarMotionData =
+  //    CarMotionData(
+  //      worldPositionX = buffer.readFloatLE(),
+  //      worldPositionY = buffer.readFloatLE(),
+  //      worldPositionZ = buffer.readFloatLE(),
+  //      worldVelocityX = buffer.readFloatLE(),
+  //      worldVelocityY = buffer.readFloatLE(),
+  //      worldVelocityZ = buffer.readFloatLE(),
+  //      worldForwardDirX = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
+  //      worldForwardDirY = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
+  //      worldForwardDirZ = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
+  //      worldRightDirX = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
+  //      worldRightDirY = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
+  //      worldRightDirZ = PacketUtils.normalizedVectorToFloat(buffer.readShortLE()),
+  //      gForceLateral = buffer.readFloatLE(),
+  //      gForceLongitudinal = buffer.readFloatLE(),
+  //      gForceVertical = buffer.readFloatLE(),
+  //      yaw = buffer.readFloatLE(),
+  //      pitch = buffer.readFloatLE(),
+  //      roll = buffer.readFloatLE())
 
-  def fillBuffer(buffer: ByteBuf): ByteBuf = {
-    buffer.writeFloatLE(worldPositionX)
-    buffer.writeFloatLE(worldPositionY)
-    buffer.writeFloatLE(worldPositionZ)
-    buffer.writeFloatLE(worldVelocityX)
-    buffer.writeFloatLE(worldVelocityY)
-    buffer.writeFloatLE(worldVelocityZ)
-    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldForwardDirX))
-    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldForwardDirY))
-    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldForwardDirZ))
-    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldRightDirX))
-    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldRightDirY))
-    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldRightDirZ))
-    buffer.writeFloatLE(gForceLateral)
-    buffer.writeFloatLE(gForceLongitudinal)
-    buffer.writeFloatLE(gForceVertical)
-    buffer.writeFloatLE(yaw)
-    buffer.writeFloatLE(pitch)
-    buffer.writeFloatLE(roll)
-    buffer
-  }
+//  def fillBuffer(buffer: ByteBuf): ByteBuf = {
+//    buffer.writeFloatLE(worldPositionX)
+//    buffer.writeFloatLE(worldPositionY)
+//    buffer.writeFloatLE(worldPositionZ)
+//    buffer.writeFloatLE(worldVelocityX)
+//    buffer.writeFloatLE(worldVelocityY)
+//    buffer.writeFloatLE(worldVelocityZ)
+//    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldForwardDirX))
+//    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldForwardDirY))
+//    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldForwardDirZ))
+//    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldRightDirX))
+//    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldRightDirY))
+//    buffer.writeShortLE(PacketUtils.floatToNormalizedVector(worldRightDirZ))
+//    buffer.writeFloatLE(gForceLateral)
+//    buffer.writeFloatLE(gForceLongitudinal)
+//    buffer.writeFloatLE(gForceVertical)
+//    buffer.writeFloatLE(yaw)
+//    buffer.writeFloatLE(pitch)
+//    buffer.writeFloatLE(roll)
+//    buffer
+//  }
 
   override def toString: String = {
     s"CarMotionData[worldPositionX=$worldPositionX,worldPositionY=$worldPositionY,worldPositionZ=$worldPositionZ," +

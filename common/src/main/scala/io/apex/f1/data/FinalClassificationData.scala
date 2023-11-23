@@ -1,6 +1,6 @@
 package io.apex.f1.data
 
-import io.netty.buffer.ByteBuf
+import io.apex.f1.enums.ResultStatus
 
 import java.util.Arrays
 
