@@ -1,17 +1,15 @@
 package io.apex.f1.data
 
-import io.apex.f1.enums._
-
+import io.apex.f1.enums.*
 
 case class Penalty(
-                    penaltyType: PenaltyType,
-                    infringementType: InfringementType,
-                    vehicleIdx: Short,
-                    otherVehicleIdx: Short,
-                    time: Short,
-                    lapNum: Short,
-                    placesGained: Short
-                  ) {
+    penaltyType: PenaltyType,
+    infringementType: InfringementType,
+    vehicleIdx: Short,
+    otherVehicleIdx: Short,
+    time: Short,
+    lapNum: Short,
+    placesGained: Short) {
 //  def fill(buffer: ByteBuf): Penalty = {
 //    val penaltyType = PenaltyType.valueOf(buffer.readUnsignedByte())
 //    val infringementType = InfringementType.valueOf(buffer.readUnsignedByte())
@@ -37,7 +35,7 @@ case class Penalty(
 
   override def toString: String = {
     s"Penalty[penaltyType=$penaltyType,infringementType=$infringementType," +
-      s"vehicleIdx=$vehicleIdx,otherVehicleIdx=$otherVehicleIdx,time=$time," +
-      s"lapNum=$lapNum,placesGained=$placesGained]"
+    s"vehicleIdx=$vehicleIdx,otherVehicleIdx=$otherVehicleIdx,time=$time," +
+    s"lapNum=$lapNum,placesGained=$placesGained]"
   }
 }

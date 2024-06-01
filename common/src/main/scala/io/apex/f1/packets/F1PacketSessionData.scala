@@ -4,46 +4,44 @@ import io.apex.f1.PacketConstants
 import io.apex.f1.data.*
 import io.apex.f1.enums.*
 
-/**
- * Session Packet
- *
- * The session packet includes details about the current session in progress.
- * Frequency: 2 per second
- */
+/** Session Packet
+  *
+  * The session packet includes details about the current session in progress.
+  * Frequency: 2 per second
+  */
 case class F1PacketSessionData$(
-                                 header: F1PacketHeader$,
-                                 weather: Weather,
-                                 trackTemperature: Short,
-                                 airTemperature: Short,
-                                 totalLaps: Short,
-                                 trackLength: Int,
-                                 sessionType: SessionType,
-                                 trackId: Track,
-                                 formula: Formula,
-                                 sessionTimeLeft: Int,
-                                 sessionDuration: Int,
-                                 pitSpeedLimit: Short,
-                                 gamePaused: Short,
-                                 isSpectating: Short,
-                                 spectatorCarIndex: Short,
-                                 sliProNativeSupport: Short,
-                                 numMarshalZones: Short,
-                                 marshalZones: List[MarshalZone],
-                                 safetyCarStatus: SafetyCarStatus,
-                                 networkGame: Short,
-                                 numWeatherForecastSamples: Short,
-                                 weatherForecastSamples: List[WeatherForecastSample]
-                            ) {
+    header: F1PacketHeader$,
+    weather: Weather,
+    trackTemperature: Short,
+    airTemperature: Short,
+    totalLaps: Short,
+    trackLength: Int,
+    sessionType: SessionType,
+    trackId: Track,
+    formula: Formula,
+    sessionTimeLeft: Int,
+    sessionDuration: Int,
+    pitSpeedLimit: Short,
+    gamePaused: Short,
+    isSpectating: Short,
+    spectatorCarIndex: Short,
+    sliProNativeSupport: Short,
+    numMarshalZones: Short,
+    marshalZones: List[MarshalZone],
+    safetyCarStatus: SafetyCarStatus,
+    networkGame: Short,
+    numWeatherForecastSamples: Short,
+    weatherForecastSamples: List[WeatherForecastSample]) {
 
   override def toString: String = {
     val marshalZonesString = marshalZones.mkString(",")
     val weatherForecastSamplesString = weatherForecastSamples.mkString(",")
     s"Session[$header,weather=$weather,trackTemperature=$trackTemperature,airTemperature=$airTemperature,totalLaps=$totalLaps," +
-      s"trackLength=$trackLength,sessionType=$sessionType,trackId=$trackId,formula=$formula,sessionTimeLeft=$sessionTimeLeft," +
-      s"sessionDuration=$sessionDuration,pitSpeedLimit=$pitSpeedLimit,gamePaused=$gamePaused,isSpectating=$isSpectating," +
-      s"spectatorCarIndex=$spectatorCarIndex,sliProNativeSupport=$sliProNativeSupport,numMarshalZones=$numMarshalZones," +
-      s"marshalZones=$marshalZonesString,safetyCarStatus=$safetyCarStatus,networkGame=$networkGame," +
-      s"numWeatherForecastSamples=$numWeatherForecastSamples,weatherForecastSamples=$weatherForecastSamplesString]"
+    s"trackLength=$trackLength,sessionType=$sessionType,trackId=$trackId,formula=$formula,sessionTimeLeft=$sessionTimeLeft," +
+    s"sessionDuration=$sessionDuration,pitSpeedLimit=$pitSpeedLimit,gamePaused=$gamePaused,isSpectating=$isSpectating," +
+    s"spectatorCarIndex=$spectatorCarIndex,sliProNativeSupport=$sliProNativeSupport,numMarshalZones=$numMarshalZones," +
+    s"marshalZones=$marshalZonesString,safetyCarStatus=$safetyCarStatus,networkGame=$networkGame," +
+    s"numWeatherForecastSamples=$numWeatherForecastSamples,weatherForecastSamples=$weatherForecastSamplesString]"
   }
 
   //  def fill(buffer: ByteBuf): PacketSessionData = {

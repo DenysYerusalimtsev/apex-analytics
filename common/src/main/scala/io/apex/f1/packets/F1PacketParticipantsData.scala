@@ -2,20 +2,17 @@ package io.apex.f1.packets
 
 import io.apex.f1.data.*
 
-/**
- * Participants Packet
- *
- * This is a list of participants in the race. If the vehicle is controlled by
- * AI, then the name will be the driver name. If this is a multiplayer game, the
- * names will be the Steam Id on PC, or the LAN name if appropriate.
- * Frequency: Every 5 seconds
- */
+/** Participants Packet
+  *
+  * This is a list of participants in the race. If the vehicle is controlled by
+  * AI, then the name will be the driver name. If this is a multiplayer game, the
+  * names will be the Steam Id on PC, or the LAN name if appropriate.
+  * Frequency: Every 5 seconds
+  */
 case class F1PacketParticipantsData$(
-                                      header: F1PacketHeader$,
-                                      numActiveCars: Short,
-                                      participants: List[ParticipantData]
-                                 ) {
-
+    header: F1PacketHeader$,
+    numActiveCars: Short,
+    participants: List[ParticipantData]) {
 
   override def toString: String = {
     s"Participants[$header,numActiveCars=$numActiveCars,participants=${participants.mkString(",")}]"

@@ -1,21 +1,20 @@
 package io.apex.f1.packets
 
-
 import io.apex.f1.enums.PacketId
+
 import java.math.BigInteger
 
 case class F1PacketHeader$(
-                         packetFormat: Int,
-                         gameMajorVersion: Short,
-                         gameMinorVersion: Short,
-                         packetVersion: Short,
-                         packetId: PacketId,
-                         sessionUid: BigInteger,
-                         sessionTime: Float,
-                         frameIdentifier: Long,
-                         playerCarIndex: Short,
-                         secondaryPlayerCarIndex: Short
-                       ) {
+    packetFormat: Int,
+    gameMajorVersion: Short,
+    gameMinorVersion: Short,
+    packetVersion: Short,
+    packetId: PacketId,
+    sessionUid: BigInteger,
+    sessionTime: Float,
+    frameIdentifier: Long,
+    playerCarIndex: Short,
+    secondaryPlayerCarIndex: Short) {
 
   //  def fill(buffer: ByteBuf): PacketHeader = {
   //    PacketHeader(
@@ -48,8 +47,8 @@ case class F1PacketHeader$(
 
   override def toString: String =
     s"Header[format=$packetFormat, major=$gameMajorVersion, minor=$gameMinorVersion, version=$packetVersion, id=$packetId, " +
-      s"sessionUid=$sessionUid, sessionTime=$sessionTime, frameIdentifier=$frameIdentifier, playerCarIndex=$playerCarIndex, " +
-      s"secondaryPlayerCarIndex=$secondaryPlayerCarIndex]"
+    s"sessionUid=$sessionUid, sessionTime=$sessionTime, frameIdentifier=$frameIdentifier, playerCarIndex=$playerCarIndex, " +
+    s"secondaryPlayerCarIndex=$secondaryPlayerCarIndex]"
 }
 
 object F1PacketHeader$ extends F1Packet {

@@ -1,18 +1,15 @@
 package io.apex.f1.data
 
-import io.apex.f1.enums._
-
+import io.apex.f1.enums.*
 
 case class ParticipantData(
-                            aiControlled: Short,
-                            driverId: Driver,
-                            teamId: Team,
-                            raceNumber: Short,
-                            nationality: Nationality,
-                            name: String,
-                            yourTelemetry: Short
-                          ) {
-
+    aiControlled: Short,
+    driverId: Driver,
+    teamId: Team,
+    raceNumber: Short,
+    nationality: Nationality,
+    name: String,
+    yourTelemetry: Short) {
 
   //  def fill(buffer: ByteBuf): ParticipantData = {
   //    val aiControlled = buffer.readUnsignedByte()
@@ -39,7 +36,7 @@ case class ParticipantData(
 
   override def toString: String = {
     s"ParticipantData[aiControlled=$aiControlled,driverId=$driverId,teamId=$teamId," +
-      s"raceNumber=$raceNumber,nationality=$nationality,name=$name,yourTelemetry=$yourTelemetry]"
+    s"raceNumber=$raceNumber,nationality=$nationality,name=$name,yourTelemetry=$yourTelemetry]"
   }
 }
 

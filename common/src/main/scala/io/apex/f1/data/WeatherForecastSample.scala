@@ -1,12 +1,13 @@
 package io.apex.f1.data
 
-import io.apex.f1.enums._
+import io.apex.f1.enums.*
 
-case class WeatherForecastSample(sessionType: SessionType,
-                                 timeOffset: Short,
-                                 weather: Weather,
-                                 trackTemperature: Short,
-                                 airTemperature: Short) {
+case class WeatherForecastSample(
+    sessionType: SessionType,
+    timeOffset: Short,
+    weather: Weather,
+    trackTemperature: Short,
+    airTemperature: Short) {
   //  def fill(buffer: ByteBuf): WeatherForecastSample = {
   //    val sessionType = SessionType.valueOf(buffer.readUnsignedByte())
   //    val timeOffset = buffer.readUnsignedByte()

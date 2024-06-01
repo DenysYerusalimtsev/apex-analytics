@@ -1,27 +1,25 @@
 package io.apex.f1.data
 
-
-import io.apex.f1.enums._
+import io.apex.f1.enums.*
 
 import java.util.Arrays
 
 case class CarTelemetryData(
-                             speed: Int,
-                             throttle: Float,
-                             steer: Float,
-                             brake: Float,
-                             clutch: Short,
-                             gear: Short,
-                             engineRPM: Int,
-                             drs: Short,
-                             revLightsPercent: Short,
-                             brakesTemperature: Array[Int],
-                             tyresSurfaceTemperature: Array[Short],
-                             tyresInnerTemperature: Array[Short],
-                             engineTemperature: Int,
-                             tyresPressure: Array[Float],
-                             surfaceType: Array[SurfaceType]
-                           ) {
+    speed: Int,
+    throttle: Float,
+    steer: Float,
+    brake: Float,
+    clutch: Short,
+    gear: Short,
+    engineRPM: Int,
+    drs: Short,
+    revLightsPercent: Short,
+    brakesTemperature: Array[Int],
+    tyresSurfaceTemperature: Array[Short],
+    tyresInnerTemperature: Array[Short],
+    engineTemperature: Int,
+    tyresPressure: Array[Float],
+    surfaceType: Array[SurfaceType]) {
   //  def fillBuffer(buffer: ByteBuf): ByteBuf = {
   //    buffer.writeShortLE(speed)
   //    buffer.writeFloatLE(throttle)
@@ -53,21 +51,21 @@ case class CarTelemetryData(
 
   override def toString: String = {
     "CarTelemetryData[speed=" + speed +
-      ",throttle=" + throttle +
-      ",steer=" + steer +
-      ",brake=" + brake +
-      ",clutch=" + clutch +
-      ",gear=" + gear +
-      ",engineRPM=" + engineRPM +
-      ",drs=" + drs +
-      ",revLightsPercent=" + revLightsPercent +
-      ",brakesTemperature=" + Arrays.toString(brakesTemperature) +
-      ",tyresSurfaceTemperature=" + Arrays.toString(tyresSurfaceTemperature) +
-      ",tyresInnerTemperature=" + Arrays.toString(tyresInnerTemperature) +
-      ",engineTemperature=" + engineTemperature +
-      ",tyresPressure=" + Arrays.toString(tyresPressure) +
-      ",surfaceType=" + surfaceType.mkString(",") +
-      "]"
+    ",throttle=" + throttle +
+    ",steer=" + steer +
+    ",brake=" + brake +
+    ",clutch=" + clutch +
+    ",gear=" + gear +
+    ",engineRPM=" + engineRPM +
+    ",drs=" + drs +
+    ",revLightsPercent=" + revLightsPercent +
+    ",brakesTemperature=" + Arrays.toString(brakesTemperature) +
+    ",tyresSurfaceTemperature=" + Arrays.toString(tyresSurfaceTemperature) +
+    ",tyresInnerTemperature=" + Arrays.toString(tyresInnerTemperature) +
+    ",engineTemperature=" + engineTemperature +
+    ",tyresPressure=" + Arrays.toString(tyresPressure) +
+    ",surfaceType=" + surfaceType.mkString(",") +
+    "]"
   }
 }
 

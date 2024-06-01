@@ -2,23 +2,20 @@ package io.apex.f1.packets
 
 import io.apex.f1.PacketConstants
 import io.apex.f1.data.CarSetupData
-import io.apex.f1.packets._
+import io.apex.f1.packets.*
 
 import scala.collection.mutable.ListBuffer
 
-/**
- * Car Setups Packet
- *
- * This packet details the car setups for each vehicle in the session. Note that
- * in multiplayer games, other player cars will appear as blank, you will only
- * be able to see your car setup and AI cars.
- * Frequency: 2 per second
- */
+/** Car Setups Packet
+  *
+  * This packet details the car setups for each vehicle in the session. Note that
+  * in multiplayer games, other player cars will appear as blank, you will only
+  * be able to see your car setup and AI cars.
+  * Frequency: 2 per second
+  */
 case class F1PacketCarSetupData$(
-                                  header: F1PacketHeader$,
-                                  carSetupData: List[CarSetupData]
-                             ) {
-
+    header: F1PacketHeader$,
+    carSetupData: List[CarSetupData]) {
 
   override def toString: String = {
     val carSetupDataString = carSetupData.map(_.toString).mkString(",")

@@ -15,5 +15,3 @@ trait F1Packet {
 //  def fillBuffer(buffer: ByteBuf): ByteBuf = this.header.fillBuffer(buffer)
 //
 //  override def toString: String = this.header.toString
-
-

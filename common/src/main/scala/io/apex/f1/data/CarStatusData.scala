@@ -1,42 +1,40 @@
 package io.apex.f1.data
 
-import io.apex.f1.enums._
+import io.apex.f1.enums.*
 
 import java.util.Arrays
 
 case class CarStatusData(
-                          tractionControl: TractionControl,
-                          antiLockBrakes: Short,
-                          fuelMix: FuelMix,
-                          frontBrakeBias: Short,
-                          pitLimiterStatus: Short,
-                          fuelInTank: Float,
-                          fuelCapacity: Float,
-                          fuelRemainingLaps: Float,
-                          maxRPM: Int,
-                          idleRPM: Int,
-                          maxGears: Short,
-                          drsAllowed: DrsAllowed,
-                          drsActivationDistance: Int,
-                          tyresWear: Array[Short],
-                          actualTyreCompound: ActualTyreCompound,
-                          visualTyreCompound: VisualTyreCompound,
-                          tyresAgeLaps: Short,
-                          tyresDamage: Array[Short],
-                          frontLeftWingDamage: Short,
-                          frontRightWingDamage: Short,
-                          rearWingDamage: Short,
-                          drsFault: Short,
-                          engineDamage: Short,
-                          gearBoxDamage: Short,
-                          vehicleFiaFlags: VehicleFiaFlag,
-                          ersStoreEnergy: Float,
-                          ersDeployMode: ErsDeployMode,
-                          ersHarvestedThisLapMGUK: Float,
-                          ersHarvestedThisLapMGUH: Float,
-                          ersDeployedThisLap: Float
-                        ) {
-
+    tractionControl: TractionControl,
+    antiLockBrakes: Short,
+    fuelMix: FuelMix,
+    frontBrakeBias: Short,
+    pitLimiterStatus: Short,
+    fuelInTank: Float,
+    fuelCapacity: Float,
+    fuelRemainingLaps: Float,
+    maxRPM: Int,
+    idleRPM: Int,
+    maxGears: Short,
+    drsAllowed: DrsAllowed,
+    drsActivationDistance: Int,
+    tyresWear: Array[Short],
+    actualTyreCompound: ActualTyreCompound,
+    visualTyreCompound: VisualTyreCompound,
+    tyresAgeLaps: Short,
+    tyresDamage: Array[Short],
+    frontLeftWingDamage: Short,
+    frontRightWingDamage: Short,
+    rearWingDamage: Short,
+    drsFault: Short,
+    engineDamage: Short,
+    gearBoxDamage: Short,
+    vehicleFiaFlags: VehicleFiaFlag,
+    ersStoreEnergy: Float,
+    ersDeployMode: ErsDeployMode,
+    ersHarvestedThisLapMGUK: Float,
+    ersHarvestedThisLapMGUH: Float,
+    ersDeployedThisLap: Float) {
 
   //  def fill(buffer: ByteBuf): CarStatusData = {
   //    CarStatusData(
@@ -134,36 +132,36 @@ case class CarStatusData(
 
   override def toString: String =
     s"CarStatusData[tractionControl=$tractionControl," +
-      s"antiLockBrakes=$antiLockBrakes," +
-      s"fuelMix=$fuelMix," +
-      s"frontBrakeBias=$frontBrakeBias," +
-      s"pitLimiterStatus=$pitLimiterStatus," +
-      s"fuelInTank=$fuelInTank," +
-      s"fuelCapacity=$fuelCapacity," +
-      s"fuelRemainingLaps=$fuelRemainingLaps," +
-      s"maxRPM=$maxRPM," +
-      s"idleRPM=$idleRPM," +
-      s"maxGears=$maxGears," +
-      s"drsAllowed=$drsAllowed," +
-      s"drsActivationDistance=$drsActivationDistance," +
-      s"tyresWear=${Arrays.toString(tyresWear)}," +
-      s"actualTyreCompound=$actualTyreCompound," +
-      s"visualTyreCompound=$visualTyreCompound," +
-      s"tyresAgeLaps=$tyresAgeLaps," +
-      s"tyresDamage=${Arrays.toString(tyresDamage)}," +
-      s"frontLeftWingDamage=$frontLeftWingDamage," +
-      s"frontRightWingDamage=$frontRightWingDamage," +
-      s"rearWingDamage=$rearWingDamage," +
-      s"drsFault=$drsFault," +
-      s"engineDamage=$engineDamage," +
-      s"gearBoxDamage=$gearBoxDamage," +
-      s"vehicleFiaFlags=$vehicleFiaFlags," +
-      s"ersStoreEnergy=$ersStoreEnergy," +
-      s"ersDeployMode=$ersDeployMode," +
-      s"ersHarvestedThisLapMGUK=$ersHarvestedThisLapMGUK," +
-      s"ersHarvestedThisLapMGUH=$ersHarvestedThisLapMGUH," +
-      s"ersDeployedThisLap=$ersDeployedThisLap" +
-      "]"
+    s"antiLockBrakes=$antiLockBrakes," +
+    s"fuelMix=$fuelMix," +
+    s"frontBrakeBias=$frontBrakeBias," +
+    s"pitLimiterStatus=$pitLimiterStatus," +
+    s"fuelInTank=$fuelInTank," +
+    s"fuelCapacity=$fuelCapacity," +
+    s"fuelRemainingLaps=$fuelRemainingLaps," +
+    s"maxRPM=$maxRPM," +
+    s"idleRPM=$idleRPM," +
+    s"maxGears=$maxGears," +
+    s"drsAllowed=$drsAllowed," +
+    s"drsActivationDistance=$drsActivationDistance," +
+    s"tyresWear=${Arrays.toString(tyresWear)}," +
+    s"actualTyreCompound=$actualTyreCompound," +
+    s"visualTyreCompound=$visualTyreCompound," +
+    s"tyresAgeLaps=$tyresAgeLaps," +
+    s"tyresDamage=${Arrays.toString(tyresDamage)}," +
+    s"frontLeftWingDamage=$frontLeftWingDamage," +
+    s"frontRightWingDamage=$frontRightWingDamage," +
+    s"rearWingDamage=$rearWingDamage," +
+    s"drsFault=$drsFault," +
+    s"engineDamage=$engineDamage," +
+    s"gearBoxDamage=$gearBoxDamage," +
+    s"vehicleFiaFlags=$vehicleFiaFlags," +
+    s"ersStoreEnergy=$ersStoreEnergy," +
+    s"ersDeployMode=$ersDeployMode," +
+    s"ersHarvestedThisLapMGUK=$ersHarvestedThisLapMGUK," +
+    s"ersHarvestedThisLapMGUH=$ersHarvestedThisLapMGUH," +
+    s"ersDeployedThisLap=$ersDeployedThisLap" +
+    "]"
 }
 
 object CarStatusData extends F1Data {

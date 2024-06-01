@@ -1,25 +1,24 @@
 package io.apex.f1.data
 
 case class CarMotionData(
-                          worldPositionX: Float,
-                          worldPositionY: Float,
-                          worldPositionZ: Float,
-                          worldVelocityX: Float,
-                          worldVelocityY: Float,
-                          worldVelocityZ: Float,
-                          worldForwardDirX: Float,
-                          worldForwardDirY: Float,
-                          worldForwardDirZ: Float,
-                          worldRightDirX: Float,
-                          worldRightDirY: Float,
-                          worldRightDirZ: Float,
-                          gForceLateral: Float,
-                          gForceLongitudinal: Float,
-                          gForceVertical: Float,
-                          yaw: Float,
-                          pitch: Float,
-                          roll: Float
-                        ) {
+    worldPositionX: Float,
+    worldPositionY: Float,
+    worldPositionZ: Float,
+    worldVelocityX: Float,
+    worldVelocityY: Float,
+    worldVelocityZ: Float,
+    worldForwardDirX: Float,
+    worldForwardDirY: Float,
+    worldForwardDirZ: Float,
+    worldRightDirX: Float,
+    worldRightDirY: Float,
+    worldRightDirZ: Float,
+    gForceLateral: Float,
+    gForceLongitudinal: Float,
+    gForceVertical: Float,
+    yaw: Float,
+    pitch: Float,
+    roll: Float) {
   //  def fill(buffer: ByteBuf): CarMotionData =
   //    CarMotionData(
   //      worldPositionX = buffer.readFloatLE(),
@@ -65,11 +64,11 @@ case class CarMotionData(
 
   override def toString: String = {
     s"CarMotionData[worldPositionX=$worldPositionX,worldPositionY=$worldPositionY,worldPositionZ=$worldPositionZ," +
-      s"worldVelocityX=$worldVelocityX,worldVelocityY=$worldVelocityY,worldVelocityZ=$worldVelocityZ," +
-      s"worldForwardDirX=$worldForwardDirX,worldForwardDirY=$worldForwardDirY,worldForwardDirZ=$worldForwardDirZ," +
-      s"worldRightDirX=$worldRightDirX,worldRightDirY=$worldRightDirY,worldRightDirZ=$worldRightDirZ," +
-      s"gForceLateral=$gForceLateral,gForceLongitudinal=$gForceLongitudinal,gForceVertical=$gForceVertical," +
-      s"yaw=$yaw,pitch=$pitch,roll=$roll]"
+    s"worldVelocityX=$worldVelocityX,worldVelocityY=$worldVelocityY,worldVelocityZ=$worldVelocityZ," +
+    s"worldForwardDirX=$worldForwardDirX,worldForwardDirY=$worldForwardDirY,worldForwardDirZ=$worldForwardDirZ," +
+    s"worldRightDirX=$worldRightDirX,worldRightDirY=$worldRightDirY,worldRightDirZ=$worldRightDirZ," +
+    s"gForceLateral=$gForceLateral,gForceLongitudinal=$gForceLongitudinal,gForceVertical=$gForceVertical," +
+    s"yaw=$yaw,pitch=$pitch,roll=$roll]"
   }
 }
 

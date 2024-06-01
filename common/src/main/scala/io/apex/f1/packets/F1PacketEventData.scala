@@ -3,17 +3,15 @@ package io.apex.f1.packets
 import io.apex.f1.data.*
 import io.apex.f1.enums.*
 
-/**
- * Event Packet
- *
- * This packet gives details of events that happen during the course of a session.
- * Frequency: When the event occurs
- */
+/** Event Packet
+  *
+  * This packet gives details of events that happen during the course of a session.
+  * Frequency: When the event occurs
+  */
 case class F1PacketEventData$(
-                               header: F1PacketHeader$,
-                               eventCode: EventCode,
-                               eventDataDetails: EventDataDetails
-                          ) {
+    header: F1PacketHeader$,
+    eventCode: EventCode,
+    eventDataDetails: EventDataDetails) {
 
   override def toString: String = {
     s"Event[$header, eventStringCode=$eventCode, eventDataDetails=$eventDataDetails]"

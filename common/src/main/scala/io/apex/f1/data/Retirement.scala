@@ -1,6 +1,5 @@
 package io.apex.f1.data
 
-
 case class Retirement(vehicleIdx: Short) {
 //  def fill(buffer: ByteBuf): Retirement = {
 //    val vehicleIdx = buffer.readUnsignedByte()

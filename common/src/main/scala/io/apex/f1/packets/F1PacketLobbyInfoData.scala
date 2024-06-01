@@ -3,20 +3,17 @@ package io.apex.f1.packets
 import io.apex.f1.PacketConstants
 import io.apex.f1.data.*
 
-
-/**
- * Lobby Info Packet
- *
- * This packet details the players currently in a multiplayer lobby. It details
- * each player’s selected car, any AI involved in the game and also the ready
- * status of each of the participants.
- * Frequency: Two every second when in the lobby
- */
+/** Lobby Info Packet
+  *
+  * This packet details the players currently in a multiplayer lobby. It details
+  * each player’s selected car, any AI involved in the game and also the ready
+  * status of each of the participants.
+  * Frequency: Two every second when in the lobby
+  */
 case class F1PacketLobbyInfoData$(
-                                   header: F1PacketHeader$,
-                                   numPlayers: Short,
-                                   lobbyInfoData: List[LobbyInfoData]
-                              ) {
+    header: F1PacketHeader$,
+    numPlayers: Short,
+    lobbyInfoData: List[LobbyInfoData]) {
 
   override def toString: String = {
     s"LobbyInfo[$header,numPlayers=$numPlayers,lobbyInfoData=${lobbyInfoData.mkString(",")}]"
@@ -37,5 +34,6 @@ case class F1PacketLobbyInfoData$(
 //  }
 
 object F1PacketLobbyInfoData$ extends F1Packet {
-  override def size: Int = F1PacketHeader$.size + 1 + LobbyInfoData.size * PacketConstants.LOBBY_PLAYERS
+  override def size: Int =
+    F1PacketHeader$.size + 1 + LobbyInfoData.size * PacketConstants.LOBBY_PLAYERS
 }

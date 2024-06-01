@@ -8,7 +8,7 @@ ThisBuild / useCoursier := false
 
 ThisBuild / scalacOptions ++= {
   CrossVersion.partialVersion(scalaVersion.value) match {
-    case Some((3, _)) => Seq("-Ykind-projector:underscores")
+    case Some((3, _))       => Seq("-Ykind-projector:underscores")
     case Some((2, 12 | 13)) => Seq("-Xsource:3", "-P:kind-projector:underscore-placeholders")
   }
 }
@@ -19,8 +19,7 @@ lazy val catsEffectVersion = "3.2.9"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "apex-analytics"
-  )
+    name := "apex-analytics")
 
 addCommandAlias("testFast", "testOnly -- -l org.scalatest.tags.Slow")
 
@@ -40,23 +39,22 @@ lazy val commonSettings = Seq(
   updateOptions := updateOptions.value.withLatestSnapshots(false),
   Test / testOptions += Tests.Argument("-oDF"),
   // do not build scala-docs when packaging via sbt native packager
-  Compile / packageDoc / mappings := Nil
-)
+  Compile / packageDoc / mappings := Nil)
 
 lazy val defaultMergeStrategy = assembly / assemblyMergeStrategy := {
-  case PathList("META-INF", "native-image", "io.netty", _*) => MergeStrategy.first
-  case PathList("META-INF", "native", _*) => MergeStrategy.first
-  case PathList("META-INF", "versions", _*) => MergeStrategy.first
-  case PathList(ps@_*) if ps.last endsWith ".kotlin_module" => MergeStrategy.first
-  case PathList(ps@_*) if ps.last endsWith ".properties" => MergeStrategy.first
-  case PathList(ps@_*) if ps.last endsWith ".proto" => MergeStrategy.first
-  case PathList(ps@_*) if ps.last endsWith ".jnilib" => MergeStrategy.first
-  case PathList(ps@_*) if ps.last endsWith "plugin.xml" => MergeStrategy.first
-  case PathList(ps@_*) if ps.last endsWith ".jai" => MergeStrategy.concat
-  case PathList(ps@_*) if ps.last endsWith ".jaiext" => MergeStrategy.concat
-  case "application.conf" => MergeStrategy.concat
-  case "module-info.class" => MergeStrategy.discard
-  case other: Any => MergeStrategy.defaultMergeStrategy(other)
+  case PathList("META-INF", "native-image", "io.netty", _*)   => MergeStrategy.first
+  case PathList("META-INF", "native", _*)                     => MergeStrategy.first
+  case PathList("META-INF", "versions", _*)                   => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".kotlin_module" => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".properties"    => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".proto"         => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".jnilib"        => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith "plugin.xml"     => MergeStrategy.first
+  case PathList(ps @ _*) if ps.last endsWith ".jai"           => MergeStrategy.concat
+  case PathList(ps @ _*) if ps.last endsWith ".jaiext"        => MergeStrategy.concat
+  case "application.conf"                                     => MergeStrategy.concat
+  case "module-info.class"                                    => MergeStrategy.discard
+  case other: Any                                             => MergeStrategy.defaultMergeStrategy(other)
 }
 
 // We need to add provided dependencies back so we could execute tests
@@ -80,14 +78,12 @@ lazy val forkTests =
       "-XX:MinHeapFreeRatio=10",
       "-XX:MaxHeapFreeRatio=20"))
 
-
 lazy val akkaDependencies = dependencyOverrides ++= Seq(
   "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion % Test,
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
   "org.typelevel" %% "cats-effect" % catsEffectVersion)
-
 
 lazy val `application` = (project in file("application"))
   .settings(
@@ -107,5 +103,4 @@ lazy val `common` = (project in file("common"))
     name := "common",
     commonSettings,
     libraryDependencies ++= commonDependencies ++ Seq(
-      "org.scodec" % "scodec-core_3" % "2.2.2"
-    ))
+      "org.scodec" % "scodec-core_3" % "2.2.2"))

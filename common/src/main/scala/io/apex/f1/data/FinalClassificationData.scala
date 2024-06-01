@@ -5,20 +5,19 @@ import io.apex.f1.enums.ResultStatus
 import java.util.Arrays
 
 case class FinalClassificationData(
-                                    position: Short,
-                                    numLaps: Short,
-                                    gridPosition: Short,
-                                    points: Short,
-                                    numPitStops: Short,
-                                    resultStatus: ResultStatus,
-                                    bestLapTime: Float,
-                                    totalRaceTime: Double,
-                                    penaltiesTime: Short,
-                                    numPenalties: Short,
-                                    numTyreStints: Short,
-                                    tyreStintsActual: Array[Short],
-                                    tyreStintsVisual: Array[Short]
-                                  ) {
+    position: Short,
+    numLaps: Short,
+    gridPosition: Short,
+    points: Short,
+    numPitStops: Short,
+    resultStatus: ResultStatus,
+    bestLapTime: Float,
+    totalRaceTime: Double,
+    penaltiesTime: Short,
+    numPenalties: Short,
+    numTyreStints: Short,
+    tyreStintsActual: Array[Short],
+    tyreStintsVisual: Array[Short]) {
   //  def fill(buffer: ByteBuf): FinalClassificationData = {
   //    position = buffer.readUnsignedByte()
   //    numLaps = buffer.readUnsignedByte()
@@ -63,9 +62,9 @@ case class FinalClassificationData(
 
   override def toString: String =
     s"FinalClassificationData[position=$position,numLaps=$numLaps,gridPosition=$gridPosition,points=$points," +
-      s"numPitStops=$numPitStops,resultStatus=$resultStatus,bestLapTime=$bestLapTime,totalRaceTime=$totalRaceTime," +
-      s"penaltiesTime=$penaltiesTime,numPenalties=$numPenalties,numTyreStints=$numTyreStints," +
-      s"tyreStintsActual=${Arrays.toString(tyreStintsActual)},tyreStintsVisual=${Arrays.toString(tyreStintsVisual)}]"
+    s"numPitStops=$numPitStops,resultStatus=$resultStatus,bestLapTime=$bestLapTime,totalRaceTime=$totalRaceTime," +
+    s"penaltiesTime=$penaltiesTime,numPenalties=$numPenalties,numTyreStints=$numTyreStints," +
+    s"tyreStintsActual=${Arrays.toString(tyreStintsActual)},tyreStintsVisual=${Arrays.toString(tyreStintsVisual)}]"
 }
 
 object FinalClassificationData extends F1Data {

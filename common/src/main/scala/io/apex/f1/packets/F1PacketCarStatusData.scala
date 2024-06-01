@@ -3,18 +3,15 @@ package io.apex.f1.packets
 import io.apex.f1.PacketConstants
 import io.apex.f1.data.*
 
-
-/**
- * Car Status Packet
- *
- * This packet details car statuses for all the cars in the race. It includes
- * values such as the damage readings on the car.
- * Frequency: Rate as specified in menus
- */
+/** Car Status Packet
+  *
+  * This packet details car statuses for all the cars in the race. It includes
+  * values such as the damage readings on the car.
+  * Frequency: Rate as specified in menus
+  */
 case class F1PacketCarStatusData$(
-                                   header: F1PacketHeader$,
-                                   carStatusData: List[CarStatusData]
-                              ) {
+    header: F1PacketHeader$,
+    carStatusData: List[CarStatusData]) {
 
   // 1344
 

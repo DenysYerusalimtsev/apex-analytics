@@ -1,29 +1,28 @@
 package io.apex.f1.data
 
 case class CarSetupData(
-                         frontWing: Short,
-                         rearWing: Short,
-                         onThrottle: Short,
-                         offThrottle: Short,
-                         frontCamber: Float,
-                         rearCamber: Float,
-                         frontToe: Float,
-                         rearToe: Float,
-                         frontSuspension: Short,
-                         rearSuspension: Short,
-                         frontAntiRollBar: Short,
-                         rearAntiRollBar: Short,
-                         frontSuspensionHeight: Short,
-                         rearSuspensionHeight: Short,
-                         brakePressure: Short,
-                         brakeBias: Short,
-                         rearLeftTyrePressure: Float,
-                         rearRightTyrePressure: Float,
-                         frontLeftTyrePressure: Float,
-                         frontRightTyrePressure: Float,
-                         ballast: Short,
-                         fuelLoad: Float
-                       ) {
+    frontWing: Short,
+    rearWing: Short,
+    onThrottle: Short,
+    offThrottle: Short,
+    frontCamber: Float,
+    rearCamber: Float,
+    frontToe: Float,
+    rearToe: Float,
+    frontSuspension: Short,
+    rearSuspension: Short,
+    frontAntiRollBar: Short,
+    rearAntiRollBar: Short,
+    frontSuspensionHeight: Short,
+    rearSuspensionHeight: Short,
+    brakePressure: Short,
+    brakeBias: Short,
+    rearLeftTyrePressure: Float,
+    rearRightTyrePressure: Float,
+    frontLeftTyrePressure: Float,
+    frontRightTyrePressure: Float,
+    ballast: Short,
+    fuelLoad: Float) {
   //  def fill(buffer: ByteBuf): CarSetupData =
   //    CarSetupData(
   //      frontWing = buffer.readUnsignedByte(),
@@ -77,14 +76,14 @@ case class CarSetupData(
 
   override def toString: String = {
     s"CarSetupData[frontWing=$frontWing,rearWing=$rearWing,onThrottle=$onThrottle,offThrottle=$offThrottle," +
-      s"frontCamber=$frontCamber,rearCamber=$rearCamber,frontToe=$frontToe,rearToe=$rearToe," +
-      s"frontSuspension=$frontSuspension,rearSuspension=$rearSuspension," +
-      s"frontAntiRollBar=$frontAntiRollBar,rearAntiRollBar=$rearAntiRollBar," +
-      s"frontSuspensionHeight=$frontSuspensionHeight,rearSuspensionHeight=$rearSuspensionHeight," +
-      s"brakePressure=$brakePressure,brakeBias=$brakeBias," +
-      s"rearLeftTyrePressure=$rearLeftTyrePressure,rearRightTyrePressure=$rearRightTyrePressure," +
-      s"frontLeftTyrePressure=$frontLeftTyrePressure,frontRightTyrePressure=$frontRightTyrePressure," +
-      s"ballast=$ballast,fuelLoad=$fuelLoad]"
+    s"frontCamber=$frontCamber,rearCamber=$rearCamber,frontToe=$frontToe,rearToe=$rearToe," +
+    s"frontSuspension=$frontSuspension,rearSuspension=$rearSuspension," +
+    s"frontAntiRollBar=$frontAntiRollBar,rearAntiRollBar=$rearAntiRollBar," +
+    s"frontSuspensionHeight=$frontSuspensionHeight,rearSuspensionHeight=$rearSuspensionHeight," +
+    s"brakePressure=$brakePressure,brakeBias=$brakeBias," +
+    s"rearLeftTyrePressure=$rearLeftTyrePressure,rearRightTyrePressure=$rearRightTyrePressure," +
+    s"frontLeftTyrePressure=$frontLeftTyrePressure,frontRightTyrePressure=$frontRightTyrePressure," +
+    s"ballast=$ballast,fuelLoad=$fuelLoad]"
   }
 }
 

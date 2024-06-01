@@ -3,12 +3,11 @@ package io.apex.f1.data
 import io.apex.f1.enums.*
 
 case class LobbyInfoData(
-                          aiControlled: Short,
-                          teamId: Team,
-                          nationality: Nationality,
-                          name: String,
-                          readyStatus: ReadyStatus
-                        ) {
+    aiControlled: Short,
+    teamId: Team,
+    nationality: Nationality,
+    name: String,
+    readyStatus: ReadyStatus) {
 
   //  def fill(buffer: ByteBuf): LobbyInfoData = {
   //    val aiControlled = buffer.readUnsignedByte()
