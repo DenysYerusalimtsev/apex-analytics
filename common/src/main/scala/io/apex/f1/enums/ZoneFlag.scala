@@ -1,12 +1,12 @@
 package io.apex.f1.enums
 
 enum ZoneFlag(val value: Int) {
-  case INVALID_UNKNOWN extends ZoneFlag(-1)
-  case NONE extends ZoneFlag(0)
-  case GREEN extends ZoneFlag(1)
-  case BLUE extends ZoneFlag(2)
-  case YELLOW extends ZoneFlag(3)
-  case RED extends ZoneFlag(4)
+  case InvalidUnknown extends ZoneFlag(-1)
+  case None extends ZoneFlag(0)
+  case Green extends ZoneFlag(1)
+  case Blue extends ZoneFlag(2)
+  case Yellow extends ZoneFlag(3)
+  case Red extends ZoneFlag(4)
 }
 
 object ZoneFlag {

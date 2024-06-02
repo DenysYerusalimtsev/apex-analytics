@@ -103,4 +103,11 @@ lazy val `common` = (project in file("common"))
     name := "common",
     commonSettings,
     libraryDependencies ++= commonDependencies ++ Seq(
-      "org.scodec" % "scodec-core_3" % "2.2.2"))
+      "org.scodec" % "scodec-core_3" % "2.3.0"))
+
+lazy val `f1-parser` = (project in file("core/f1-parser"))
+  .settings(
+    name := "f1-parser",
+    commonSettings,
+    libraryDependencies ++= commonDependencies ++ Seq())
+  .dependsOn(`common`)

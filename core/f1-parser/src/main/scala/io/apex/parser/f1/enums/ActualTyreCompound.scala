@@ -1,4 +1,4 @@
-package io.apex.f1.enums
+package io.apex.parser.f1.enums
 
 enum ActualTyreCompound(val value: Int) {
   case Unknown extends ActualTyreCompound(0)
