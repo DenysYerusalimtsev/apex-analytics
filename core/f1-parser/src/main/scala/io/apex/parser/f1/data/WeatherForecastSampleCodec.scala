@@ -6,7 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object WeatherForecastSampleParser extends Codec[WeatherForecastSample] {
+object WeatherForecastSampleCodec extends Codec[WeatherForecastSample] {
 
   val codec: Codec[WeatherForecastSample] = {
     ("sessionType" | uint8) ::
