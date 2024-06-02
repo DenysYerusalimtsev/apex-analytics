@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object SpeedTrapParser {
+object SpeedTrapCodec {
   val speedTrapCodec: Codec[SpeedTrap] = {
     ("vehicleIdx" | uint8) ::
     ("speed" | float) ::

@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object PacketMotionDataParser {
+object PacketMotionDataCodec {
   implicit val packetMotionDataCodec: Codec[PacketMotionData] = {
     ("header" | Codec[PacketHeader]) ::
     ("carMotionData" | vectorOfN(provide(22), Codec[CarMotionData])) ::

@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object FastestLapParser {
+object FastestLapCodec {
   val codec: Codec[FastestLap] = {
     ("vehicleIdx" | uint8) ::
     ("lapTime" | float)

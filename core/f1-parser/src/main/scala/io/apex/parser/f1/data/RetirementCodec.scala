@@ -1,12 +1,12 @@
 package io.apex.parser.f1.data
 
-import io.apex.f1.data.RaceWinner
+import io.apex.f1.data.Retirement
 import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object RaceWinnerParser {
-  val codec: Codec[RaceWinner] = {
+object RetirementCodec {
+  val codec: Codec[Retirement] = {
     ("vehicleIdx" | uint8)
-  }.as[RaceWinner]
+  }.as[Retirement]
 }

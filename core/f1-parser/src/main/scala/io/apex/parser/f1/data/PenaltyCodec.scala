@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object PenaltyParser {
+object PenaltyCodec {
   val codec: Codec[Penalty] = {
     ("penaltyType" | uint8) ::
     ("infringementType" | uint8) ::

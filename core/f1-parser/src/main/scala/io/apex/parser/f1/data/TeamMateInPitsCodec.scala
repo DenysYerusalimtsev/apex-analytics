@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object TeamMateInPitsParser {
+object TeamMateInPitsCodec {
   val teamMateInPitsCodec: Codec[TeamMateInPits] = {
     ("vehicleIdx" | uint8)
   }.as[TeamMateInPits]

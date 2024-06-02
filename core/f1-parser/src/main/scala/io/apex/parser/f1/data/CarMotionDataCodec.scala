@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object CarMotionDataParser {
+object CarMotionDataCodec {
   implicit val codec: Codec[CarMotionData] = {
     ("worldPositionX" | float) ::
     ("worldPositionY" | float) ::

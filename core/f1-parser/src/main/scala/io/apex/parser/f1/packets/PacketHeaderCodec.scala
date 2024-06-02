@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object PacketHeaderParser {
+object PacketHeaderCodec {
   implicit val codec: Codec[PacketHeader] = {
     fixedSizeBytes(
       PacketHeader.size,

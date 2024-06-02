@@ -13,7 +13,7 @@ case class ParticipantData(
 
   //  def fill(buffer: ByteBuf): ParticipantData = {
   //    val aiControlled = buffer.readUnsignedByte()
-  //    val driverId = Driver.vaslueOf(PacketConfig.getSeason(), buffer.readUnsignedByte())
+  //    val driverId = Driver.valueOf(PacketConfig.getSeason(), buffer.readUnsignedByte())
   //    val teamId = Team.valueOf(PacketConfig.getSeason(), buffer.readUnsignedByte())
   //    val raceNumber = buffer.readUnsignedByte()
   //    val nationality = Nationality.valueOf(buffer.readUnsignedByte())
