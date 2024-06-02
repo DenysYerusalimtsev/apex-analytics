@@ -10,8 +10,8 @@ import io.apex.f1.data.*
   * status of each of the participants.
   * Frequency: Two every second when in the lobby
   */
-case class F1PacketLobbyInfoData$(
-    header: F1PacketHeader$,
+case class PacketLobbyInfoData(
+    header: PacketHeader,
     numPlayers: Short,
     lobbyInfoData: List[LobbyInfoData]) {
 
@@ -33,7 +33,8 @@ case class F1PacketLobbyInfoData$(
 //    buffer
 //  }
 
-object F1PacketLobbyInfoData$ extends F1Packet {
+object PacketLobbyInfoData extends F1Packet {
+  // 1169
   override def size: Int =
-    F1PacketHeader$.size + 1 + LobbyInfoData.size * PacketConstants.LOBBY_PLAYERS
+    PacketHeader.size + 1 + LobbyInfoData.size * PacketConstants.LobbyPlayers
 }

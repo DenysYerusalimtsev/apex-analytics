@@ -9,8 +9,8 @@ import io.apex.f1.data.*
   * names will be the Steam Id on PC, or the LAN name if appropriate.
   * Frequency: Every 5 seconds
   */
-case class F1PacketParticipantsData$(
-    header: F1PacketHeader$,
+case class PacketParticipantsData(
+    header: PacketHeader,
     numActiveCars: Short,
     participants: List[ParticipantData]) {
 
@@ -33,6 +33,7 @@ case class F1PacketParticipantsData$(
   //  }
 }
 
-object F1PacketParticipantsData$ extends F1Packet {
-  override def size: Int = F1PacketHeader$.size + 4 + EventDataDetails.size
+object PacketParticipantsData extends F1Packet {
+  // 1213
+  override def size: Int = PacketHeader.size + 4 + EventDataDetails.size
 }

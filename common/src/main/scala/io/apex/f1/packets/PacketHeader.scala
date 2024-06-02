@@ -4,7 +4,7 @@ import io.apex.f1.enums.PacketId
 
 import java.math.BigInteger
 
-case class F1PacketHeader$(
+case class PacketHeader(
     packetFormat: Int,
     gameMajorVersion: Short,
     gameMinorVersion: Short,
@@ -51,7 +51,7 @@ case class F1PacketHeader$(
     s"secondaryPlayerCarIndex=$secondaryPlayerCarIndex]"
 }
 
-object F1PacketHeader$ extends F1Packet {
+object PacketHeader extends F1Packet {
   override def size: Int = 24
 
   def packetIdOffset: Int = 5

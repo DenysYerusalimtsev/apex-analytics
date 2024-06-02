@@ -13,8 +13,8 @@ import scala.collection.mutable.ListBuffer
   * be able to see your car setup and AI cars.
   * Frequency: 2 per second
   */
-case class F1PacketCarSetupData$(
-    header: F1PacketHeader$,
+case class PacketCarSetupData(
+    header: PacketHeader,
     carSetupData: List[CarSetupData]) {
 
   override def toString: String = {
@@ -38,7 +38,7 @@ case class F1PacketCarSetupData$(
 //  }
 }
 
-object F1PacketCarSetupData$ extends F1Packet {
+object PacketCarSetupData extends F1Packet {
   // 1102
-  override def size: Int = F1PacketHeader$.size + CarSetupData.size * PacketConstants.CARS
+  override def size: Int = PacketHeader.size + CarSetupData.size * PacketConstants.Cars
 }

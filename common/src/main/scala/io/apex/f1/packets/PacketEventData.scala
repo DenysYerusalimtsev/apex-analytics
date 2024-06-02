@@ -8,8 +8,8 @@ import io.apex.f1.enums.*
   * This packet gives details of events that happen during the course of a session.
   * Frequency: When the event occurs
   */
-case class F1PacketEventData$(
-    header: F1PacketHeader$,
+case class PacketEventData(
+    header: PacketHeader,
     eventCode: EventCode,
     eventDataDetails: EventDataDetails) {
 
@@ -94,6 +94,7 @@ case class F1PacketEventData$(
   //  }
 }
 
-object F1PacketEventData$ extends F1Packet {
-  override def size: Int = F1PacketHeader$.size + 4 + EventDataDetails.size
+object PacketEventData extends F1Packet {
+  // 35
+  override def size: Int = PacketHeader.size + 4 + EventDataDetails.size
 }

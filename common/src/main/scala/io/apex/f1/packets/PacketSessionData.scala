@@ -9,8 +9,8 @@ import io.apex.f1.enums.*
   * The session packet includes details about the current session in progress.
   * Frequency: 2 per second
   */
-case class F1PacketSessionData$(
-    header: F1PacketHeader$,
+case class PacketSessionData(
+    header: PacketHeader,
     weather: Weather,
     trackTemperature: Short,
     airTemperature: Short,
@@ -103,8 +103,9 @@ case class F1PacketSessionData$(
   //  }
 }
 
-object F1PacketSessionData$ extends F1Packet {
-  override def size: Int = F1PacketHeader$.size +
-    19 + MarshalZone.size * PacketConstants.MARSHAL_ZONES + 3 +
-    WeatherForecastSample.size * PacketConstants.WEATHER_FORECAST_SAMPLES
+object PacketSessionData extends F1Packet {
+  // 251
+  override def size: Int = PacketHeader.size +
+    19 + MarshalZone.size * PacketConstants.MarshalZones + 3 +
+    WeatherForecastSample.size * PacketConstants.WeatherForecastSamples
 }

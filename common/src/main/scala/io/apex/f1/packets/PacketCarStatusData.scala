@@ -9,11 +9,9 @@ import io.apex.f1.data.*
   * values such as the damage readings on the car.
   * Frequency: Rate as specified in menus
   */
-case class F1PacketCarStatusData$(
-    header: F1PacketHeader$,
+case class PacketCarStatusData(
+    header: PacketHeader,
     carStatusData: List[CarStatusData]) {
-
-  // 1344
 
   override def toString: String = {
     val carStatusDataString = carStatusData.map(_.toString).mkString(",")
@@ -36,7 +34,7 @@ case class F1PacketCarStatusData$(
   //  }
 }
 
-object F1PacketCarStatusData$ extends F1Packet {
-  override def size: Int = F1PacketHeader$.size + CarSetupData.size * PacketConstants.CARS;
-
+object PacketCarStatusData extends F1Packet {
+  // 1344
+  override def size: Int = PacketHeader.size + CarSetupData.size * PacketConstants.Cars;
 }
