@@ -6,7 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object MarshalZone {
+object MarshalZoneCodec {
   implicit val codec: Codec[MarshalZone] =
     (("zoneStart" | float) :: ("zoneFlag" | Codec[ZoneFlag])).as[MarshalZone]
 }

@@ -1,15 +1,15 @@
 package io.apex.f1.enums
 
 enum EventCode(val value: String) {
-  case SESSION_STARTED extends EventCode("SSTA")
-  case SESSION_ENDED extends EventCode("SEND")
-  case FASTEST_LAP extends EventCode("FTLP")
-  case RETIREMENT extends EventCode("RTMT")
-  case DRS_ENABLED extends EventCode("DRSE")
-  case DRS_DISABLED extends EventCode("DRSD")
-  case TEAM_MATE_IN_PITS extends EventCode("TMPT")
-  case CHEQUERED_FLAG extends EventCode("CHQF")
-  case RACE_WINNER extends EventCode("RCWN")
-  case PENALTY_ISSUED extends EventCode("PENA")
-  case SPEED_TRAP_TRIGGERED extends EventCode("SPTP")
+  case SessionStarted extends EventCode("SSTA")
+  case SessionEnded extends EventCode("SEND")
+  case FastestLap extends EventCode("FTLP")
+  case Retirement extends EventCode("RTMT")
+  case DrsEnabled extends EventCode("DRSE")
+  case DrsDisabled extends EventCode("DRSD")
+  case TeamMateInPits extends EventCode("TMPT")
+  case ChequeredFlag extends EventCode("CHQF")
+  case RaceWinner extends EventCode("RCWN")
+  case PenaltyIssued extends EventCode("PENA")
+  case SpeedTrapTriggered extends EventCode("SPTP")
 }

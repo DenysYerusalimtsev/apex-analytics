@@ -15,7 +15,7 @@ case class PacketMotionData(
     extraCarMotionData: ExtraCarMotionData) {
 
   override def toString: String = {
-    s"Motion[$header,carMotionData=${carMotionData.mkString(",")},extraCarMotionData=$extraCarMotionData]"
+    s"Motion[$header, carMotionData=${carMotionData.mkString(",")}, extraCarMotionData=$extraCarMotionData]"
   }
   //
   //  def fill(buffer: ByteBuf): PacketMotionData = {

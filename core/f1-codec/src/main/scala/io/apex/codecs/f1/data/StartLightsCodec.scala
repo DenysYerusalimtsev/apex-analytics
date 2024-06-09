@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object StartLightsParser {
+object StartLightsCodec {
   val startLightsCodec: Codec[StartLights] = {
     ("numLights" | uint8)
   }.as[StartLights]

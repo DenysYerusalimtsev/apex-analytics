@@ -6,7 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object LapDataParser extends Codec[LapData] {
+object LapDataCodec extends Codec[LapData] {
 
   val codec: Codec[LapData] = {
     ("lastLapTimeInMS" | uint32L) ::
