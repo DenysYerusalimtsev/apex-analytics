@@ -5,10 +5,8 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-import scala.util.Try
-
 object ZoneFlagParser {
-  implicit val zoneFlagCodec: Codec[ZoneFlag] =
+  val codec: Codec[ZoneFlag] =
     mappedEnum(
       uint8,
       ZoneFlag.InvalidUnknown -> -1,
