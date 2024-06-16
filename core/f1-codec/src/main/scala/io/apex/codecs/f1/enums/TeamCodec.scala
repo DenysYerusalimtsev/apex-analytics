@@ -8,11 +8,9 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-
-
 object Team2020Codec {
-  val codec2020: Codec[Team2020] = mappedEnum(
-    uint8, // Codec for the integer value
+  val codec: Codec[Team2020] = mappedEnum(
+    uint8,
     Team2020.MERCEDES -> 0,
     Team2020.FERRARI -> 1,
     Team2020.RED_BULL_RACING -> 2,
@@ -72,8 +70,8 @@ object Team2020Codec {
 }
 
 object Team2021Codec {
-  val codec2021: Codec[Team2021] = mappedEnum(
-    uint8, // Codec for the integer value
+  val codec: Codec[Team2021] = mappedEnum(
+    uint8,
     Team2021.MERCEDES -> 0,
     Team2021.FERRARI -> 1,
     Team2021.RED_BULL_RACING -> 2,
@@ -128,9 +126,9 @@ object Team2021Codec {
     Team2021.TRIDENT_21 -> 116)
 }
 
-object Team2022 {
-  val codec2022: Codec[Team2022] = mappedEnum(
-    uint8, // Codec for the integer value
+object Team2022Codec {
+  val codec: Codec[Team2022] = mappedEnum(
+    uint8,
     Team2022.MERCEDES -> 0,
     Team2022.FERRARI -> 1,
     Team2022.RED_BULL_RACING -> 2,
@@ -172,6 +170,14 @@ object Team2022 {
     Team2022.CAMPOS_21 -> 114,
     Team2022.BWT_21 -> 115,
     Team2022.TRIDENT_21 -> 116,
-    Team2022.MERCEDES_AMG_GT_BLACK_SERIES -> 117
-  )
+    Team2022.MERCEDES_AMG_GT_BLACK_SERIES -> 117)
+}
+
+object TeamCodec {
+  def codec(season: Int, value: Int): Codec[Team] =
+    season match {
+      case 2020 => Team2020Codec.codec
+      case 2021 => Team2021Codec.codec
+      case 2022 => Team2022Codec.codec
+    }
 }

@@ -9,7 +9,7 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object Track2020Codec {
-  val codec2020: Codec[Track2020] = {
+  val codec: Codec[Track2020] = {
     mappedEnum(
       int8,
       Track2020.MELBOURNE -> 0,
@@ -43,7 +43,7 @@ object Track2020Codec {
 }
 
 object Track2021Codec {
-  val codec2021: Codec[Track2021] = {
+  val codec: Codec[Track2021] = {
     mappedEnum(
       int8,
       Track2021.MELBOURNE -> 0,
@@ -80,7 +80,7 @@ object Track2021Codec {
 }
 
 object Track2022Codec {
-  val codec2022: Codec[Track2022] = {
+  val codec: Codec[Track2022] = {
     mappedEnum(
       int8,
       Track2022.MELBOURNE -> 0,
@@ -115,4 +115,13 @@ object Track2022Codec {
       Track2022.JEDDAH -> 29,
       Track2022.MIAMI -> 30)
   }
+}
+
+object TrackCodec {
+  def codec(season: Int, value: Int): Codec[Track] =
+    season match {
+      case 2020 => Track2020Codec.codec
+      case 2021 => Track2021Codec.codec
+      case 2022 => Track2022Codec.codec
+    }
 }
