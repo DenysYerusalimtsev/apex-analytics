@@ -1,10 +1,12 @@
 package io.apex.codecs.f1.enums
 
+import io.apex.f1.enums.ActualTyreCompound
+import io.apex.f1.enums.ActualTyreCompound.*
 import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object ActualTyreCompound {
+object ActualTyreCompoundCodec {
   val codec: Codec[ActualTyreCompound] =
     mappedEnum(
       uint8,
