@@ -1,9 +1,8 @@
 import sbt.Keys.run
 import sbtassembly.AssemblyPlugin.autoImport.assemblyMergeStrategy
-import pl.project13.scala.sbt.JmhPlugin
 
 ThisBuild / version := "0.1.0-SNAPSHOT"
-ThisBuild / scalaVersion := "3.2.2"
+ThisBuild / scalaVersion := "3.3.1"
 ThisBuild / useCoursier := false
 
 ThisBuild / scalacOptions ++= {
@@ -12,10 +11,43 @@ ThisBuild / scalacOptions ++= {
     case Some((2, 12 | 13)) => Seq("-Xsource:3", "-P:kind-projector:underscore-placeholders")
   }
 }
+val pekkoCore = Seq(
+  "org.apache.pekko" %% "pekko-actor-typed" % V.pekko % Test,
+  "org.apache.pekko" %% "pekko-stream-typed" % V.pekko % Test,
+  "org.apache.pekko" %% "pekko-testkit" % V.pekko % Test,
+  "org.apache.pekko" %% "pekko-actor-testkit-typed" % V.pekko % Test,
+  "org.apache.pekko" %% "pekko-stream-testkit" % V.pekko % Test)
 
-lazy val akkaVersion = "2.6.18"
-lazy val catsVersion = "2.6.1"
-lazy val catsEffectVersion = "3.2.9"
+val pekkoHttp = Seq(
+  "org.apache.pekko" %% "pekko-http" % V.pekko_http,
+  "com.github.pjfanning" %% "pekko-http-jsoniter-scala" % V.pekko_jsoniter,
+  "org.apache.pekko" %% "pekko-http-testkit" % V.pekko_http % Test)
+
+val pekkoCluster = Seq(
+  "org.apache.pekko" %% "pekko-cluster-sharding-typed" % V.pekko,
+  "org.apache.pekko" %% "pekko-discovery" % V.pekko,
+  "org.apache.pekko" %% "pekko-management" % V.pekko_management,
+  "org.apache.pekko" %% "pekko-management-cluster-http" % V.pekko_management,
+  // "org.apache.pekko" %% "pekko-http-spray-json" % pekkoHttpVersion, // todo: remove
+  "org.apache.pekko" %% "pekko-management-cluster-bootstrap" % V.pekko_management,
+  "org.apache.pekko" %% "pekko-discovery-kubernetes-api" % V.pekko_management)
+
+val pekkoKafka = Seq(
+  "org.apache.pekko" %% "pekko-connectors-kafka" % V.pekko_kafka)
+
+val sttpClient = Seq(
+  "com.softwaremill.sttp.client4" %% "core" % V.sttp,
+  "com.softwaremill.sttp.client4" %% "okhttp-backend" % V.sttp,
+  "com.softwaremill.sttp.client4" %% "slf4j-backend" % V.sttp,
+  "com.softwaremill.sttp.client4" %% "jsoniter" % V.sttp,
+  "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-macros" % V.jsoniter % "provided")
+
+val logging = Seq(
+  "ch.qos.logback" % "logback-classic" % V.logback)
+
+val catsEffect = Seq(
+  "org.typelevel" %% "cats-effect" % V.cats_effect,
+  "org.typelevel" %% "cats-effect-testing-scalatest" % V.cats_effect_testing % Test)
 
 lazy val root = (project in file("."))
   .settings(
@@ -78,18 +110,12 @@ lazy val forkTests =
       "-XX:MinHeapFreeRatio=10",
       "-XX:MaxHeapFreeRatio=20"))
 
-lazy val akkaDependencies = dependencyOverrides ++= Seq(
-  "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
-  "com.typesafe.akka" %% "akka-stream" % akkaVersion,
-  "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion % Test,
-  "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
-  "org.typelevel" %% "cats-effect" % catsEffectVersion)
-
 lazy val `application` = (project in file("application"))
   .settings(
     name := "application",
     commonSettings,
-    libraryDependencies ++= commonDependencies ++ Seq())
+    libraryDependencies ++= commonDependencies ++ pekkoCore ++ pekkoHttp ++
+    pekkoCluster ++ catsEffect ++ Seq())
   .dependsOn(`common`)
 
 lazy val `core` = (project in file("core"))
