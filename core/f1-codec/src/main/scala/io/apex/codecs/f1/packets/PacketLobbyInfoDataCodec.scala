@@ -10,6 +10,6 @@ object PacketLobbyInfoDataCodec {
   val codec: Codec[PacketLobbyInfoData] = {
     ("header" | PacketHeaderCodec.codec) ::
     ("numPlayers" | uint8) ::
-    ("lobbyPlayers" | vectorOfN(provide(22), LobbyInfoDataCodec.codec))
+    ("lobbyPlayers" | listOfN(provide(22), LobbyInfoDataCodec.codec))
   }.as[PacketLobbyInfoData]
 }

@@ -17,11 +17,11 @@ object CarTelemetryDataCodec {
       ("drs" | uint8) ::
       ("revLightsPercent" | uint8) ::
       ("revLightsBitValue" | uint16) ::
-      ("brakesTemperature" | vectorOfN(provide(4), uint16)) ::
-      ("tyresSurfaceTemperature" | vectorOfN(provide(4), uint8)) ::
-      ("tyresInnerTemperature" | vectorOfN(provide(4), uint8)) ::
+      ("brakesTemperature" | listOfN(provide(4), uint16)) ::
+      ("tyresSurfaceTemperature" | listOfN(provide(4), uint8)) ::
+      ("tyresInnerTemperature" | listOfN(provide(4), uint8)) ::
       ("engineTemperature" | uint16) ::
-      ("tyresPressure" | vectorOfN(provide(4), float)) ::
-      ("surfaceType" | vectorOfN(provide(4), uint8))
+      ("tyresPressure" | listOfN(provide(4), float)) ::
+      ("surfaceType" | listOfN(provide(4), uint8))
   ).as[CarTelemetryData]
 }

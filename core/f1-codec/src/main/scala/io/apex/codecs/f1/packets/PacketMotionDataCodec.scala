@@ -9,12 +9,12 @@ import scodec.codecs.*
 object PacketMotionDataCodec {
   val packetMotionDataCodec: Codec[PacketMotionData] = (
     ("header" | PacketHeaderCodec.codec) ::
-      ("carMotionData" | vectorOfN(provide(22), CarMotionDataCodec.codec)) ::
-      ("suspensionPosition" | vectorOfN(provide(4), float)) ::
-      ("suspensionVelocity" | vectorOfN(provide(4), float)) ::
-      ("suspensionAcceleration" | vectorOfN(provide(4), float)) ::
-      ("wheelSpeed" | vectorOfN(provide(4), float)) ::
-      ("wheelSlip" | vectorOfN(provide(4), float)) ::
+      ("carMotionData" | listOfN(provide(22), CarMotionDataCodec.codec)) ::
+      ("suspensionPosition" | listOfN(provide(4), float)) ::
+      ("suspensionVelocity" | listOfN(provide(4), float)) ::
+      ("suspensionAcceleration" | listOfN(provide(4), float)) ::
+      ("wheelSpeed" | listOfN(provide(4), float)) ::
+      ("wheelSlip" | listOfN(provide(4), float)) ::
       ("localVelocityX" | float) ::
       ("localVelocityY" | float) ::
       ("localVelocityZ" | float) ::

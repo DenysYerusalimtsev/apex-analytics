@@ -9,6 +9,6 @@ import scodec.codecs.*
 object PacketCarDamageDataCodec {
   val codec: Codec[PacketCarDamageData] = (
     ("header" | PacketHeaderCodec.codec) ::
-      ("carDamageData" | vectorOfN(provide(22), CarDamageDataCodec.codec))
+      ("carDamageData" | listOfN(provide(22), CarDamageDataCodec.codec))
   ).as[PacketCarDamageData]
 }

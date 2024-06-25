@@ -6,7 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object SessionType {
+object SessionTypeCodec {
   val codec: Codec[SessionType] = mappedEnum(
     uint8,
     UNKNOWN -> 0,

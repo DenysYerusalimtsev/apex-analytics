@@ -6,7 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object Sector {
+object SectorCodec {
 
   val codec: Codec[Sector] = mappedEnum(
     uint8,

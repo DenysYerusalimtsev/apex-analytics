@@ -18,11 +18,11 @@ case class CarStatusData(
     maxGears: Short,
     drsAllowed: DrsAllowed,
     drsActivationDistance: Int,
-    tyresWear: Array[Short],
+    tyresWear: List[Short],
     actualTyreCompound: ActualTyreCompound,
     visualTyreCompound: VisualTyreCompound,
     tyresAgeLaps: Short,
-    tyresDamage: Array[Short],
+    tyresDamage: List[Short],
     frontLeftWingDamage: Short,
     frontRightWingDamage: Short,
     rearWingDamage: Short,
@@ -144,11 +144,11 @@ case class CarStatusData(
     s"maxGears=$maxGears," +
     s"drsAllowed=$drsAllowed," +
     s"drsActivationDistance=$drsActivationDistance," +
-    s"tyresWear=${Arrays.toString(tyresWear)}," +
+    s"tyresWear=${tyresWear.mkString(" , ")}," +
     s"actualTyreCompound=$actualTyreCompound," +
     s"visualTyreCompound=$visualTyreCompound," +
     s"tyresAgeLaps=$tyresAgeLaps," +
-    s"tyresDamage=${Arrays.toString(tyresDamage)}," +
+    s"tyresDamage=${tyresDamage.mkString(", ")}," +
     s"frontLeftWingDamage=$frontLeftWingDamage," +
     s"frontRightWingDamage=$frontRightWingDamage," +
     s"rearWingDamage=$rearWingDamage," +

@@ -6,7 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object SafetyCarStatus {
+object SafetyCarStatusCodec {
 
   val codec: Codec[SafetyCarStatus] = mappedEnum(
     int8,

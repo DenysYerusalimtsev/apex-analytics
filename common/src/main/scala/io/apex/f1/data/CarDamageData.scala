@@ -1,9 +1,9 @@
 package io.apex.f1.data
 
 case class CarDamageData(
-    tyresWear: Array[Float],
-    tyresDamage: Array[Int],
-    brakesDamage: Array[Int],
+    tyresWear: List[Float],
+    tyresDamage: List[Int],
+    brakesDamage: List[Int],
     frontLeftWingDamage: Int,
     frontRightWingDamage: Int,
     rearWingDamage: Int,

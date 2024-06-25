@@ -18,8 +18,8 @@ object FinalClassificationDataCodec {
       ("penaltiesTime" | uint8) ::
       ("numPenalties" | uint8) ::
       ("numTyreStints" | uint8) ::
-      ("tyreStintsActual" | vectorOfN(provide(8), uint8)) ::
-      ("tyreStintsVisual" | vectorOfN(provide(8), uint8)) ::
-      ("tyreStintsEndLaps" | vectorOfN(provide(8), uint8))
+      ("tyreStintsActual" | listOfN(provide(8), uint8)) ::
+      ("tyreStintsVisual" | listOfN(provide(8), uint8)) ::
+      ("tyreStintsEndLaps" | listOfN(provide(8), uint8))
   ).as[FinalClassificationData]
 }

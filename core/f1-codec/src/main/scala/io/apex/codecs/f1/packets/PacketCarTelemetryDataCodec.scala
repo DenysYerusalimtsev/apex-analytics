@@ -9,7 +9,7 @@ import scodec.codecs.*
 object PacketCarTelemetryDataCodec {
   val codec: Codec[PacketCarTelemetryData] = (
     ("header" | PacketHeaderCodec.codec) ::
-      ("carTelemetryData" | vectorOfN(provide(22), CarTelemetryDataCodec.codec)) ::
+      ("carTelemetryData" | listOfN(provide(22), CarTelemetryDataCodec.codec)) ::
       ("mfdPanelIndex" | uint8) ::
       ("mfdPanelIndexSecondaryPlayer" | uint8) ::
       ("suggestedGear" | int8)

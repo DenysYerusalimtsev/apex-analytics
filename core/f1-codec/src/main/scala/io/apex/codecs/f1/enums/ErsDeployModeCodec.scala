@@ -6,7 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object ErsDeployMode {
+object ErsDeployModeCodec {
   val codec: Codec[ErsDeployMode] = mappedEnum(
     int8,
     NONE -> 0,

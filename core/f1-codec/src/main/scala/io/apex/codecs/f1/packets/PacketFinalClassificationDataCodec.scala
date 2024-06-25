@@ -10,6 +10,6 @@ object PacketFinalClassificationDataCodec {
   val codec: Codec[PacketFinalClassificationData] = (
     ("header" | PacketHeaderCodec.codec) ::
       ("numCars" | uint8) ::
-      ("classificationData" | vectorOfN(provide(22), FinalClassificationDataCodec.codec))
+      ("classificationData" | listOfN(provide(22), FinalClassificationDataCodec.codec))
   ).as[PacketFinalClassificationData]
 }

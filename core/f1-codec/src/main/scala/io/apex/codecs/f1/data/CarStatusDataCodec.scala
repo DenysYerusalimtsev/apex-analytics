@@ -1,5 +1,6 @@
 package io.apex.codecs.f1.data
 
+import io.apex.codecs.f1.enums.*
 import io.apex.f1.data.CarStatusData
 import scodec.*
 import scodec.bits.*
@@ -9,7 +10,7 @@ object CarStatusDataCodec {
   val codec: Codec[CarStatusData] = (
     ("tractionControl" | uint8) ::
       ("antiLockBrakes" | uint8) ::
-      ("fuelMix" | uint8) ::
+      ("fuelMix" | FuelMixCodec.codec) ::
       ("frontBrakeBias" | uint8) ::
       ("pitLimiterStatus" | uint8) ::
       ("fuelInTank" | float) ::
@@ -18,14 +19,14 @@ object CarStatusDataCodec {
       ("maxRPM" | uint16) ::
       ("idleRPM" | uint16) ::
       ("maxGears" | uint8) ::
-      ("drsAllowed" | uint8) ::
+      ("drsAllowed" | DrsAllowedCodec.codec) ::
       ("drsActivationDistance" | uint16) ::
-      ("actualTyreCompound" | uint8) ::
-      ("visualTyreCompound" | uint8) ::
+      ("actualTyreCompound" | ActualTyreCompoundCodec.codec) ::
+      ("visualTyreCompound" | VisualTyreCompoundCodec.codec) ::
       ("tyresAgeLaps" | uint8) ::
-      ("vehicleFiaFlags" | int8) ::
+      ("vehicleFiaFlags" | VehicleFiaFlagCodec.codec) ::
       ("ersStoreEnergy" | float) ::
-      ("ersDeployMode" | uint8) ::
+      ("ersDeployMode" | ErsDeployModeCodec.codec) ::
       ("ersHarvestedThisLapMGUK" | float) ::
       ("ersHarvestedThisLapMGUH" | float) ::
       ("ersDeployedThisLap" | float) ::

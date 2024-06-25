@@ -10,7 +10,7 @@ object PacketLapDataCodec extends Codec[PacketLapData] {
 
   val codec: Codec[PacketLapData] = (
     ("header" | PacketHeaderCodec.codec) ::
-      ("lapData" | vectorOfN(provide(22), LapDataCodec.codec)) ::
+      ("lapData" | listOfN(provide(22), LapDataCodec.codec)) ::
       ("timeTrialPBCarIdx" | uint8) ::
       ("timeTrialRivalCarIdx" | uint8)
   ).as[PacketLapData]

@@ -6,7 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object SurfaceType {
+object SurfaceTypeCodec {
 
   val codec: Codec[SurfaceType] = mappedEnum(
     uint8,
