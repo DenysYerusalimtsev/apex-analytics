@@ -8,14 +8,14 @@ import scodec.codecs.*
 
 object WeatherForecastSampleCodec extends Codec[WeatherForecastSample] {
 
-  val codec: Codec[WeatherForecastSample] = {
+  val codec: Codec[WeatherForecastSample] = (
     ("sessionType" | uint8) ::
-    ("timeOffset" | uint8) ::
-    ("weather" | uint8) ::
-    ("trackTemperature" | int8) ::
-    ("trackTemperatureChange" | int8) ::
-    ("airTemperature" | int8) ::
-    ("airTemperatureChange" | int8) ::
-    ("rainPercentage" | uint8)
-  }.as[WeatherForecastSample]
+      ("timeOffset" | uint8) ::
+      ("weather" | uint8) ::
+      ("trackTemperature" | int8) ::
+      ("trackTemperatureChange" | int8) ::
+      ("airTemperature" | int8) ::
+      ("airTemperatureChange" | int8) ::
+      ("rainPercentage" | uint8)
+  ).as[WeatherForecastSample]
 }

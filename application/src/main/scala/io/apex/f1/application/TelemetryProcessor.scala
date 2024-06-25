@@ -37,7 +37,6 @@ object TelemetryProcessor {
   }
 
   private def decodeData(data: ByteString): Unit = {
-    val codec: Codec[PacketCarDamageData] = PacketCarDamageDataCodec.codec
     val result = PacketCarDamageDataCodec.codec.decodeValue(BitVector(data.toArray))
     result match {
       case Right(value) => println(s"Decoded value: $value")

@@ -6,12 +6,12 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object LobbyInfoDataCodec {
-  val codec: Codec[LobbyInfoData] = {
+  val codec: Codec[LobbyInfoData] = (
     ("aiControlled" | uint8) ::
-    ("teamId" | uint8) ::
-    ("nationality" | uint8) ::
-    ("name" | fixedSizeBytes(48, utf8)) ::
-    ("carNumber" | uint8) ::
-    ("readyStatus" | uint8)
-  }.as[LobbyInfoData]
+      ("teamId" | uint8) ::
+      ("nationality" | uint8) ::
+      ("name" | fixedSizeBytes(48, utf8)) ::
+      ("carNumber" | uint8) ::
+      ("readyStatus" | uint8)
+  ).as[LobbyInfoData]
 }

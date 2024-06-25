@@ -6,13 +6,13 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object PenaltyCodec {
-  val codec: Codec[Penalty] = {
+  val codec: Codec[Penalty] = (
     ("penaltyType" | uint8) ::
-    ("infringementType" | uint8) ::
-    ("vehicleIdx" | uint8) ::
-    ("otherVehicleIdx" | uint8) ::
-    ("time" | uint8) ::
-    ("lapNum" | uint8) ::
-    ("placesGained" | uint8)
-  }.as[Penalty]
+      ("infringementType" | uint8) ::
+      ("vehicleIdx" | uint8) ::
+      ("otherVehicleIdx" | uint8) ::
+      ("time" | uint8) ::
+      ("lapNum" | uint8) ::
+      ("placesGained" | uint8)
+  ).as[Penalty]
 }

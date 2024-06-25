@@ -6,12 +6,12 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object SpeedTrapCodec {
-  val codec: Codec[SpeedTrap] = {
+  val codec: Codec[SpeedTrap] = (
     ("vehicleIdx" | uint8) ::
-    ("speed" | float) ::
-    ("isOverallFastestInSession" | uint8) ::
-    ("isDriverFastestInSession" | uint8) ::
-    ("fastestVehicleIdxInSession" | uint8) ::
-    ("fastestSpeedInSession" | float)
-  }.as[SpeedTrap]
+      ("speed" | float) ::
+      ("isOverallFastestInSession" | uint8) ::
+      ("isDriverFastestInSession" | uint8) ::
+      ("fastestVehicleIdxInSession" | uint8) ::
+      ("fastestSpeedInSession" | float)
+  ).as[SpeedTrap]
 }

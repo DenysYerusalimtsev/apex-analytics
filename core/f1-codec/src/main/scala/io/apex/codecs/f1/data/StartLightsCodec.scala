@@ -6,24 +6,18 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object StartLightsCodec {
-  val startLightsCodec: Codec[StartLights] = {
-    ("numLights" | uint8)
-  }.as[StartLights]
+  val startLightsCodec: Codec[StartLights] = ("numLights" | uint8).as[StartLights]
 
-  val driveThroughPenaltyServedCodec: Codec[DriveThroughPenaltyServed] = {
-    ("vehicleIdx" | uint8)
-  }.as[DriveThroughPenaltyServed]
+  val driveThroughPenaltyServedCodec: Codec[DriveThroughPenaltyServed] =
+    ("vehicleIdx" | uint8).as[DriveThroughPenaltyServed]
 
-  val stopGoPenaltyServedCodec: Codec[StopGoPenaltyServed] = {
-    ("vehicleIdx" | uint8)
-  }.as[StopGoPenaltyServed]
+  val stopGoPenaltyServedCodec: Codec[StopGoPenaltyServed] =
+    ("vehicleIdx" | uint8).as[StopGoPenaltyServed]
 
-  val flashbackCodec: Codec[Flashback] = {
+  val flashbackCodec: Codec[Flashback] = (
     ("flashbackFrameIdentifier" | uint32L) ::
-    ("flashbackSessionTime" | float)
-  }.as[Flashback]
+      ("flashbackSessionTime" | float)
+  ).as[Flashback]
 
-  val buttonsCodec: Codec[Buttons] = {
-    ("buttonStatus" | uint32L)
-  }.as[Buttons]
+  val buttonsCodec: Codec[Buttons] = ("buttonStatus" | uint32L).as[Buttons]
 }

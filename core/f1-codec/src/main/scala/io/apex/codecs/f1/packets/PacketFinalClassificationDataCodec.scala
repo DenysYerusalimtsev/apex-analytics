@@ -7,9 +7,9 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object PacketFinalClassificationDataCodec {
-  val codec: Codec[PacketFinalClassificationData] = {
+  val codec: Codec[PacketFinalClassificationData] = (
     ("header" | PacketHeaderCodec.codec) ::
-    ("numCars" | uint8) ::
-    ("classificationData" | vectorOfN(provide(22), FinalClassificationDataCodec.codec))
-  }.as[PacketFinalClassificationData]
+      ("numCars" | uint8) ::
+      ("classificationData" | vectorOfN(provide(22), FinalClassificationDataCodec.codec))
+  ).as[PacketFinalClassificationData]
 }

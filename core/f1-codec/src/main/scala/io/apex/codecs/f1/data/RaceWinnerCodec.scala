@@ -6,7 +6,7 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object RaceWinnerCodec {
-  val codec: Codec[RaceWinner] = {
+  val codec: Codec[RaceWinner] = (
     ("vehicleIdx" | uint8)
-  }.as[RaceWinner]
+  ).as[RaceWinner]
 }

@@ -6,7 +6,7 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object ParticipantDataCodec {
-  val codec: Codec[ParticipantData] = {
+  val codec: Codec[ParticipantData] = (
     ("m_aiControlled" | uint8) ::
       ("m_driverId" | uint8) ::
       ("m_networkId" | uint8) ::
@@ -16,5 +16,5 @@ object ParticipantDataCodec {
       ("m_nationality" | uint8) ::
       ("m_name" | fixedSizeBytes(48, utf8)) ::
       ("m_yourTelemetry" | uint8)
-  }.as[ParticipantData]
+  ).as[ParticipantData]
 }

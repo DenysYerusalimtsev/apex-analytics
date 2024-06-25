@@ -9,9 +9,9 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object PacketEventDataCodec {
-  val codec: Codec[PacketEventData] = {
+  val codec: Codec[PacketEventData] = (
     ("header" | PacketHeaderCodec.codec) ::
-    ("eventStringCode" | fixedSizeBytes(4, bytes)) ::
-    ("eventDetails" | EventDataDetailsCodec.codec)
-  }.as[PacketEventData]
+      ("eventStringCode" | fixedSizeBytes(4, bytes)) ::
+      ("eventDetails" | EventDataDetailsCodec.codec)
+  ).as[PacketEventData]
 }

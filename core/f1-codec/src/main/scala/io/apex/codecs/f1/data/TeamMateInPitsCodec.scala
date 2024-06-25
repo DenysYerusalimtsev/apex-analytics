@@ -6,7 +6,5 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object TeamMateInPitsCodec {
-  val codec: Codec[TeamMateInPits] = {
-    ("vehicleIdx" | uint8)
-  }.as[TeamMateInPits]
+  val codec: Codec[TeamMateInPits] = ("vehicleIdx" | uint8).as[TeamMateInPits]
 }

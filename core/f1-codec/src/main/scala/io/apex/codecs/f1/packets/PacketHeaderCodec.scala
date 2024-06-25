@@ -6,7 +6,7 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object PacketHeaderCodec {
-  implicit val codec: Codec[PacketHeader] = {
+  implicit val codec: Codec[PacketHeader] =
     fixedSizeBytes(
       PacketHeader.size,
       ("packetFormat" | uint16) ::
@@ -18,6 +18,5 @@ object PacketHeaderCodec {
       ("sessionTime" | float) ::
       ("frameIdentifier" | uint32) ::
       ("playerCarIndex" | uint8) ::
-      ("secondaryPlayerCarIndex" | uint8))
-  }.as[PacketHeader]
+      ("secondaryPlayerCarIndex" | uint8)).as[PacketHeader]
 }

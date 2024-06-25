@@ -6,9 +6,9 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object TyreStintHistoryDataCodec extends Codec[TyreStintHistoryData] {
-  val codec: Codec[TyreStintHistoryData] = {
+  val codec: Codec[TyreStintHistoryData] = (
     ("m_endLap" | uint8) ::
-    ("m_tyreActualCompound" | uint8) ::
-    ("m_tyreVisualCompound" | uint8)
-  }.as[TyreStintHistoryData]
+      ("m_tyreActualCompound" | uint8) ::
+      ("m_tyreVisualCompound" | uint8)
+  ).as[TyreStintHistoryData]
 }

@@ -7,8 +7,8 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object PacketCarStatusDataCodec {
-  val codec: Codec[PacketCarStatusData] = {
+  val codec: Codec[PacketCarStatusData] = (
     ("header" | PacketHeaderCodec.codec) ::
-    ("carStatusData" | vectorOfN(provide(22), CarStatusDataCodec.codec))
-  }.as[PacketCarStatusData]
+      ("carStatusData" | vectorOfN(provide(22), CarStatusDataCodec.codec))
+  ).as[PacketCarStatusData]
 }
