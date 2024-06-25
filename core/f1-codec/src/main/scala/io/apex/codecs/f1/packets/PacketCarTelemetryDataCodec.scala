@@ -1,5 +1,6 @@
 package io.apex.codecs.f1.packets
 
+import io.apex.codecs.f1.data.CarTelemetryDataCodec
 import io.apex.f1.packets.PacketCarTelemetryData
 import scodec.*
 import scodec.bits.*

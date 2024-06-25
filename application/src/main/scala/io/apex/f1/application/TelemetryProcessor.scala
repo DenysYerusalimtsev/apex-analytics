@@ -1,5 +1,7 @@
 package io.apex.f1.application
 
+import io.apex.codecs.f1.packets.PacketCarDamageDataCodec
+import io.apex.f1.packets.PacketCarDamageData
 import org.apache.pekko.actor.typed.scaladsl.Behaviors
 import org.apache.pekko.actor.typed.{ActorRef, Behavior}
 import org.apache.pekko.io.{IO, Udp}
@@ -35,9 +37,8 @@ object TelemetryProcessor {
   }
 
   private def decodeData(data: ByteString): Unit = {
-    // Example deserialization using Scodec
-    val codec: Codec[YourDataType] = ???
-    val result = codec.decodeValue(BitVector(data.toArray))
+    val codec: Codec[PacketCarDamageData] = PacketCarDamageDataCodec.codec
+    val result = PacketCarDamageDataCodec.codec.decodeValue(BitVector(data.toArray))
     result match {
       case Right(value) => println(s"Decoded value: $value")
       case Left(err)    => println(s"Failed to decode: $err")

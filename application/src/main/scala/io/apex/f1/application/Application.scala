@@ -11,12 +11,12 @@ import scala.concurrent.ExecutionContextExecutor
 
 object Application extends IOApp {
   def main(args: Array[String]): Unit = {
-    given system: ActorSystem[Any] = ActorSystem()
+    given system: ActorSystem[Any] = ActorSystem(TelemetryProcessor(), "f1-apex-telemetry-processor")
     given executionContext: ExecutionContextExecutor = system.executionContext
 
     val config = ConfigFactory.load()
 
-    val routes = new Routes(telemetryProcessor).routes
+    val routes = new Routes(system).routes
     Http().newServerAt(config.getString("http.host"), config.getInt("http.port")).bindFlow(routes)
   }
 }

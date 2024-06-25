@@ -1,5 +1,6 @@
 package io.apex.codecs.f1.packets
 
+import io.apex.codecs.f1.data.LapDataCodec
 import io.apex.f1.packets.PacketLapData
 import scodec.*
 import scodec.bits.*

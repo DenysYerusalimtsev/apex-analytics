@@ -14,7 +14,7 @@ object PacketHeaderCodec {
       ("gameMinorVersion" | uint8) ::
       ("packetVersion" | uint8) ::
       ("packetId" | uint8) ::
-      ("sessionUID" | uint64) ::
+      ("sessionUid" | int64) ::
       ("sessionTime" | float) ::
       ("frameIdentifier" | uint32) ::
       ("playerCarIndex" | uint8) ::

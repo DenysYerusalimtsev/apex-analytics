@@ -1,5 +1,6 @@
 package io.apex.codecs.f1.packets
 
+import io.apex.codecs.f1.data.{MarshalZoneCodec, WeatherForecastSampleCodec}
 import io.apex.f1.packets.PacketSessionData
 import scodec.*
 import scodec.bits.*
@@ -8,7 +9,7 @@ import scodec.codecs.*
 object PacketSessionDataCodec extends Codec[PacketSessionData] {
 
   val codec: Codec[PacketSessionData] = {
-    ("header" | Codec[PacketHeader]) ::
+    ("header" | PacketHeaderCodec.codec) ::
     ("weather" | uint8) ::
     ("trackTemperature" | int8) ::
     ("airTemperature" | int8) ::

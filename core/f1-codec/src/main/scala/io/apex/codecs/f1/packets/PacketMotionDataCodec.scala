@@ -1,14 +1,15 @@
 package io.apex.codecs.f1.packets
 
-import io.apex.f1.packets.PacketMotionData
+import io.apex.codecs.f1.data.CarMotionDataCodec
+import io.apex.f1.packets.{PacketHeader, PacketMotionData}
 import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
 object PacketMotionDataCodec {
   implicit val packetMotionDataCodec: Codec[PacketMotionData] = {
-    ("header" | Codec[PacketHeader]) ::
-    ("carMotionData" | vectorOfN(provide(22), Codec[CarMotionData])) ::
+    ("header" | PacketHeaderCodec.codec) ::
+    ("carMotionData" | vectorOfN(provide(22), CarMotionDataCodec.codec)) ::
     ("suspensionPosition" | vectorOfN(provide(4), float)) ::
     ("suspensionVelocity" | vectorOfN(provide(4), float)) ::
     ("suspensionAcceleration" | vectorOfN(provide(4), float)) ::

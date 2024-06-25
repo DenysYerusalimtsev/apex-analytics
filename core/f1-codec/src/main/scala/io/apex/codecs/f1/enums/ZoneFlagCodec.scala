@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object ZoneFlagParser {
+object ZoneFlagCodec {
   val codec: Codec[ZoneFlag] =
     mappedEnum(
       uint8,

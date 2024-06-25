@@ -116,7 +116,7 @@ lazy val `application` = (project in file("application"))
     commonSettings,
     libraryDependencies ++= commonDependencies ++ pekkoCore ++ pekkoHttp ++
     pekkoCluster ++ catsEffect ++ Seq())
-  .dependsOn(`common`)
+  .dependsOn(`common`, `f1-codec`)
 
 lazy val `core` = (project in file("core"))
   .settings(

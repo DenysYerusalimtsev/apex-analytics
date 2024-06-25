@@ -8,7 +8,7 @@ import scodec.codecs.*
 
 object PacketSessionHistoryDataCodec {
   val codec: Codec[PacketSessionHistoryData] = {
-    ("header" | Codec[PacketHeader]) ::
+    ("header" | PacketHeaderCodec) ::
     ("carIdx" | uint8) ::
     ("numLaps" | uint8) ::
     ("numTyreStints" | uint8) ::
