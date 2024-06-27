@@ -8,7 +8,7 @@ import scodec.codecs.*
 
 object CarStatusDataCodec {
   val codec: Codec[CarStatusData] = (
-    ("tractionControl" | uint8) ::
+    ("tractionControl" | TractionControlCodec.codec) ::
       ("antiLockBrakes" | uint8) ::
       ("fuelMix" | FuelMixCodec.codec) ::
       ("frontBrakeBias" | uint8) ::
@@ -24,6 +24,13 @@ object CarStatusDataCodec {
       ("actualTyreCompound" | ActualTyreCompoundCodec.codec) ::
       ("visualTyreCompound" | VisualTyreCompoundCodec.codec) ::
       ("tyresAgeLaps" | uint8) ::
+//      ("tyresDamage" | listOfN(provide(4), int16)) :: // Assuming 4 tyres
+//      ("frontLeftWingDamage" | int16) ::
+//      ("frontRightWingDamage" | int16) ::
+//      ("rearWingDamage" | int16) ::
+//      ("drsFault" | int16) ::
+//      ("engineDamage" | int16) ::
+//      ("gearBoxDamage" | int16) ::
       ("vehicleFiaFlags" | VehicleFiaFlagCodec.codec) ::
       ("ersStoreEnergy" | float) ::
       ("ersDeployMode" | ErsDeployModeCodec.codec) ::
@@ -31,5 +38,5 @@ object CarStatusDataCodec {
       ("ersHarvestedThisLapMGUH" | float) ::
       ("ersDeployedThisLap" | float) ::
       ("networkPaused" | uint8)
-  ).as[CarStatusData]
+    ).as[CarStatusData]
 }

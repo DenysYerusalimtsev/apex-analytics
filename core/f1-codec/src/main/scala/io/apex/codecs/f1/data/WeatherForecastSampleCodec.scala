@@ -1,7 +1,7 @@
 package io.apex.codecs.f1.data
 
+import io.apex.codecs.f1.enums.{SessionTypeCodec, WeatherCodec}
 import io.apex.f1.data.WeatherForecastSample
-import io.apex.f1.enums.*
 import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
@@ -9,9 +9,9 @@ import scodec.codecs.*
 object WeatherForecastSampleCodec extends Codec[WeatherForecastSample] {
 
   val codec: Codec[WeatherForecastSample] = (
-    ("sessionType" | uint8) ::
+    ("sessionType" | SessionTypeCodec.codec) ::
       ("timeOffset" | uint8) ::
-      ("weather" | uint8) ::
+      ("weather" | WeatherCodec.codec) ::
       ("trackTemperature" | int8) ::
       ("trackTemperatureChange" | int8) ::
       ("airTemperature" | int8) ::

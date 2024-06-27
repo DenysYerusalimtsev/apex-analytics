@@ -7,7 +7,10 @@ case class WeatherForecastSample(
     timeOffset: Short,
     weather: Weather,
     trackTemperature: Short,
-    airTemperature: Short) {
+    trackTemperatureChange: Short,
+    airTemperature: Short,
+    airTemperatureChange: Short,
+    rainPercentage: Short) {
   //  def fill(buffer: ByteBuf): WeatherForecastSample = {
   //    val sessionType = SessionType.valueOf(buffer.readUnsignedByte())
   //    val timeOffset = buffer.readUnsignedByte()
@@ -25,9 +28,17 @@ case class WeatherForecastSample(
   //    buffer.writeByte(weatherForecastSample.airTemperature)
   //  }
 
-  override def toString: String = {
-    s"WeatherForecastSample[sessionType=$sessionType, timeOffset=$timeOffset, weather=$weather, trackTemperature=$trackTemperature, airTemperature=$airTemperature]"
-  }
+  override def toString: String =
+    s"WeatherForecastSample[" +
+    "sessionType=" + sessionType +
+    ", timeOffset=" + timeOffset +
+    ", weather=" + weather +
+    ", trackTemperature=" + trackTemperature +
+    ", trackTemperatureChange=" + trackTemperatureChange +
+    ", airTemperature=" + airTemperature +
+    ", airTemperatureChange=" + airTemperatureChange +
+    ", rainPercentage=" + rainPercentage +
+    ']'
 }
 
 object WeatherForecastSample extends F1Data {

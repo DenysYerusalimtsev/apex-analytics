@@ -22,13 +22,13 @@ case class CarStatusData(
     actualTyreCompound: ActualTyreCompound,
     visualTyreCompound: VisualTyreCompound,
     tyresAgeLaps: Short,
-    tyresDamage: List[Short],
-    frontLeftWingDamage: Short,
-    frontRightWingDamage: Short,
-    rearWingDamage: Short,
-    drsFault: Short,
-    engineDamage: Short,
-    gearBoxDamage: Short,
+//    tyresDamage: List[Short],
+//    frontLeftWingDamage: Short,
+//    frontRightWingDamage: Short,
+//    rearWingDamage: Short,
+//    drsFault: Short,
+//    engineDamage: Short,
+//    gearBoxDamage: Short,
     vehicleFiaFlags: VehicleFiaFlag,
     ersStoreEnergy: Float,
     ersDeployMode: ErsDeployMode,
@@ -148,13 +148,13 @@ case class CarStatusData(
     s"actualTyreCompound=$actualTyreCompound," +
     s"visualTyreCompound=$visualTyreCompound," +
     s"tyresAgeLaps=$tyresAgeLaps," +
-    s"tyresDamage=${tyresDamage.mkString(", ")}," +
-    s"frontLeftWingDamage=$frontLeftWingDamage," +
-    s"frontRightWingDamage=$frontRightWingDamage," +
-    s"rearWingDamage=$rearWingDamage," +
-    s"drsFault=$drsFault," +
-    s"engineDamage=$engineDamage," +
-    s"gearBoxDamage=$gearBoxDamage," +
+//    s"tyresDamage=${tyresDamage.mkString(", ")}," +
+//    s"frontLeftWingDamage=$frontLeftWingDamage," +
+//    s"frontRightWingDamage=$frontRightWingDamage," +
+//    s"rearWingDamage=$rearWingDamage," +
+//    s"drsFault=$drsFault," +
+//    s"engineDamage=$engineDamage," +
+//    s"gearBoxDamage=$gearBoxDamage," +
     s"vehicleFiaFlags=$vehicleFiaFlags," +
     s"ersStoreEnergy=$ersStoreEnergy," +
     s"ersDeployMode=$ersDeployMode," +

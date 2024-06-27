@@ -2,9 +2,7 @@ package io.apex.f1.data
 
 import io.apex.f1.enums.*
 
-import java.util.Arrays
-
-case class CarTelemetryData(
+  case class CarTelemetryData(
     speed: Int,
     throttle: Float,
     steer: Float,
@@ -14,12 +12,12 @@ case class CarTelemetryData(
     engineRPM: Int,
     drs: Short,
     revLightsPercent: Short,
-    brakesTemperature: Array[Int],
-    tyresSurfaceTemperature: Array[Short],
+    brakesTemperature: List[Int],
+    tyresSurfaceTemperature: List[Short],
     tyresInnerTemperature: Array[Short],
     engineTemperature: Int,
-    tyresPressure: Array[Float],
-    surfaceType: Array[SurfaceType]) {
+    tyresPressure: List[Float],
+    surfaceType: List[SurfaceType]) {
   //  def fillBuffer(buffer: ByteBuf): ByteBuf = {
   //    buffer.writeShortLE(speed)
   //    buffer.writeFloatLE(throttle)
@@ -59,11 +57,11 @@ case class CarTelemetryData(
     ",engineRPM=" + engineRPM +
     ",drs=" + drs +
     ",revLightsPercent=" + revLightsPercent +
-    ",brakesTemperature=" + Arrays.toString(brakesTemperature) +
-    ",tyresSurfaceTemperature=" + Arrays.toString(tyresSurfaceTemperature) +
-    ",tyresInnerTemperature=" + Arrays.toString(tyresInnerTemperature) +
+    ",brakesTemperature=" + brakesTemperature.mkString(", ") +
+    ",tyresSurfaceTemperature=" + tyresSurfaceTemperature.mkString(", ") +
+    ",tyresInnerTemperature=" + tyresInnerTemperature.mkString(", ") +
     ",engineTemperature=" + engineTemperature +
-    ",tyresPressure=" + Arrays.toString(tyresPressure) +
+    ",tyresPressure=" + tyresPressure.mkString(", ") +
     ",surfaceType=" + surfaceType.mkString(",") +
     "]"
   }
