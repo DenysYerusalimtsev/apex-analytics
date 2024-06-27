@@ -19,7 +19,7 @@ class Routes(telemetryProcessor: ActorRef[TelemetryProcessor.Command])(implicit
     } ~
     path("stop") {
       get {
-        telemetryProcessor ! ProcessorManager.StopProcessing
+        telemetryProcessor ! TelemetryProcessor.StopProcessing
         complete("Processing stopped")
       }
     }

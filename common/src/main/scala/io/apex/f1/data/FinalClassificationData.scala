@@ -2,22 +2,21 @@ package io.apex.f1.data
 
 import io.apex.f1.enums.ResultStatus
 
-import java.util.Arrays
-
 case class FinalClassificationData(
-    position: Short,
-    numLaps: Short,
-    gridPosition: Short,
-    points: Short,
-    numPitStops: Short,
+    position: Int,
+    numLaps: Int,
+    gridPosition: Int,
+    points: Int,
+    numPitStops: Int,
     resultStatus: ResultStatus,
-    bestLapTime: Float,
+    bestLapTimeInMS: Long,
     totalRaceTime: Double,
-    penaltiesTime: Short,
-    numPenalties: Short,
-    numTyreStints: Short,
-    tyreStintsActual: Array[Short],
-    tyreStintsVisual: Array[Short]) {
+    penaltiesTime: Int,
+    numPenalties: Int,
+    numTyreStints: Int,
+    tyreStintsActual: List[Int],
+    tyreStintsVisual: List[Int],
+    tyreStintsEndLaps: List[Int]) {
   //  def fill(buffer: ByteBuf): FinalClassificationData = {
   //    position = buffer.readUnsignedByte()
   //    numLaps = buffer.readUnsignedByte()
@@ -62,9 +61,9 @@ case class FinalClassificationData(
 
   override def toString: String =
     s"FinalClassificationData[position=$position,numLaps=$numLaps,gridPosition=$gridPosition,points=$points," +
-    s"numPitStops=$numPitStops,resultStatus=$resultStatus,bestLapTime=$bestLapTime,totalRaceTime=$totalRaceTime," +
+    s"numPitStops=$numPitStops,resultStatus=$resultStatus,bestLapTime=$bestLapTimeInMS,totalRaceTime=$totalRaceTime," +
     s"penaltiesTime=$penaltiesTime,numPenalties=$numPenalties,numTyreStints=$numTyreStints," +
-    s"tyreStintsActual=${Arrays.toString(tyreStintsActual)},tyreStintsVisual=${Arrays.toString(tyreStintsVisual)}]"
+    s"tyreStintsActual=${tyreStintsActual.mkString(", ")},tyreStintsVisual=${tyreStintsVisual.mkString(",")}]"
 }
 
 object FinalClassificationData extends F1Data {

@@ -7,19 +7,19 @@ import io.apex.f1.enums.*
     throttle: Float,
     steer: Float,
     brake: Float,
-    clutch: Short,
-    gear: Short,
+    clutch: Int,
+    gear: Int,
     engineRPM: Int,
-    drs: Short,
-    revLightsPercent: Short,
+    drs: Int,
+    revLightsPercent: Int,
     brakesTemperature: List[Int],
-    tyresSurfaceTemperature: List[Short],
-    tyresInnerTemperature: Array[Short],
+    tyresSurfaceTemperature: List[Int],
+    tyresInnerTemperature: List[Int],
     engineTemperature: Int,
     tyresPressure: List[Float],
     surfaceType: List[SurfaceType]) {
   //  def fillBuffer(buffer: ByteBuf): ByteBuf = {
-  //    buffer.writeShortLE(speed)
+  //    buffer.writeIntLE(speed)
   //    buffer.writeFloatLE(throttle)
   //    buffer.writeFloatLE(steer)
   //    buffer.writeFloatLE(brake)

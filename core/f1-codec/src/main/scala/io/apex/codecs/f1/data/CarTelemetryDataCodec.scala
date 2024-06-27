@@ -1,5 +1,6 @@
 package io.apex.codecs.f1.data
 
+import io.apex.codecs.f1.enums.SurfaceTypeCodec
 import io.apex.f1.data.CarTelemetryData
 import scodec.*
 import scodec.bits.*
@@ -22,6 +23,6 @@ object CarTelemetryDataCodec {
       ("tyresInnerTemperature" | listOfN(provide(4), uint8)) ::
       ("engineTemperature" | uint16) ::
       ("tyresPressure" | listOfN(provide(4), float)) ::
-      ("surfaceType" | listOfN(provide(4), uint8))
+      ("surfaceType" | listOfN(provide(4), SurfaceTypeCodec.codec))
   ).as[CarTelemetryData]
 }

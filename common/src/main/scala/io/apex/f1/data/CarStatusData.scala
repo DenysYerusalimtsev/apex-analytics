@@ -6,35 +6,36 @@ import java.util.Arrays
 
 case class CarStatusData(
     tractionControl: TractionControl,
-    antiLockBrakes: Short,
+    antiLockBrakes: Int,
     fuelMix: FuelMix,
-    frontBrakeBias: Short,
-    pitLimiterStatus: Short,
+    frontBrakeBias: Int,
+    pitLimiterStatus: Int,
     fuelInTank: Float,
     fuelCapacity: Float,
     fuelRemainingLaps: Float,
     maxRPM: Int,
     idleRPM: Int,
-    maxGears: Short,
+    maxGears: Int,
     drsAllowed: DrsAllowed,
     drsActivationDistance: Int,
-    tyresWear: List[Short],
+//    tyresWear: List[Int],
     actualTyreCompound: ActualTyreCompound,
     visualTyreCompound: VisualTyreCompound,
-    tyresAgeLaps: Short,
-//    tyresDamage: List[Short],
-//    frontLeftWingDamage: Short,
-//    frontRightWingDamage: Short,
-//    rearWingDamage: Short,
-//    drsFault: Short,
-//    engineDamage: Short,
-//    gearBoxDamage: Short,
+    tyresAgeLaps: Int,
+//    tyresDamage: List[Int],
+//    frontLeftWingDamage: Int,
+//    frontRightWingDamage: Int,
+//    rearWingDamage: Int,
+//    drsFault: Int,
+//    engineDamage: Int,
+//    gearBoxDamage: Int,
     vehicleFiaFlags: VehicleFiaFlag,
     ersStoreEnergy: Float,
     ersDeployMode: ErsDeployMode,
     ersHarvestedThisLapMGUK: Float,
     ersHarvestedThisLapMGUH: Float,
-    ersDeployedThisLap: Float) {
+    ersDeployedThisLap: Float,
+    networkPaused: Int) {
 
   //  def fill(buffer: ByteBuf): CarStatusData = {
   //    CarStatusData(
@@ -46,11 +47,11 @@ case class CarStatusData(
   //      fuelInTank = buffer.readFloatLE(),
   //      fuelCapacity = buffer.readFloatLE(),
   //      fuelRemainingLaps = buffer.readFloatLE(),
-  //      maxRPM = buffer.readUnsignedShortLE(),
-  //      idleRPM = buffer.readUnsignedShortLE(),
+  //      maxRPM = buffer.readUnsignedIntLE(),
+  //      idleRPM = buffer.readUnsignedIntLE(),
   //      maxGears = buffer.readUnsignedByte(),
   //      drsAllowed = DrsAllowed.valueOf(buffer.readUnsignedByte()),
-  //      drsActivationDistance = buffer.readUnsignedShortLE()
+  //      drsActivationDistance = buffer.readUnsignedIntLE()
   //    for (j <- 0 until PacketConstants.TYRES) {
   //      tyresWear(j) = buffer.readUnsignedByte()
   //    }
@@ -101,11 +102,10 @@ case class CarStatusData(
   //    buffer.writeFloatLE(fuelInTank)
   //    buffer.writeFloatLE(fuelCapacity)
   //    buffer.writeFloatLE(fuelRemainingLaps)
-  //    buffer.writeShortLE(maxRPM)
-  //    buffer.writeShortLE(idleRPM)
+  //    buffer.writeIntLE(maxRPM)
+  //    buffer.writeIntLE(idleRPM)
   //    buffer.writeByte(maxGears)
   //    buffer.writeByte(drsAllowed.getValue())
-  //    buffer.writeShortLE(drsActivationDistance)
   //    for (j <- 0 until PacketConstants.TYRES) {
   //      buffer.writeByte(tyresWear(j))
   //    }
@@ -144,7 +144,7 @@ case class CarStatusData(
     s"maxGears=$maxGears," +
     s"drsAllowed=$drsAllowed," +
     s"drsActivationDistance=$drsActivationDistance," +
-    s"tyresWear=${tyresWear.mkString(" , ")}," +
+//    s"tyresWear=${tyresWear.mkString(" , ")}," +
     s"actualTyreCompound=$actualTyreCompound," +
     s"visualTyreCompound=$visualTyreCompound," +
     s"tyresAgeLaps=$tyresAgeLaps," +
