@@ -7,15 +7,14 @@ import io.apex.f1.enums.*
 case class PacketCarTelemetryData(
     header: PacketHeader,
     carTelemetryData: List[CarTelemetryData],
-    buttonStatus: Long,
     mfdPanelIndex: MfdPanel,
     mfdPanelIndexSecondaryPlayer: MfdPanel,
-    suggestedGear: Short) {
+    suggestedGear: Int) {
 
   override def toString: String = {
     val carTelemetryDataString = carTelemetryData.map(_.toString).mkString(",")
     s"CarTelemetry[$header, carTelemetryData=[$carTelemetryDataString], " +
-    s"buttonStatus=$buttonStatus, mfdPanelIndex=$mfdPanelIndex, " +
+    s"mfdPanelIndex=$mfdPanelIndex, " +
     s"mfdPanelIndexSecondaryPlayer=$mfdPanelIndexSecondaryPlayer, suggestedGear=$suggestedGear]"
   }
   //  def fill(buffer: ByteBuf): PacketCarTelemetryData = {

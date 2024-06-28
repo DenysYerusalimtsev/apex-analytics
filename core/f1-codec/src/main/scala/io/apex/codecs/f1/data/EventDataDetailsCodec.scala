@@ -8,8 +8,7 @@ import scodec.codecs.*
 
 object EventDataDetailsCodec {
   val codec: Codec[EventDataDetails] = (
-    ("header" | PacketHeaderCodec.codec) ::
-      ("fastestLap" | FastestLapCodec.codec) ::
+    ("fastestLap" | FastestLapCodec.codec) ::
       ("retirement" | RetirementCodec.codec) ::
       ("teamMateInPits" | TeamMateInPitsCodec.codec) ::
       ("raceWinner" | RaceWinnerCodec.codec) ::

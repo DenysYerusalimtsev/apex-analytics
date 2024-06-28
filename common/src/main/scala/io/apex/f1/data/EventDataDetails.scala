@@ -1,6 +1,7 @@
 package io.apex.f1.data
 
 case class EventDataDetails(
+
     fastestLap: FastestLap,
     retirement: Retirement,
     teamMateInPits: TeamMateInPits,

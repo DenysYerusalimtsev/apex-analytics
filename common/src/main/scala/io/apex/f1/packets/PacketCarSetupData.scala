@@ -15,7 +15,7 @@ import scala.collection.mutable.ListBuffer
   */
 case class PacketCarSetupData(
     header: PacketHeader,
-    carSetupData: Vector[CarSetupData]) {
+    carSetupData: List[CarSetupData]) {
 
   override def toString: String = {
     val carSetupDataString = carSetupData.map(_.toString).mkString(",")
