@@ -3,7 +3,7 @@ package io.apex.f1.data
 import io.apex.f1.enums.*
 
 case class LobbyInfoData(
-    aiControlled: Short,
+    aiControlled: Int,
     teamId: Team,
     nationality: Nationality,
     name: String,

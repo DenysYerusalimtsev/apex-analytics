@@ -3,33 +3,40 @@ package io.apex.f1.data
 import io.apex.f1.enums.*
 
 case class LapData(
-    lastLapTime: Float,
-    currentLapTime: Float,
+    lastLapTime: Long,
+    currentLapTime: Long,
     sector1TimeInMS: Int,
     sector2TimeInMS: Int,
-    bestLapTime: Float,
-    bestLapNum: Int,
-    bestLapSector1TimeInMS: Int,
-    bestLapSector2TimeInMS: Int,
-    bestLapSector3TimeInMS: Int,
-    bestOverallSector1TimeInMS: Int,
-    bestOverallSector1LapNum: Short,
-    bestOverallSector2TimeInMS: Int,
-    bestOverallSector2LapNum: Short,
-    bestOverallSector3TimeInMS: Int,
-    bestOverallSector3LapNum: Short,
+//    bestLapTime: Float,
+//    bestLapNum: Int,
+//    bestLapSector1TimeInMS: Int,
+//    bestLapSector2TimeInMS: Int,
+//    bestLapSector3TimeInMS: Int,
+//    bestOverallSector1TimeInMS: Int,
+//    bestOverallSector1LapNum: Int,
+//    bestOverallSector2TimeInMS: Int,
+//    bestOverallSector2LapNum: Int,
+//    bestOverallSector3TimeInMS: Int,
+//    bestOverallSector3LapNum: Int,
     lapDistance: Float,
     totalDistance: Float,
     safetyCarDelta: Float,
-    carPosition: Short,
-    currentLapNum: Short,
+    carPosition: Int,
+    currentLapNum: Int,
     pitStatus: PitStatus,
     sector: Sector,
-    currentLapInvalid: Short,
-    penalties: Short,
-    gridPosition: Short,
+    currentLapInvalid: Int,
+    penalties: Int,
+    warning: Int,
+    numUnservedDriveThroughPens: Int,
+    numUnservedStopGoPens: Int,
+    gridPosition: Int,
     driverStatus: DriverStatus,
-    resultStatus: ResultStatus) {
+    resultStatus: ResultStatus,
+    pitLaneTimerActive: Int,
+    pitLaneTimeInLaneInMS: Int,
+    pitStopTimerInMS: Int,
+    pitStopShouldServePen: Int) {
   //  def fill(buffer: ByteBuf): LapData = {
   //    LapData(
   //      buffer.readFloatLE(),
@@ -98,17 +105,17 @@ case class LapData(
     s"currentLapTime=$currentLapTime," +
     s"sector1TimeInMS=$sector1TimeInMS," +
     s"sector2TimeInMS=$sector2TimeInMS," +
-    s"bestLapTime=$bestLapTime," +
-    s"bestLapNum=$bestLapNum," +
-    s"bestLapSector1TimeInMS=$bestLapSector1TimeInMS," +
-    s"bestLapSector2TimeInMS=$bestLapSector2TimeInMS," +
-    s"bestLapSector3TimeInMS=$bestLapSector3TimeInMS," +
-    s"bestOverallSector1TimeInMS=$bestOverallSector1TimeInMS," +
-    s"bestOverallSector1LapNum=$bestOverallSector1LapNum," +
-    s"bestOverallSector2TimeInMS=$bestOverallSector2TimeInMS," +
-    s"bestOverallSector2LapNum=$bestOverallSector2LapNum," +
-    s"bestOverallSector3TimeInMS=$bestOverallSector3TimeInMS," +
-    s"bestOverallSector3LapNum=$bestOverallSector3LapNum," +
+//    s"bestLapTime=$bestLapTime," +
+    //    s"bestLapNum=$bestLapNum," +
+    //    s"bestLapSector1TimeInMS=$bestLapSector1TimeInMS," +
+    //    s"bestLapSector2TimeInMS=$bestLapSector2TimeInMS," +
+    //    s"bestLapSector3TimeInMS=$bestLapSector3TimeInMS," +
+    //    s"bestOverallSector1TimeInMS=$bestOverallSector1TimeInMS," +
+    //    s"bestOverallSector1LapNum=$bestOverallSector1LapNum," +
+    //    s"bestOverallSector2TimeInMS=$bestOverallSector2TimeInMS," +
+    //    s"bestOverallSector2LapNum=$bestOverallSector2LapNum," +
+    //    s"bestOverallSector3TimeInMS=$bestOverallSector3TimeInMS," +
+    //    s"bestOverallSector3LapNum=$bestOverallSector3LapNum," +
     s"lapDistance=$lapDistance," +
     s"totalDistance=$totalDistance," +
     s"safetyCarDelta=$safetyCarDelta," +
