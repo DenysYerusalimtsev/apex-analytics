@@ -1,6 +1,6 @@
 package io.apex.f1.data
 
-case class RaceWinner(vehicleIdx: Short) {
+case class RaceWinner(vehicleIdx: Int) {
 //  def fill(buffer: ByteBuf): RaceWinner = {
 //    val vehicleIdx = buffer.readUnsignedByte()
 //    RaceWinner(vehicleIdx)

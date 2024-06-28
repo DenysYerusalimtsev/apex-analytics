@@ -1,6 +1,12 @@
 package io.apex.f1.data
 
-case class SpeedTrap(vehicleIdx: Short, speed: Float) {
+case class SpeedTrap(
+    vehicleIdx: Int,
+    speed: Float,
+    isOverallFastestInSession: Int,
+    isDriverFastestInSession: Int,
+    fastestVehicleIdxInSession: Int,
+    fastestSpeedInSession: Float) {
 //  def fill(buffer: ByteBuf): SpeedTrap = {
 //    val vehicleIdx = buffer.readUnsignedByte()
 //    val speed = buffer.readFloatLE()
@@ -13,6 +19,7 @@ case class SpeedTrap(vehicleIdx: Short, speed: Float) {
 //  }
 
   override def toString: String = {
-    s"SpeedTrap[vehicleIdx=$vehicleIdx, speed=$speed]"
+    s"SpeedTrapData[vehicleIdx=$vehicleIdx, speed=$speed, isOverallFastestInSession=$isOverallFastestInSession, " +
+    s"isDriverFastestInSession=$isDriverFastestInSession, fastestVehicleIdxInSession=$fastestVehicleIdxInSession, fastestSpeedInSession=$fastestSpeedInSession]"
   }
 }

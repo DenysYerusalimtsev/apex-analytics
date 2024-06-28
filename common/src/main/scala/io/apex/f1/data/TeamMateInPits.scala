@@ -1,6 +1,6 @@
 package io.apex.f1.data
 
-case class TeamMateInPits(vehicleIdx: Short) {
+case class TeamMateInPits(vehicleIdx: Int) {
 //  def fill(buffer: ByteBuf): TeamMateInPits = {
   //    val vehicleIdx = buffer.readUnsignedByte()
   //    TeamMateInPits(vehicleIdx)

@@ -3,13 +3,15 @@ package io.apex.f1.data
 import io.apex.f1.enums.*
 
 case class ParticipantData(
-    aiControlled: Short,
+    aiControlled: Int,
     driverId: Driver,
+    networkId: Int,
     teamId: Team,
-    raceNumber: Short,
+    myTeam: Int,
+    raceNumber: Int,
     nationality: Nationality,
     name: String,
-    yourTelemetry: Short) {
+    yourTelemetry: Int) {
 
   //  def fill(buffer: ByteBuf): ParticipantData = {
   //    val aiControlled = buffer.readUnsignedByte()

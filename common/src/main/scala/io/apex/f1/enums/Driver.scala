@@ -1,8 +1,5 @@
 package io.apex.f1.enums
 
-import scala.collection.immutable.HashMap
-import scala.util.Try
-
 sealed trait Driver
 
 object Driver {

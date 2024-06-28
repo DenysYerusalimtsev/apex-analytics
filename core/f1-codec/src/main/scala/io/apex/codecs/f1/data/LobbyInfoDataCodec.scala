@@ -11,7 +11,7 @@ object LobbyInfoDataCodec {
 
   val codec: Codec[LobbyInfoData] = (
     ("aiControlled" | uint8) ::
-      ("teamId" | TeamCodec.codec) ::
+      ("teamId" | Team2022Codec.codec) ::
       ("nationality" | NationalityCodec.codec) ::
       ("name" | nameCodec) ::
       ("carNumber" | uint8) ::

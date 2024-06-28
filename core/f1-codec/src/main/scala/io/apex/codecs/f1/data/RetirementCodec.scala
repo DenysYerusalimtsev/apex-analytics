@@ -6,5 +6,5 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object RetirementCodec {
-  val codec: Codec[Retirement] = (("vehicleIdx" | uint8)).as[Retirement]
+  val codec: Codec[Retirement] = ("vehicleIdx" | uint8).as[Retirement]
 }

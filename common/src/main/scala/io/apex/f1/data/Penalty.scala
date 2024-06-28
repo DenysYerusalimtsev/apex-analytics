@@ -5,11 +5,11 @@ import io.apex.f1.enums.*
 case class Penalty(
     penaltyType: PenaltyType,
     infringementType: InfringementType,
-    vehicleIdx: Short,
-    otherVehicleIdx: Short,
-    time: Short,
-    lapNum: Short,
-    placesGained: Short) {
+    vehicleIdx: Int,
+    otherVehicleIdx: Int,
+    time: Int,
+    lapNum: Int,
+    placesGained: Int) {
 //  def fill(buffer: ByteBuf): Penalty = {
 //    val penaltyType = PenaltyType.valueOf(buffer.readUnsignedByte())
 //    val infringementType = InfringementType.valueOf(buffer.readUnsignedByte())

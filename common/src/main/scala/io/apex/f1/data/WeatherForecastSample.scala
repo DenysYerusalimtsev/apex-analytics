@@ -4,13 +4,13 @@ import io.apex.f1.enums.*
 
 case class WeatherForecastSample(
     sessionType: SessionType,
-    timeOffset: Short,
+    timeOffset: Int,
     weather: Weather,
-    trackTemperature: Short,
-    trackTemperatureChange: Short,
-    airTemperature: Short,
-    airTemperatureChange: Short,
-    rainPercentage: Short) {
+    trackTemperature: Int,
+    trackTemperatureChange: Int,
+    airTemperature: Int,
+    airTemperatureChange: Int,
+    rainPercentage: Int) {
   //  def fill(buffer: ByteBuf): WeatherForecastSample = {
   //    val sessionType = SessionType.valueOf(buffer.readUnsignedByte())
   //    val timeOffset = buffer.readUnsignedByte()
