@@ -12,6 +12,7 @@ import io.apex.f1.enums.*
     engineRPM: Int,
     drs: Int,
     revLightsPercent: Int,
+    revLightsBitValue: Int,
     brakesTemperature: List[Int],
     tyresSurfaceTemperature: List[Int],
     tyresInnerTemperature: List[Int],

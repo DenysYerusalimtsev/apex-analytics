@@ -21,7 +21,7 @@ object LapDataCodec extends Codec[LapData] {
       ("currentLapNum" | uint8) ::
       ("pitStatus" | PitStatusCodec.codec) ::
       ("numPitStops" | uint8) ::
-      ("sector" | uint8) ::
+      ("sector" | SectorCodec.codec) ::
       ("currentLapInvalid" | uint8) ::
       ("penalties" | uint8) ::
       ("warnings" | uint8) ::
