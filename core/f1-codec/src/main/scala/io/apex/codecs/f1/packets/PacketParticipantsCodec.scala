@@ -8,8 +8,8 @@ import scodec.codecs.*
 
 object PacketParticipantsCodec {
   val codec: Codec[PacketParticipantsData] = (
-    ("m_header" | PacketHeaderCodec.codec) ::
-      ("m_numActiveCars" | uint8) ::
-      ("m_participants" | listOfN(provide(22), ParticipantDataCodec.codec))
+    ("header" | PacketHeaderCodec.codec) ::
+      ("numActiveCars" | uint8) ::
+      ("participants" | listOfN(provide(22), ParticipantDataCodec.codec))
   ).as[PacketParticipantsData]
 }

@@ -27,8 +27,8 @@ object PacketSessionDataCodec extends Codec[PacketSessionData] {
       ("spectatorCarIndex" | uint8) ::
       ("sliProNativeSupport" | uint8) ::
       ("numMarshalZones" | uint8) ::
-      ("marshalZones" | listOfN(uint8, MarshalZoneCodec.codec)) ::
-      ("safetyCarStatus" | uint8) ::
+      ("marshalZones" | listOfN(provide(21), MarshalZoneCodec.codec)) ::
+      ("safetyCarStatus" | SafetyCarStatusCodec.codec) ::
       ("networkGame" | uint8) ::
       ("numWeatherForecastSamples" | uint8) ::
       ("weatherForecastSamples" | listOfN(uint8, WeatherForecastSampleCodec.codec)) ::

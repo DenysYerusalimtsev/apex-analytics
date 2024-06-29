@@ -4,7 +4,7 @@ import io.apex.f1.enums.*
 
 case class LobbyInfoData(
     aiControlled: Int,
-    teamId: Team,
+    teamId: Team2022,
     nationality: Nationality,
     name: String,
     carNumber: Int,

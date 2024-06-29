@@ -173,11 +173,11 @@ object Team2022Codec {
     Team2022.MERCEDES_AMG_GT_BLACK_SERIES -> 117)
 }
 
-object TeamCodec {
-  def codec(season: Int, value: Int): Codec[Team] =
-    season match {
-      case 2020 => Team2020Codec.codec
-      case 2021 => Team2021Codec.codec
-      case 2022 => Team2022Codec.codec
-    }
-}
+//object TeamCodec {
+//  def codec(season: Int, value: Int): Codec[Team] =
+//    season match {
+//      case 2020 => Team2020Codec.codec
+//      case 2021 => Team2021Codec.codec
+//      case 2022 => Team2022Codec.codec
+//    }
+//}

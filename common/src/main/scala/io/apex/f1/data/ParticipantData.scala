@@ -4,9 +4,9 @@ import io.apex.f1.enums.*
 
 case class ParticipantData(
     aiControlled: Int,
-    driverId: Driver,
+    driverId: Driver2022,
     networkId: Int,
-    teamId: Team,
+    teamId: Team2022,
     myTeam: Int,
     raceNumber: Int,
     nationality: Nationality,
@@ -36,10 +36,10 @@ case class ParticipantData(
   //      .writeByte(participantData.yourTelemetry)
   //  }
 
-  override def toString: String = {
-    s"ParticipantData[aiControlled=$aiControlled,driverId=$driverId,teamId=$teamId," +
-    s"raceNumber=$raceNumber,nationality=$nationality,name=$name,yourTelemetry=$yourTelemetry]"
-  }
+//  override def toString: String = {
+//    s"ParticipantData[aiControlled=$aiControlled,driverId=$driverId,teamId=$teamId," +
+//    s"raceNumber=$raceNumber,nationality=$nationality,name=$name,yourTelemetry=$yourTelemetry]"
+//  }
 }
 
 object ParticipantData extends F1Data {

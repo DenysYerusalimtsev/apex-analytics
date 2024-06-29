@@ -7,10 +7,8 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object PacketHeaderCodec {
-  val codec: Codec[PacketHeader] =
-    fixedSizeBytes(
-      PacketHeader.size,
-      ("packetFormat" | uint16) ::
+  val codec: Codec[PacketHeader] = (
+    ("packetFormat" | uint16) ::
       ("gameMajorVersion" | uint8) ::
       ("gameMinorVersion" | uint8) ::
       ("packetVersion" | uint8) ::

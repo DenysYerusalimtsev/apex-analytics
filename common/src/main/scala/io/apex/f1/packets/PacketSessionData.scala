@@ -52,18 +52,19 @@ case class PacketSessionData(
     gameMode: Int,
     ruleSet: Int,
     timeOfDay: Long,
-    sessionLength: Int) {
+    sessionLength: Int
+                            ) {
 
-  override def toString: String = {
-    val marshalZonesString = marshalZones.mkString(",")
-    val weatherForecastSamplesString = weatherForecastSamples.mkString(",")
-    s"Session[$header,weather=$weather,trackTemperature=$trackTemperature,airTemperature=$airTemperature,totalLaps=$totalLaps," +
-    s"trackLength=$trackLength,sessionType=$sessionType,trackId=$trackId,formula=$formula,sessionTimeLeft=$sessionTimeLeft," +
-    s"sessionDuration=$sessionDuration,pitSpeedLimit=$pitSpeedLimit,gamePaused=$gamePaused,isSpectating=$isSpectating," +
-    s"spectatorCarIndex=$spectatorCarIndex,sliProNativeSupport=$sliProNativeSupport,numMarshalZones=$numMarshalZones," +
-    s"marshalZones=$marshalZonesString,safetyCarStatus=$safetyCarStatus,networkGame=$networkGame," +
-    s"numWeatherForecastSamples=$numWeatherForecastSamples,weatherForecastSamples=$weatherForecastSamplesString]"
-  }
+//  override def toString: String = {
+//    val marshalZonesString = marshalZones.mkString(",")
+//    val weatherForecastSamplesString = weatherForecastSamples.mkString(",")
+//    s"Session[$header,weather=$weather,trackTemperature=$trackTemperature,airTemperature=$airTemperature,totalLaps=$totalLaps," +
+//    s"trackLength=$trackLength,sessionType=$sessionType,trackId=$trackId,formula=$formula,sessionTimeLeft=$sessionTimeLeft," +
+//    s"sessionDuration=$sessionDuration,pitSpeedLimit=$pitSpeedLimit,gamePaused=$gamePaused,isSpectating=$isSpectating," +
+//    s"spectatorCarIndex=$spectatorCarIndex,sliProNativeSupport=$sliProNativeSupport,numMarshalZones=$numMarshalZones," +
+//    s"marshalZones=$marshalZonesString,safetyCarStatus=$safetyCarStatus,networkGame=$networkGame," +
+//    s"numWeatherForecastSamples=$numWeatherForecastSamples,weatherForecastSamples=$weatherForecastSamplesString]"
+//  }
 
   //  def fill(buffer: ByteBuf): PacketSessionData = {
   //    val filledHeader = PacketHeader().fill(buffer)
