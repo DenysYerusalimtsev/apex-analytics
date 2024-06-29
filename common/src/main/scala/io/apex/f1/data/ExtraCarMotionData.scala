@@ -1,11 +1,11 @@
 package io.apex.f1.data
 
 case class ExtraCarMotionData(
-    suspensionPosition: Array[Float],
-    suspensionVelocity: Array[Float],
-    suspensionAcceleration: Array[Float],
-    wheelSpeed: Array[Float],
-    wheelSlip: Array[Float],
+    suspensionPosition: List[Float],
+    suspensionVelocity: List[Float],
+    suspensionAcceleration: List[Float],
+    wheelSpeed: List[Float],
+    wheelSlip: List[Float],
     localVelocityX: Float,
     localVelocityY: Float,
     localVelocityZ: Float,

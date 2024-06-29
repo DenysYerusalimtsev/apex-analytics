@@ -10,10 +10,12 @@ import io.apex.f1.data.LapData
   */
 case class PacketLapData(
     header: PacketHeader,
-    lapData: List[LapData]) {
+    lapData: List[LapData],
+    timeTrialPBCarIdx: Int,
+    timeTrialRivalCarIdx: Int) {
 
   override def toString: String = {
-    s"LapData[$header,lapData=${lapData.mkString(",")}]"
+    s"LapData[header=$header,lapData=${lapData.mkString(",")}, timeTrialPBCarIdx=$timeTrialPBCarIdx, timeTrialRivalCarIdx=$timeTrialRivalCarIdx]"
   }
 //  def fill(buffer: ByteBuf): PacketLapData = {
 //    val filledHeader = PacketHeader().fill(buffer)

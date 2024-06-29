@@ -11,7 +11,7 @@ import io.apex.f1.data.*
   */
 case class PacketParticipantsData(
     header: PacketHeader,
-    numActiveCars: Short,
+    numActiveCars: Int,
     participants: List[ParticipantData]) {
 
   override def toString: String = {

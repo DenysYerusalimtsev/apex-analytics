@@ -12,7 +12,7 @@ import io.apex.f1.data.*
   */
 case class PacketLobbyInfoData(
     header: PacketHeader,
-    numPlayers: Short,
+    numPlayers: Int,
     lobbyInfoData: List[LobbyInfoData]) {
 
   override def toString: String = {

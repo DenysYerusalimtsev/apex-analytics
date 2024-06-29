@@ -6,15 +6,15 @@ import java.math.BigInteger
 
 case class PacketHeader(
     packetFormat: Int,
-    gameMajorVersion: Short,
-    gameMinorVersion: Short,
-    packetVersion: Short,
+    gameMajorVersion: Int,
+    gameMinorVersion: Int,
+    packetVersion: Int,
     packetId: PacketId,
     sessionUid: BigInteger,
     sessionTime: Float,
     frameIdentifier: Long,
-    playerCarIndex: Short,
-    secondaryPlayerCarIndex: Short) {
+    playerCarIndex: Int,
+    secondaryPlayerCarIndex: Int) {
 
   //  def fill(buffer: ByteBuf): PacketHeader = {
   //    PacketHeader(

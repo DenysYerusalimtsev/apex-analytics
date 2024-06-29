@@ -11,8 +11,8 @@ case class PacketSessionHistoryData(
     bestSector1LapNum: Int,
     bestSector2LapNum: Int,
     bestSector3LapNum: Int,
-    lapHistoryData: Vector[LapHistoryData],
-    tyreStintsHistoryData: Vector[TyreStintHistoryData])
+    lapHistoryData: List[LapHistoryData],
+    tyreStintsHistoryData: List[TyreStintHistoryData])
 
 object PacketSessionHistoryData extends F1Data {
 

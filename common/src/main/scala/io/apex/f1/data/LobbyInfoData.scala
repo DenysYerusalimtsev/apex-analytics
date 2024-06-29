@@ -7,6 +7,7 @@ case class LobbyInfoData(
     teamId: Team,
     nationality: Nationality,
     name: String,
+    carNumber: Int,
     readyStatus: ReadyStatus) {
 
   //  def fill(buffer: ByteBuf): LobbyInfoData = {

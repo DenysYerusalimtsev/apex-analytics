@@ -1,6 +1,7 @@
 package io.apex.codecs.f1.packets
 
-import io.apex.codecs.f1.data.{MarshalZoneCodec, WeatherForecastSampleCodec}
+import io.apex.codecs.f1.data.*
+import io.apex.codecs.f1.enums.*
 import io.apex.f1.packets.PacketSessionData
 import scodec.*
 import scodec.bits.*
@@ -10,16 +11,16 @@ object PacketSessionDataCodec extends Codec[PacketSessionData] {
 
   val codec: Codec[PacketSessionData] = (
     ("header" | PacketHeaderCodec.codec) ::
-      ("weather" | uint8) ::
+      ("weather" | WeatherCodec.codec) ::
       ("trackTemperature" | int8) ::
       ("airTemperature" | int8) ::
       ("totalLaps" | uint8) ::
-      ("trackLength" | uint16L) ::
-      ("sessionType" | uint8) ::
-      ("trackId" | int8) ::
-      ("formula" | uint8) ::
-      ("sessionTimeLeft" | uint16L) ::
-      ("sessionDuration" | uint16L) ::
+      ("trackLength" | uint16) ::
+      ("sessionType" | SessionTypeCodec.codec) ::
+      ("trackId" | Track2022Codec.codec) ::
+      ("formula" | FormulaCodec.codec) ::
+      ("sessionTimeLeft" | uint16) ::
+      ("sessionDuration" | uint16) ::
       ("pitSpeedLimit" | uint8) ::
       ("gamePaused" | uint8) ::
       ("isSpectating" | uint8) ::
@@ -33,9 +34,9 @@ object PacketSessionDataCodec extends Codec[PacketSessionData] {
       ("weatherForecastSamples" | listOfN(uint8, WeatherForecastSampleCodec.codec)) ::
       ("forecastAccuracy" | uint8) ::
       ("aiDifficulty" | uint8) ::
-      ("seasonLinkIdentifier" | uint32L) ::
-      ("weekendLinkIdentifier" | uint32L) ::
-      ("sessionLinkIdentifier" | uint32L) ::
+      ("seasonLinkIdentifier" | uint32) ::
+      ("weekendLinkIdentifier" | uint32) ::
+      ("sessionLinkIdentifier" | uint32) ::
       ("pitStopWindowIdealLap" | uint8) ::
       ("pitStopWindowLatestLap" | uint8) ::
       ("pitStopRejoinPosition" | uint8) ::
@@ -50,7 +51,7 @@ object PacketSessionDataCodec extends Codec[PacketSessionData] {
       ("dynamicRacingLineType" | uint8) ::
       ("gameMode" | uint8) ::
       ("ruleSet" | uint8) ::
-      ("timeOfDay" | uint32L) ::
+      ("timeOfDay" | uint32) ::
       ("sessionLength" | uint8)
   ).as[PacketSessionData]
 }

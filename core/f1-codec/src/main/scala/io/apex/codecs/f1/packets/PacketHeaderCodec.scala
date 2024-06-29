@@ -6,7 +6,7 @@ import scodec.bits.*
 import scodec.codecs.*
 
 object PacketHeaderCodec {
-  implicit val codec: Codec[PacketHeader] =
+  val codec: Codec[PacketHeader] =
     fixedSizeBytes(
       PacketHeader.size,
       ("packetFormat" | uint16) ::

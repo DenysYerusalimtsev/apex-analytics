@@ -13,7 +13,7 @@ import io.apex.f1.data.FinalClassificationData
   */
 case class PacketFinalClassificationData(
     header: PacketHeader,
-    numCars: Short,
+    numCars: Int,
     finalClassificationData: List[FinalClassificationData]) {
 
   override def toString: String = {
