@@ -5,7 +5,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object LapHistoryDataCodec extends Codec[LapHistoryData] {
+object LapHistoryDataCodec {
   val codec: Codec[LapHistoryData] = (
     ("lapTimeInMS" | uint32) ::
       ("sector1TimeInMS" | uint16) ::
