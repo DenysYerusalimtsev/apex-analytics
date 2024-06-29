@@ -7,7 +7,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object PacketSessionDataCodec extends Codec[PacketSessionData] {
+object PacketSessionDataCodec {
 
   val codec: Codec[PacketSessionData] = (
     ("header" | PacketHeaderCodec.codec) ::

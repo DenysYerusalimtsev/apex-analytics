@@ -117,11 +117,11 @@ object Track2022Codec {
   }
 }
 
-object TrackCodec {
-  def codec(season: Int, value: Int): Codec[Track] =
-    season match {
-      case 2020 => Track2020Codec.codec
-      case 2021 => Track2021Codec.codec
-      case 2022 => Track2022Codec.codec
-    }
-}
+//object TrackCodec {
+//  def codec(season: Int, value: Int): Codec[Track] =
+//    season match {
+//      case 2020 => Track2020Codec.codec
+//      case 2021 => Track2021Codec.codec
+//      case 2022 => Track2022Codec.codec
+//    }
+//}

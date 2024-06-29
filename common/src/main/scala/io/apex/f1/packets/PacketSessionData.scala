@@ -17,7 +17,7 @@ case class PacketSessionData(
     totalLaps: Int,
     trackLength: Int,
     sessionType: SessionType,
-    trackId: Track,
+    trackId: Track2022,
     formula: Formula,
     sessionTimeLeft: Int,
     sessionDuration: Int,

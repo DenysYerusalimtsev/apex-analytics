@@ -6,8 +6,7 @@ import scodec.*
 import scodec.bits.*
 import scodec.codecs.*
 
-object PacketLapDataCodec extends Codec[PacketLapData] {
-
+object PacketLapDataCodec {
   val codec: Codec[PacketLapData] = (
     ("header" | PacketHeaderCodec.codec) ::
       ("lapData" | listOfN(provide(22), LapDataCodec.codec)) ::
