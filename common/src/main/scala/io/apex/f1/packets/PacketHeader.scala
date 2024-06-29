@@ -10,7 +10,7 @@ case class PacketHeader(
     gameMinorVersion: Int,
     packetVersion: Int,
     packetId: PacketId,
-    sessionUid: BigInteger,
+    sessionUid: Long,
     sessionTime: Float,
     frameIdentifier: Long,
     playerCarIndex: Int,

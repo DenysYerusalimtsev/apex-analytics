@@ -1,5 +1,6 @@
 package io.apex.codecs.f1.packets
 
+import io.apex.codecs.f1.enums.*
 import io.apex.f1.packets.PacketHeader
 import scodec.*
 import scodec.bits.*
@@ -13,7 +14,7 @@ object PacketHeaderCodec {
       ("gameMajorVersion" | uint8) ::
       ("gameMinorVersion" | uint8) ::
       ("packetVersion" | uint8) ::
-      ("packetId" | uint8) ::
+      ("packetId" | PacketIdCodec.codec) ::
       ("sessionUid" | int64) ::
       ("sessionTime" | float) ::
       ("frameIdentifier" | uint32) ::
